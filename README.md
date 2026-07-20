@@ -17,6 +17,8 @@ games/
     adapter.py config.json fetch.py ratings.json
   dota2/              Dota2(数据: OpenDota 免费)
     adapter.py config.json fetch.py ratings.json
+  cs2/                CS2(数据: bo3.gg 免费)
+    adapter.py config.json fetch.py ratings.json
 cli.py                统一命令入口
 ```
 
@@ -39,6 +41,7 @@ python3 cli.py list dota2 Spirit       # 模糊查队名
 |---|---|---|---|---|
 | 英雄联盟 LoL | 65.4% | 70.7% | 0.216 | 选手+队伍融合评级 |
 | Dota2 | 57.6% | 57.7% | 0.239 | 队伍级;高方差游戏,天花板偏低 |
+| CS2 | 57.0% | ~58% | 0.245 | 队伍级(按地图展开);数据 3.5 个月,历史越多越稳 |
 
 > 诚实说明:命中率是游戏本身特性决定的——LoL 分层清晰(~65%),Dota2 爆冷多(~57%)。两者概率都已校准(Brier/LogLoss 优于瞎猜)。对外按真实数字设预期,按多场累计判断,不虚高。
 
