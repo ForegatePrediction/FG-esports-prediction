@@ -1,0 +1,11 @@
+{
+  "name": "英雄联盟 LoL",
+  "source": "Oracle's Elixir (免费)",
+  "scale": 400,
+  "shrink": 1.0,
+  "side_adv": 25,
+  "default_bo": 5,
+  "hcap": 1.5,
+  "backtest": {"mode": "last_year"},
+  "accuracy": "样本外 单图~65% / 系列~70%"
+}

@@ -1,0 +1,5582 @@
+{
+  "updated": "2026-07-11",
+  "model": "blend Elo (0.7 player-mean + 0.3 team), blue_adv=25",
+  "single_map_formula": "p_A = 1/(1+10**(-(ratingA-ratingB)/400))",
+  "accuracy_note": "样本外: 单图~65%, 系列赛~70%(见 docs/回测准确率报告.md)。请按多场累计判断,单场必有约30%会失手。",
+  "data_through": "2026-07-10",
+  "n_teams": 398,
+  "teams": {
+    "100 Thieves": {
+      "rating": 1757.3,
+      "roster": [
+        "Dhokla",
+        "River",
+        "Quid",
+        "FBI",
+        "Eyla"
+      ],
+      "w": 74,
+      "l": 67,
+      "last_date": "2025-10-24",
+      "league": "WLDs"
+    },
+    "3BL Esports": {
+      "rating": 1495.5,
+      "roster": [
+        "Sotsy",
+        "ShizuOo",
+        "c0st0m",
+        "Jalleba",
+        "Frozen"
+      ],
+      "w": 29,
+      "l": 46,
+      "last_date": "2026-05-08",
+      "league": "AL"
+    },
+    "4 Employed e 1 Budino": {
+      "rating": 1590.3,
+      "roster": [
+        "SkaR",
+        "Ryujin",
+        "Budino",
+        "xHikama",
+        "CloudStrikee"
+      ],
+      "w": 9,
+      "l": 3,
+      "last_date": "2026-02-21",
+      "league": "LIT"
+    },
+    "7REX": {
+      "rating": 1484.2,
+      "roster": [
+        "Hakari",
+        "Nero",
+        "lolo",
+        "Beenie",
+        "bulas"
+      ],
+      "w": 12,
+      "l": 12,
+      "last_date": "2026-05-12",
+      "league": "CD"
+    },
+    "9Gaming Esports": {
+      "rating": 1394.9,
+      "roster": [
+        "Nanaue",
+        "666",
+        "BayMaxxx",
+        "Nuna",
+        "Dara2"
+      ],
+      "w": 11,
+      "l": 19,
+      "last_date": "2026-05-27",
+      "league": "VCS"
+    },
+    "9z Globant": {
+      "rating": 1588.7,
+      "roster": [
+        "Nate",
+        "Warsor",
+        "Aloned",
+        "FIX",
+        "Ux"
+      ],
+      "w": 23,
+      "l": 17,
+      "last_date": "2026-07-09",
+      "league": "LRS"
+    },
+    "A One Man Army": {
+      "rating": 1496.7,
+      "roster": [
+        "Smurfe",
+        "Dome",
+        "Artoria",
+        "Xay",
+        "Urban"
+      ],
+      "w": 45,
+      "l": 54,
+      "last_date": "2026-01-23",
+      "league": "CCWS"
+    },
+    "A One Man Army Prime": {
+      "rating": 1507.2,
+      "roster": [
+        "Smurfe",
+        "Dome",
+        "Artoria",
+        "Xay",
+        "Urban"
+      ],
+      "w": 7,
+      "l": 12,
+      "last_date": "2026-02-20",
+      "league": "PRM"
+    },
+    "ALMO Players": {
+      "rating": 1392.5,
+      "roster": [
+        "Shinn",
+        "Ambush",
+        "Neczo",
+        "Azu",
+        "CrabLord"
+      ],
+      "w": 13,
+      "l": 28,
+      "last_date": "2026-07-08",
+      "league": "HLL"
+    },
+    "Actions Per Minute": {
+      "rating": 1339.3,
+      "roster": [
+        "Loading",
+        "froy",
+        "IntoxqZz",
+        "Ozgur",
+        "Haoswen"
+      ],
+      "w": 20,
+      "l": 37,
+      "last_date": "2025-07-29",
+      "league": "HLL"
+    },
+    "Aeterna Esports": {
+      "rating": 1397.6,
+      "roster": [
+        "Strava",
+        "naau",
+        "Alvanai",
+        "Pericolo",
+        "Banino"
+      ],
+      "w": 7,
+      "l": 9,
+      "last_date": "2026-05-01",
+      "league": "LIT"
+    },
+    "Alpha7 Esports": {
+      "rating": 1562.2,
+      "roster": [
+        "Kiari",
+        "Drakehero",
+        "random",
+        "scuro",
+        "Telas"
+      ],
+      "w": 21,
+      "l": 20,
+      "last_date": "2025-10-08",
+      "league": "LTA S"
+    },
+    "Andromeda Gaming": {
+      "rating": 1465.7,
+      "roster": [
+        "Palco",
+        "Pongo",
+        "TalentLess",
+        "skakavka",
+        "Cherry"
+      ],
+      "w": 24,
+      "l": 34,
+      "last_date": "2026-06-07",
+      "league": "HC"
+    },
+    "Anonymo Esports": {
+      "rating": 1505.2,
+      "roster": [
+        "HeSSZero",
+        "Joki37",
+        "Sobek",
+        "ejsner",
+        "Raxxo"
+      ],
+      "w": 55,
+      "l": 73,
+      "last_date": "2026-05-26",
+      "league": "RL"
+    },
+    "Anubis Gaming": {
+      "rating": 1776.7,
+      "roster": [
+        "Boda",
+        "Theocacs",
+        "Giyuu",
+        "Aeru",
+        "B Butcher"
+      ],
+      "w": 90,
+      "l": 81,
+      "last_date": "2026-06-12",
+      "league": "EM"
+    },
+    "Anyone's Legend": {
+      "rating": 1629.1,
+      "roster": [
+        "Flandre",
+        "Tarzan",
+        "Shanks",
+        "Hope",
+        "Kael"
+      ],
+      "w": 212,
+      "l": 146,
+      "last_date": "2026-06-08",
+      "league": "LPL"
+    },
+    "Anyone's Legend.Young": {
+      "rating": 1488.7,
+      "roster": [
+        "Yuanyue",
+        "Coward",
+        "Renard",
+        "JiaHao",
+        "SzfyLan"
+      ],
+      "w": 40,
+      "l": 36,
+      "last_date": "2025-07-18",
+      "league": "Asia Master"
+    },
+    "Apex Mission Impossible": {
+      "rating": 1331.4,
+      "roster": [
+        "arbrio",
+        "Bio",
+        "Retrozing",
+        "Bazz",
+        "Pockus"
+      ],
+      "w": 23,
+      "l": 53,
+      "last_date": "2026-06-18",
+      "league": "NACL"
+    },
+    "Arctic Pandas": {
+      "rating": 1578.9,
+      "roster": [
+        "Nille",
+        "dibu",
+        "Simpli",
+        "kehvo",
+        "Boltox"
+      ],
+      "w": 21,
+      "l": 14,
+      "last_date": "2026-06-01",
+      "league": "NLC"
+    },
+    "Arneb": {
+      "rating": 1575.7,
+      "roster": [
+        "leaf",
+        "Kania",
+        "Daemi",
+        "dresscode",
+        "Taiyaki"
+      ],
+      "w": 30,
+      "l": 21,
+      "last_date": "2026-06-13",
+      "league": "LJL"
+    },
+    "Aurora": {
+      "rating": 1297.3,
+      "roster": [
+        "Vodin",
+        "Fishue",
+        "Slix",
+        "Khaydarin",
+        "Garank"
+      ],
+      "w": 15,
+      "l": 43,
+      "last_date": "2025-08-28",
+      "league": "ROL"
+    },
+    "Austrian Force willhaben": {
+      "rating": 1516.9,
+      "roster": [
+        "SwiT",
+        "denizzz",
+        "Nan0",
+        "Kenal",
+        "Aladoric"
+      ],
+      "w": 64,
+      "l": 62,
+      "last_date": "2025-08-11",
+      "league": "PRM"
+    },
+    "Axolotl": {
+      "rating": 1391.3,
+      "roster": [
+        "Cripple",
+        "AXL Kurumii",
+        "Shack",
+        "Padawii",
+        "Tigrot"
+      ],
+      "w": 38,
+      "l": 63,
+      "last_date": "2026-02-21",
+      "league": "LIT"
+    },
+    "BAAM Esports": {
+      "rating": 1529.6,
+      "roster": [
+        "handm",
+        "shibi",
+        "Improver",
+        "choego",
+        "sas"
+      ],
+      "w": 67,
+      "l": 84,
+      "last_date": "2026-05-20",
+      "league": "AL"
+    },
+    "BBL Dark Passage": {
+      "rating": 1465.0,
+      "roster": [
+        "NuQ",
+        "Kireas",
+        "KSAEZ",
+        "Neramin",
+        "Joexy"
+      ],
+      "w": 21,
+      "l": 32,
+      "last_date": "2025-08-30",
+      "league": "TCL"
+    },
+    "BK ROG Esports": {
+      "rating": 1642.2,
+      "roster": [
+        "Boda",
+        "Jeykup",
+        "Sayn",
+        "UNF0RGIVEN",
+        "Doss"
+      ],
+      "w": 107,
+      "l": 80,
+      "last_date": "2026-02-19",
+      "league": "LFL"
+    },
+    "BNK FEARX": {
+      "rating": 1587.1,
+      "roster": [
+        "Clear",
+        "Raptor",
+        "VicLa",
+        "Taeyoon",
+        "Kellin"
+      ],
+      "w": 137,
+      "l": 175,
+      "last_date": "2026-05-30",
+      "league": "LCK"
+    },
+    "BNK FEARX Youth": {
+      "rating": 1488.4,
+      "roster": [
+        "Kangin",
+        "Zephyr",
+        "FIESTA",
+        "Slayer",
+        "Luon"
+      ],
+      "w": 153,
+      "l": 163,
+      "last_date": "2026-05-28",
+      "league": "LCKC"
+    },
+    "BRUTE": {
+      "rating": 1351.1,
+      "roster": [
+        "Interor",
+        "Dunzi",
+        "Downed",
+        "Skyp",
+        "Munet"
+      ],
+      "w": 45,
+      "l": 77,
+      "last_date": "2026-05-17",
+      "league": "HM"
+    },
+    "Back2TheGame": {
+      "rating": 1501.9,
+      "roster": [
+        "Agresivoo",
+        "ShazQ",
+        "many",
+        "Lothen",
+        "Highway"
+      ],
+      "w": 99,
+      "l": 80,
+      "last_date": "2025-08-23",
+      "league": "RL"
+    },
+    "Bamboo Juice": {
+      "rating": 1383.7,
+      "roster": [
+        "Looter",
+        "Blender",
+        "YonYon",
+        "RURURU",
+        "BOO MoriMori"
+      ],
+      "w": 18,
+      "l": 26,
+      "last_date": "2026-04-19",
+      "league": "LJL"
+    },
+    "Barcząca Esports": {
+      "rating": 1608.3,
+      "roster": [
+        "Agresivoo",
+        "mikusik",
+        "Artoria",
+        "Woolite",
+        "Jactroll"
+      ],
+      "w": 39,
+      "l": 33,
+      "last_date": "2026-05-30",
+      "league": "RL"
+    },
+    "Barulhinhos": {
+      "rating": 1483.5,
+      "roster": [
+        "Snalt",
+        "Mewkyo",
+        "random",
+        "Sant",
+        "Vahvel"
+      ],
+      "w": 10,
+      "l": 9,
+      "last_date": "2026-06-05",
+      "league": "CD"
+    },
+    "Barça eSports": {
+      "rating": 1624.6,
+      "roster": [
+        "selenex",
+        "Koldo",
+        "Macaquinho",
+        "Legolas",
+        "Oscure"
+      ],
+      "w": 122,
+      "l": 114,
+      "last_date": "2026-06-05",
+      "league": "LES"
+    },
+    "BeFive": {
+      "rating": 1474.4,
+      "roster": [
+        "Falleo",
+        "DoubleAiM",
+        "Diva",
+        "bakisa",
+        "Coli"
+      ],
+      "w": 67,
+      "l": 66,
+      "last_date": "2026-03-03",
+      "league": "EBL"
+    },
+    "Berlin International Gaming": {
+      "rating": 1801.6,
+      "roster": [
+        "Irrelevant",
+        "Habubu",
+        "Reeker",
+        "Patrik",
+        "Kaiser"
+      ],
+      "w": 168,
+      "l": 90,
+      "last_date": "2026-07-09",
+      "league": "PRM"
+    },
+    "Beşiktaş Esports": {
+      "rating": 1654.5,
+      "roster": [
+        "Vertigo",
+        "CHEF",
+        "Ivory",
+        "Ruep",
+        "Patch"
+      ],
+      "w": 75,
+      "l": 64,
+      "last_date": "2025-09-25",
+      "league": "EM"
+    },
+    "Bilibili Gaming": {
+      "rating": 1979.4,
+      "roster": [
+        "Bin",
+        "Xun",
+        "Knight",
+        "Viper",
+        "ON"
+      ],
+      "w": 307,
+      "l": 148,
+      "last_date": "2026-07-09",
+      "league": "MSI"
+    },
+    "Bilibili Gaming Junior": {
+      "rating": 1491.6,
+      "roster": [
+        "Liangchen",
+        "luoyiyu",
+        "Sanling",
+        "chesterbb",
+        "Miyi"
+      ],
+      "w": 37,
+      "l": 50,
+      "last_date": "2026-06-11",
+      "league": "Asia Master"
+    },
+    "Bitfix Gaming": {
+      "rating": 1462.2,
+      "roster": [
+        "Banderas",
+        "DenSygeKamel69",
+        "HAWHAW",
+        "BunnyBeast",
+        "Thoug"
+      ],
+      "w": 8,
+      "l": 10,
+      "last_date": "2025-09-26",
+      "league": "NLC"
+    },
+    "Blue Otter": {
+      "rating": 1479.8,
+      "roster": [
+        "Ariana",
+        "Munchy",
+        "Samikin",
+        "Spawn",
+        "Rovex"
+      ],
+      "w": 62,
+      "l": 73,
+      "last_date": "2026-06-20",
+      "league": "NACL"
+    },
+    "Bohemian Guardians": {
+      "rating": 1357.0,
+      "roster": [
+        "MyCash",
+        "Enricfh",
+        "Zeal",
+        "Ray",
+        "JJirkos"
+      ],
+      "w": 3,
+      "l": 15,
+      "last_date": "2026-05-29",
+      "league": "HM"
+    },
+    "Bomba Team": {
+      "rating": 1705.5,
+      "roster": [
+        "frajgo",
+        "Guli",
+        "Mrozku",
+        "Odi11",
+        "minemaciek"
+      ],
+      "w": 36,
+      "l": 21,
+      "last_date": "2026-06-11",
+      "league": "EM"
+    },
+    "BoostGate Esports": {
+      "rating": 1471.6,
+      "roster": [
+        "Dionelux",
+        "bicas",
+        "iwanan",
+        "Mean",
+        "Centu"
+      ],
+      "w": 100,
+      "l": 90,
+      "last_date": "2026-05-19",
+      "league": "TCL"
+    },
+    "Bubliki": {
+      "rating": 1490.3,
+      "roster": [
+        "Sankaizer",
+        "D4SH",
+        "ardaffler",
+        "Demonadc",
+        "CrabLord"
+      ],
+      "w": 10,
+      "l": 11,
+      "last_date": "2026-06-08",
+      "league": "EM"
+    },
+    "Bulldog Esports": {
+      "rating": 1495.3,
+      "roster": [
+        "Szygenda",
+        "KKT",
+        "Ronaldo",
+        "reje",
+        "Kasing"
+      ],
+      "w": 32,
+      "l": 37,
+      "last_date": "2026-05-29",
+      "league": "NLC"
+    },
+    "Burning Core Toyama": {
+      "rating": 1645.5,
+      "roster": [
+        "tol2",
+        "Bruce",
+        "R0se",
+        "L1mit",
+        "Enapon"
+      ],
+      "w": 35,
+      "l": 57,
+      "last_date": "2025-08-14",
+      "league": "LJL"
+    },
+    "Bushido Wildcats": {
+      "rating": 1489.0,
+      "roster": [
+        "Ersin",
+        "Kurama",
+        "Warner",
+        "Jeyrus",
+        "Virgo"
+      ],
+      "w": 61,
+      "l": 58,
+      "last_date": "2026-05-20",
+      "league": "TCL"
+    },
+    "CAG OSAKA": {
+      "rating": 1360.8,
+      "roster": [
+        "Yuu",
+        "Racon",
+        "CAG kaylie",
+        "TenT",
+        "OkerumoN"
+      ],
+      "w": 8,
+      "l": 18,
+      "last_date": "2026-04-19",
+      "league": "LJL"
+    },
+    "CCG Esports": {
+      "rating": 1559.6,
+      "roster": [
+        "Fiji",
+        "Dardoch",
+        "Aojune",
+        "Cody Sun",
+        "Only35"
+      ],
+      "w": 61,
+      "l": 54,
+      "last_date": "2026-06-05",
+      "league": "NACL"
+    },
+    "CGN Esports": {
+      "rating": 1679.5,
+      "roster": [
+        "Send0o",
+        "Typhoon",
+        "Phantasm",
+        "Reptile",
+        "Lucky"
+      ],
+      "w": 24,
+      "l": 16,
+      "last_date": "2025-07-26",
+      "league": "PRM"
+    },
+    "CITA Kaizen": {
+      "rating": 1803.5,
+      "roster": [
+        "Robocop",
+        "Anonymouss",
+        "Nan0",
+        "Afriibi",
+        "J3rkie"
+      ],
+      "w": 62,
+      "l": 37,
+      "last_date": "2026-06-09",
+      "league": "EM"
+    },
+    "CITA Kaizen Academy": {
+      "rating": 1470.3,
+      "roster": [
+        "Vorkis",
+        "dylux",
+        "Młody G",
+        "Blek",
+        "Maty"
+      ],
+      "w": 12,
+      "l": 13,
+      "last_date": "2026-06-03",
+      "league": "HC"
+    },
+    "CTBC Flying Oyster": {
+      "rating": 1526.0,
+      "roster": [
+        "Rest",
+        "Shad0w",
+        "Pout",
+        "Doggo",
+        "Kino"
+      ],
+      "w": 144,
+      "l": 98,
+      "last_date": "2026-05-23",
+      "league": "LCP"
+    },
+    "CTBC Flying Oyster Academy": {
+      "rating": 1618.7,
+      "roster": [
+        "Zkai",
+        "Leaky",
+        "Yuhe",
+        "Tracy",
+        "2274"
+      ],
+      "w": 99,
+      "l": 48,
+      "last_date": "2026-06-11",
+      "league": "Asia Master"
+    },
+    "Caldya Esport": {
+      "rating": 1504.2,
+      "roster": [
+        "Drali",
+        "Kiki",
+        "Marbirius",
+        "Jeskla",
+        "Gordinho"
+      ],
+      "w": 18,
+      "l": 22,
+      "last_date": "2026-06-06",
+      "league": "NL"
+    },
+    "Chiefs Esports Club": {
+      "rating": 1413.5,
+      "roster": [
+        "BioPanther",
+        "Whynot",
+        "JimieN",
+        "Slayder",
+        "Luon"
+      ],
+      "w": 10,
+      "l": 41,
+      "last_date": "2025-10-03",
+      "league": "LCP"
+    },
+    "Citadel Gaming": {
+      "rating": 1476.1,
+      "roster": [
+        "Stray",
+        "Griffin",
+        "Bradley",
+        "Array",
+        "Keel"
+      ],
+      "w": 19,
+      "l": 21,
+      "last_date": "2026-05-15",
+      "league": "NACL"
+    },
+    "Cloud9": {
+      "rating": 1584.6,
+      "roster": [
+        "Thanatos",
+        "Blaber",
+        "APA",
+        "Zven",
+        "Vulcan"
+      ],
+      "w": 112,
+      "l": 76,
+      "last_date": "2026-06-13",
+      "league": "LCS"
+    },
+    "Colossal Gaming": {
+      "rating": 1551.0,
+      "roster": [
+        "lobellan",
+        "Fragola",
+        "Sharon",
+        "PiskHello",
+        "Nash"
+      ],
+      "w": 49,
+      "l": 41,
+      "last_date": "2026-05-15",
+      "league": "LIT"
+    },
+    "Connect Arena Esports": {
+      "rating": 1240.0,
+      "roster": [
+        "Fikus",
+        "uroskg",
+        "Shizika",
+        "Pcelica",
+        "Abyss"
+      ],
+      "w": 0,
+      "l": 16,
+      "last_date": "2025-07-30",
+      "league": "EBL"
+    },
+    "Contingent Esports": {
+      "rating": 1544.9,
+      "roster": [
+        "CES JRockets",
+        "Kaido",
+        "Asilah",
+        "Daption",
+        "Breezy"
+      ],
+      "w": 8,
+      "l": 10,
+      "last_date": "2026-06-18",
+      "league": "NACL"
+    },
+    "Conviction": {
+      "rating": 1714.6,
+      "roster": [
+        "Sniper",
+        "Tomio",
+        "Insanity",
+        "Tactical",
+        "Bounty"
+      ],
+      "w": 57,
+      "l": 38,
+      "last_date": "2026-06-05",
+      "league": "NACL"
+    },
+    "Corinthians Esports": {
+      "rating": 1464.4,
+      "roster": [
+        "zekas",
+        "Mewkyo",
+        "Aithusa",
+        "Celo",
+        "Cavalo"
+      ],
+      "w": 22,
+      "l": 30,
+      "last_date": "2025-08-25",
+      "league": "CD"
+    },
+    "Croatian Flair": {
+      "rating": 1483.8,
+      "roster": [
+        "Danilo",
+        "Sikterr",
+        "CROmpir",
+        "Yuki",
+        "CF Igloodan"
+      ],
+      "w": 9,
+      "l": 12,
+      "last_date": "2026-04-28",
+      "league": "EBL"
+    },
+    "Crusaders": {
+      "rating": 1474.5,
+      "roster": [
+        "Kaplica",
+        "Kadir",
+        "Sahira",
+        "Glimpse",
+        "Lostboy"
+      ],
+      "w": 21,
+      "l": 22,
+      "last_date": "2026-06-02",
+      "league": "LPLOL"
+    },
+    "Crvena zvezda Esports": {
+      "rating": 1353.1,
+      "roster": [
+        "Nazgul",
+        "Saintsu",
+        "Mali Mrav",
+        "Flif",
+        "Shone"
+      ],
+      "w": 85,
+      "l": 62,
+      "last_date": "2026-02-11",
+      "league": "EBL"
+    },
+    "Crystal Rose": {
+      "rating": 1325.2,
+      "roster": [
+        "CR Gryf",
+        "Renewal",
+        "Dym",
+        "FliiZee",
+        "Blazteurs"
+      ],
+      "w": 1,
+      "l": 13,
+      "last_date": "2026-05-24",
+      "league": "NL"
+    },
+    "Cupid Esports": {
+      "rating": 1365.4,
+      "roster": [
+        "DrCalculus",
+        "Bio",
+        "aadam",
+        "Hub",
+        "Bruhruto"
+      ],
+      "w": 6,
+      "l": 11,
+      "last_date": "2025-09-18",
+      "league": "NACL"
+    },
+    "Cusprills": {
+      "rating": 1537.1,
+      "roster": [
+        "Tay",
+        "Shini",
+        "Kina",
+        "micaO",
+        "Momochi"
+      ],
+      "w": 10,
+      "l": 5,
+      "last_date": "2025-09-19",
+      "league": "CD"
+    },
+    "DECOY 21": {
+      "rating": 1539.7,
+      "roster": [
+        "DC21 Aarrow",
+        "Solfurion",
+        "Casablanca",
+        "Showman",
+        "DC21 Mozzi"
+      ],
+      "w": 7,
+      "l": 3,
+      "last_date": "2026-05-21",
+      "league": "LIT"
+    },
+    "DKB XPERION NXT": {
+      "rating": 1474.3,
+      "roster": [
+        "Tayto",
+        "Techoteco",
+        "Azuka",
+        "Looki",
+        "Rychly"
+      ],
+      "w": 14,
+      "l": 14,
+      "last_date": "2025-09-09",
+      "league": "PRM"
+    },
+    "DMG Esports": {
+      "rating": 1433.7,
+      "roster": [
+        "Bust",
+        "CLEARS",
+        "JayJay",
+        "Kamito",
+        "Soul"
+      ],
+      "w": 48,
+      "l": 72,
+      "last_date": "2026-05-27",
+      "league": "NLC"
+    },
+    "DN SOOPers": {
+      "rating": 1383.2,
+      "roster": [
+        "DuDu",
+        "Pyosik",
+        "Clozer",
+        "deokdam",
+        "Peter"
+      ],
+      "w": 83,
+      "l": 185,
+      "last_date": "2026-05-30",
+      "league": "LCK"
+    },
+    "DN SOOPers Academy": {
+      "rating": 1454.4,
+      "roster": [
+        "Junu",
+        "Soft",
+        "Elbow",
+        "Revenge",
+        "AKIRA"
+      ],
+      "w": 100,
+      "l": 138,
+      "last_date": "2026-05-09",
+      "league": "LAS"
+    },
+    "DN SOOPers Challengers": {
+      "rating": 1626.0,
+      "roster": [
+        "Lancer",
+        "DDoiV",
+        "Flip",
+        "Enosh",
+        "Quantum"
+      ],
+      "w": 162,
+      "l": 148,
+      "last_date": "2026-05-29",
+      "league": "LCKC"
+    },
+    "DOCISK": {
+      "rating": 1432.6,
+      "roster": [
+        "PmK",
+        "FullClear",
+        "Birkyy",
+        "Anyone",
+        "kubagoat"
+      ],
+      "w": 22,
+      "l": 38,
+      "last_date": "2026-05-21",
+      "league": "RL"
+    },
+    "DRX Academy": {
+      "rating": 1105.4,
+      "roster": [
+        "Sun eater",
+        "Nerion",
+        "Future",
+        "XeRone",
+        "Keuya"
+      ],
+      "w": 28,
+      "l": 104,
+      "last_date": "2025-11-01",
+      "league": "LAS"
+    },
+    "Dark Passage": {
+      "rating": 1350.7,
+      "roster": [
+        "Joexy",
+        "Kireas",
+        "KSAEZ",
+        "Neramin",
+        "Six0x"
+      ],
+      "w": 45,
+      "l": 56,
+      "last_date": "2026-05-12",
+      "league": "TCL"
+    },
+    "DarkZero Dragonsteel": {
+      "rating": 1603.8,
+      "roster": [
+        "Keii",
+        "Kisno",
+        "Toasty",
+        "sajed",
+        "Zyko"
+      ],
+      "w": 34,
+      "l": 19,
+      "last_date": "2025-08-28",
+      "league": "NACL"
+    },
+    "Deacoy": {
+      "rating": 1446.6,
+      "roster": [
+        "Fratellin",
+        "Hamudis",
+        "Sharon",
+        "Kyte",
+        "Sheesh"
+      ],
+      "w": 6,
+      "l": 9,
+      "last_date": "2026-02-11",
+      "league": "LIT"
+    },
+    "DeathMark E-Sports": {
+      "rating": 1438.8,
+      "roster": [
+        "Karsiak",
+        "Verdict",
+        "SirZepre",
+        "Good Boi",
+        "Potato"
+      ],
+      "w": 6,
+      "l": 7,
+      "last_date": "2026-06-20",
+      "league": "NACL"
+    },
+    "Deep Cross Gaming": {
+      "rating": 1612.2,
+      "roster": [
+        "Flauren",
+        "Pop9",
+        "HongSuo",
+        "Feng",
+        "ShiauC"
+      ],
+      "w": 174,
+      "l": 116,
+      "last_date": "2026-06-29",
+      "league": "MSI"
+    },
+    "Deer Gaming": {
+      "rating": 1482.6,
+      "roster": [
+        "Virtuso",
+        "Hankat",
+        "Scuffed",
+        "Kakarot",
+        "uden"
+      ],
+      "w": 13,
+      "l": 13,
+      "last_date": "2026-06-03",
+      "league": "NLC"
+    },
+    "Delta Syndicate": {
+      "rating": 1360.4,
+      "roster": [
+        "didie",
+        "Rising",
+        "Toumes",
+        "David",
+        "Ranorr"
+      ],
+      "w": 39,
+      "l": 50,
+      "last_date": "2025-08-15",
+      "league": "HC"
+    },
+    "DetonatioN FocusMe": {
+      "rating": 1380.7,
+      "roster": [
+        "Momo",
+        "Citrus",
+        "Fisher",
+        "Kakkun",
+        "Woody"
+      ],
+      "w": 75,
+      "l": 96,
+      "last_date": "2026-05-17",
+      "league": "LCP"
+    },
+    "DetonatioN FocusMe Academy": {
+      "rating": 1397.4,
+      "roster": [
+        "Potential",
+        "Grit",
+        "Ravvy",
+        "Damocles",
+        "Kurahuto"
+      ],
+      "w": 34,
+      "l": 83,
+      "last_date": "2026-06-03",
+      "league": "LJL"
+    },
+    "Dignitas": {
+      "rating": 1357.8,
+      "roster": [
+        "Photon",
+        "eXyu",
+        "Palafox",
+        "FBI",
+        "Ignar"
+      ],
+      "w": 35,
+      "l": 80,
+      "last_date": "2026-05-17",
+      "league": "LCS"
+    },
+    "Disguised": {
+      "rating": 1447.7,
+      "roster": [
+        "Srtty",
+        "KryRa",
+        "Callme",
+        "sajed",
+        "Lyonz"
+      ],
+      "w": 61,
+      "l": 92,
+      "last_date": "2026-05-16",
+      "league": "LCS"
+    },
+    "Divernex": {
+      "rating": 1415.9,
+      "roster": [
+        "Lays",
+        "SGooB",
+        "Pulzer",
+        "AAdaMM",
+        "Dawerko"
+      ],
+      "w": 21,
+      "l": 25,
+      "last_date": "2026-02-06",
+      "league": "HW"
+    },
+    "Diversion Gaming": {
+      "rating": 1342.4,
+      "roster": [
+        "GoDirr",
+        "miflond",
+        "Ad1s",
+        "Skodix",
+        "Menďo"
+      ],
+      "w": 58,
+      "l": 57,
+      "last_date": "2026-06-04",
+      "league": "HC"
+    },
+    "Docta Esports": {
+      "rating": 1527.9,
+      "roster": [
+        "Dinastik",
+        "AlluK",
+        "Saifer",
+        "Syunko",
+        "Lac"
+      ],
+      "w": 6,
+      "l": 6,
+      "last_date": "2026-07-09",
+      "league": "LRS"
+    },
+    "Dorado Gaming": {
+      "rating": 1391.3,
+      "roster": [
+        "Dec0y",
+        "Lojaz",
+        "aadam",
+        "Hub",
+        "Redemption"
+      ],
+      "w": 18,
+      "l": 27,
+      "last_date": "2026-05-15",
+      "league": "NACL"
+    },
+    "Dplus Kia": {
+      "rating": 1683.7,
+      "roster": [
+        "Siwoo",
+        "Lucid",
+        "ShowMaker",
+        "Smash",
+        "Career"
+      ],
+      "w": 219,
+      "l": 181,
+      "last_date": "2026-06-07",
+      "league": "LCK"
+    },
+    "Dplus Kia Academy": {
+      "rating": 1740.5,
+      "roster": [
+        "Nevid",
+        "Solid",
+        "Despair",
+        "CARFE",
+        "Kitten"
+      ],
+      "w": 169,
+      "l": 103,
+      "last_date": "2026-05-17",
+      "league": "LAS"
+    },
+    "Dplus Kia Challengers": {
+      "rating": 1761.8,
+      "roster": [
+        "Jaehyuk",
+        "Sharvel",
+        "Garden",
+        "Wayne",
+        "Loopy"
+      ],
+      "w": 171,
+      "l": 134,
+      "last_date": "2026-06-21",
+      "league": "Asia Master"
+    },
+    "Dragons Esports": {
+      "rating": 1556.6,
+      "roster": [
+        "Maged",
+        "moe",
+        "Akashi",
+        "Slayder",
+        "CoBiT"
+      ],
+      "w": 59,
+      "l": 38,
+      "last_date": "2026-05-13",
+      "league": "AL"
+    },
+    "Dynasty": {
+      "rating": 1473.6,
+      "roster": [
+        "Twendddy",
+        "Fishue",
+        "MathisV",
+        "Void",
+        "Wuis"
+      ],
+      "w": 24,
+      "l": 44,
+      "last_date": "2026-05-21",
+      "league": "ROL"
+    },
+    "E WIE EINFACH E-SPORTS": {
+      "rating": 1745.1,
+      "roster": [
+        "Vizicsacsi",
+        "Afroboi",
+        "Relative",
+        "Afriibi",
+        "Wildenbruch"
+      ],
+      "w": 97,
+      "l": 95,
+      "last_date": "2026-07-09",
+      "league": "PRM"
+    },
+    "EDG Youth Team": {
+      "rating": 1473.1,
+      "roster": [
+        "hui",
+        "13day",
+        "wild",
+        "qianshi",
+        "Jerry"
+      ],
+      "w": 52,
+      "l": 33,
+      "last_date": "2026-06-10",
+      "league": "Asia Master"
+    },
+    "EDward Gaming": {
+      "rating": 1477.1,
+      "roster": [
+        "Zdz",
+        "Xiaohao",
+        "sinian",
+        "Leave",
+        "Jwei"
+      ],
+      "w": 89,
+      "l": 106,
+      "last_date": "2026-06-03",
+      "league": "LPL"
+    },
+    "EKO Esports": {
+      "rating": 1406.7,
+      "roster": [
+        "The Mountain",
+        "Izo",
+        "Luke",
+        "Alessio",
+        "Corriragazzo"
+      ],
+      "w": 33,
+      "l": 65,
+      "last_date": "2026-05-14",
+      "league": "LIT"
+    },
+    "EXILE esports": {
+      "rating": 1458.2,
+      "roster": [
+        "Dzeffry",
+        "DVLK",
+        "Deepe",
+        "KNEZA",
+        "Marco"
+      ],
+      "w": 48,
+      "l": 65,
+      "last_date": "2026-05-26",
+      "league": "HM"
+    },
+    "EXILE esports Academy": {
+      "rating": 1505.1,
+      "roster": [
+        "starkyy",
+        "Xanfii",
+        "Lukyss",
+        "Lexendo",
+        "Dzejno"
+      ],
+      "w": 17,
+      "l": 18,
+      "last_date": "2026-06-13",
+      "league": "HC"
+    },
+    "Ei Nerd Esports": {
+      "rating": 1446.6,
+      "roster": [
+        "Makes",
+        "Dizin",
+        "Pilot",
+        "Netuno",
+        "zay"
+      ],
+      "w": 5,
+      "l": 9,
+      "last_date": "2026-05-11",
+      "league": "CD"
+    },
+    "Eintracht Frankfurt": {
+      "rating": 1494.6,
+      "roster": [
+        "Addusto",
+        "D4nKa",
+        "Sencux",
+        "Devn",
+        "Richu"
+      ],
+      "w": 54,
+      "l": 89,
+      "last_date": "2026-07-09",
+      "league": "PRM"
+    },
+    "Eintracht Spandau": {
+      "rating": 1749.3,
+      "roster": [
+        "JNX",
+        "Xagog",
+        "PowerOfEvil",
+        "Fun K3y",
+        "seaz"
+      ],
+      "w": 128,
+      "l": 94,
+      "last_date": "2026-07-09",
+      "league": "PRM"
+    },
+    "Entropiq": {
+      "rating": 1676.2,
+      "roster": [
+        "Robocop",
+        "Shift",
+        "Wolorz",
+        "Yen",
+        "denyk"
+      ],
+      "w": 118,
+      "l": 67,
+      "last_date": "2025-10-07",
+      "league": "EM"
+    },
+    "Epic Avalanche": {
+      "rating": 1520.1,
+      "roster": [
+        "Menninkäinen",
+        "Tatuy",
+        "Röyhkeä",
+        "VL",
+        "Boltox"
+      ],
+      "w": 7,
+      "l": 8,
+      "last_date": "2025-09-28",
+      "league": "NLC"
+    },
+    "Epitomy Esports": {
+      "rating": 1510.6,
+      "roster": [
+        "Sala",
+        "EPT HackerPanda",
+        "Kappa1",
+        "Pecora",
+        "Aledice"
+      ],
+      "w": 11,
+      "l": 9,
+      "last_date": "2026-05-24",
+      "league": "LIT"
+    },
+    "Epitomy Masters": {
+      "rating": 1462.4,
+      "roster": [
+        "EPTM Aarrow",
+        "Lesranct",
+        "Wall",
+        "mirza",
+        "EPTM Mozziii"
+      ],
+      "w": 5,
+      "l": 5,
+      "last_date": "2026-02-14",
+      "league": "LIT"
+    },
+    "Esprit Shōnen": {
+      "rating": 1526.2,
+      "roster": [
+        "Leny",
+        "Kobs",
+        "xKenzuke",
+        "Booshi",
+        "Mxe"
+      ],
+      "w": 72,
+      "l": 56,
+      "last_date": "2026-05-21",
+      "league": "LFL"
+    },
+    "Estral Esports": {
+      "rating": 1605.4,
+      "roster": [
+        "SuperCleber",
+        "Sinatra",
+        "Kisee",
+        "Brance",
+        "Telas"
+      ],
+      "w": 86,
+      "l": 47,
+      "last_date": "2026-05-26",
+      "league": "CD"
+    },
+    "Ethereal Enigmas": {
+      "rating": 1677.0,
+      "roster": [
+        "kobe67",
+        "Trila",
+        "WalliR",
+        "Reedfoo",
+        "Sobakk"
+      ],
+      "w": 56,
+      "l": 50,
+      "last_date": "2026-06-14",
+      "league": "HC"
+    },
+    "FENNEL": {
+      "rating": 1735.0,
+      "roster": [
+        "kkkkkkkkk",
+        "Ellim",
+        "DICE",
+        "MayR",
+        "Bruce"
+      ],
+      "w": 33,
+      "l": 8,
+      "last_date": "2026-06-14",
+      "league": "LJL"
+    },
+    "FN Esports": {
+      "rating": 1596.5,
+      "roster": [
+        "Random",
+        "OWLONSKY",
+        "Sayn",
+        "Xicor",
+        "Însane"
+      ],
+      "w": 60,
+      "l": 36,
+      "last_date": "2026-06-08",
+      "league": "EM"
+    },
+    "FURIA": {
+      "rating": 1735.1,
+      "roster": [
+        "Guigo",
+        "Tatu",
+        "Tutsz",
+        "Ayu",
+        "JoJo"
+      ],
+      "w": 99,
+      "l": 85,
+      "last_date": "2026-07-06",
+      "league": "MSI"
+    },
+    "Falke Esports": {
+      "rating": 1410.8,
+      "roster": [
+        "Ethe",
+        "Clicker",
+        "Midnight",
+        "Marcv1",
+        "Deleted"
+      ],
+      "w": 32,
+      "l": 39,
+      "last_date": "2026-05-21",
+      "league": "LES"
+    },
+    "Farenvehn": {
+      "rating": 1609.6,
+      "roster": [
+        "Chordy",
+        "Follow",
+        "Enga",
+        "ianshaka",
+        "Shadow"
+      ],
+      "w": 36,
+      "l": 22,
+      "last_date": "2025-10-04",
+      "league": "LTA S"
+    },
+    "Fast8": {
+      "rating": 1469.8,
+      "roster": [
+        "F8 hanya",
+        "Fubuki",
+        "F8 aspire",
+        "MayR",
+        "raku"
+      ],
+      "w": 14,
+      "l": 17,
+      "last_date": "2026-04-19",
+      "league": "LJL"
+    },
+    "FlameHard": {
+      "rating": 1657.3,
+      "roster": [
+        "Caucha",
+        "Djoko",
+        "UniqueCORN",
+        "raining",
+        "Gordinho"
+      ],
+      "w": 40,
+      "l": 17,
+      "last_date": "2025-09-24",
+      "league": "EM"
+    },
+    "Flamengo MDL": {
+      "rating": 1566.0,
+      "roster": [
+        "Makes",
+        "Dizin",
+        "Envy",
+        "Trigo",
+        "Damage"
+      ],
+      "w": 40,
+      "l": 43,
+      "last_date": "2025-10-05",
+      "league": "LTA S"
+    },
+    "Fluxo W7M": {
+      "rating": 1510.8,
+      "roster": [
+        "curty",
+        "Peach",
+        "cody",
+        "BAO",
+        "Momochi"
+      ],
+      "w": 23,
+      "l": 53,
+      "last_date": "2026-06-10",
+      "league": "EWC"
+    },
+    "FlyQuest": {
+      "rating": 1636.1,
+      "roster": [
+        "Gakgos",
+        "Gryffinn",
+        "Quad",
+        "Massu",
+        "Cryogen"
+      ],
+      "w": 146,
+      "l": 93,
+      "last_date": "2026-06-06",
+      "league": "LCS"
+    },
+    "Fnatic": {
+      "rating": 1588.0,
+      "roster": [
+        "Empyros",
+        "Razork",
+        "Vladi",
+        "Upset",
+        "Lospa"
+      ],
+      "w": 125,
+      "l": 112,
+      "last_date": "2026-05-04",
+      "league": "LEC"
+    },
+    "Forsaken": {
+      "rating": 1676.1,
+      "roster": [
+        "iBo",
+        "Bwipo",
+        "Decay",
+        "Scorth",
+        "Lucker"
+      ],
+      "w": 112,
+      "l": 94,
+      "last_date": "2026-06-12",
+      "league": "EM"
+    },
+    "Fortress Esports": {
+      "rating": 1471.3,
+      "roster": [
+        "ugandan fighter",
+        "Noerring",
+        "Kroghsen",
+        "Boytang",
+        "Dovendyr"
+      ],
+      "w": 6,
+      "l": 6,
+      "last_date": "2025-10-04",
+      "league": "NLC"
+    },
+    "Fox Gaming": {
+      "rating": 1440.8,
+      "roster": [
+        "Krest",
+        "Shanks",
+        "Improver",
+        "Fede",
+        "Sw3ry"
+      ],
+      "w": 43,
+      "l": 48,
+      "last_date": "2025-07-25",
+      "league": "AL"
+    },
+    "Francesinhas": {
+      "rating": 1519.4,
+      "roster": [
+        "LVS",
+        "Favorito",
+        "NOMA",
+        "costy",
+        "Ze Luis"
+      ],
+      "w": 6,
+      "l": 7,
+      "last_date": "2026-05-22",
+      "league": "LPLOL"
+    },
+    "Frank Esports": {
+      "rating": 1645.6,
+      "roster": [
+        "YSKM",
+        "Holo",
+        "Pretender",
+        "MnM",
+        "kingpo54"
+      ],
+      "w": 135,
+      "l": 85,
+      "last_date": "2026-06-03",
+      "league": "PCS"
+    },
+    "French Flair": {
+      "rating": 1799.5,
+      "roster": [
+        "Adam",
+        "NattyNatt",
+        "SAKEN",
+        "3XA",
+        "Targamas"
+      ],
+      "w": 28,
+      "l": 12,
+      "last_date": "2026-04-07",
+      "league": "EM"
+    },
+    "Frites Esports Club": {
+      "rating": 1817.1,
+      "roster": [
+        "NuQ",
+        "Cboi",
+        "Wolorz",
+        "FlickeR",
+        "Seal"
+      ],
+      "w": 43,
+      "l": 8,
+      "last_date": "2026-06-09",
+      "league": "EM"
+    },
+    "Fuego": {
+      "rating": 1655.2,
+      "roster": [
+        "Jauny",
+        "Grell",
+        "Skyy",
+        "VirusFx",
+        "Ichiwin"
+      ],
+      "w": 87,
+      "l": 32,
+      "last_date": "2026-07-05",
+      "league": "LRN"
+    },
+    "Fukuoka SoftBank HAWKS gaming": {
+      "rating": 1545.4,
+      "roster": [
+        "Evi",
+        "Van1",
+        "Aria",
+        "Marble",
+        "Vsta"
+      ],
+      "w": 111,
+      "l": 98,
+      "last_date": "2026-05-24",
+      "league": "LCP"
+    },
+    "FunPlus Phoenix": {
+      "rating": 1477.4,
+      "roster": [
+        "sheer",
+        "Jiejie",
+        "Care",
+        "JiaQi",
+        "Jwei"
+      ],
+      "w": 79,
+      "l": 122,
+      "last_date": "2025-08-30",
+      "league": "LPL"
+    },
+    "G2 Esports": {
+      "rating": 1881.2,
+      "roster": [
+        "BrokenBlade",
+        "SkewMond",
+        "Caps",
+        "Hans Sama",
+        "Labrov"
+      ],
+      "w": 209,
+      "l": 114,
+      "last_date": "2026-07-10",
+      "league": "MSI"
+    },
+    "G2 NORD": {
+      "rating": 1785.5,
+      "roster": [
+        "Shelfmade",
+        "Markoon",
+        "Toasty",
+        "Rin",
+        "Tockimo"
+      ],
+      "w": 58,
+      "l": 34,
+      "last_date": "2026-07-08",
+      "league": "PRM"
+    },
+    "G3V E-sports": {
+      "rating": 1600.1,
+      "roster": [
+        "Challenq",
+        "Gato",
+        "Piqueos",
+        "Scenari0",
+        "Crecre"
+      ],
+      "w": 15,
+      "l": 16,
+      "last_date": "2026-06-09",
+      "league": "LRN"
+    },
+    "GAM Esports": {
+      "rating": 1667.9,
+      "roster": [
+        "Kiaya",
+        "Draktharr",
+        "Aress",
+        "Artemis",
+        "Taki"
+      ],
+      "w": 152,
+      "l": 112,
+      "last_date": "2026-06-06",
+      "league": "LCP"
+    },
+    "GIANTX iTero": {
+      "rating": 1567.4,
+      "roster": [
+        "ManoloGap",
+        "Th3Antonio",
+        "Miniduke",
+        "Flakked",
+        "Attila"
+      ],
+      "w": 112,
+      "l": 67,
+      "last_date": "2026-05-21",
+      "league": "LES"
+    },
+    "GLORE": {
+      "rating": 1314.9,
+      "roster": [
+        "Szafa",
+        "ShazQ",
+        "Sorrow2",
+        "Salami",
+        "Acorderr"
+      ],
+      "w": 50,
+      "l": 82,
+      "last_date": "2026-05-20",
+      "league": "RL"
+    },
+    "GMBLERS Esports": {
+      "rating": 1548.3,
+      "roster": [
+        "SkaR",
+        "Mario",
+        "DejaVu",
+        "Rharesh",
+        "Shredder"
+      ],
+      "w": 64,
+      "l": 62,
+      "last_date": "2026-06-08",
+      "league": "EM"
+    },
+    "GOAL": {
+      "rating": 1625.1,
+      "roster": [
+        "kPr",
+        "Elix1r",
+        "Kuroneel",
+        "Druxy",
+        "Abagnale"
+      ],
+      "w": 43,
+      "l": 35,
+      "last_date": "2026-06-09",
+      "league": "EM"
+    },
+    "GTZ Esports": {
+      "rating": 1431.0,
+      "roster": [
+        "Zezin",
+        "RealR",
+        "Semide",
+        "Skypper",
+        "Chambel"
+      ],
+      "w": 58,
+      "l": 56,
+      "last_date": "2026-05-22",
+      "league": "LPLOL"
+    },
+    "Galions": {
+      "rating": 2013.9,
+      "roster": [
+        "Carlsen",
+        "Thayger",
+        "OMON",
+        "HARPOON",
+        "Zoelys"
+      ],
+      "w": 116,
+      "l": 64,
+      "last_date": "2026-06-15",
+      "league": "EM"
+    },
+    "Galions Sharks": {
+      "rating": 1481.4,
+      "roster": [
+        "SwiT",
+        "jokaa",
+        "Marty",
+        "Dream",
+        "Infoneral"
+      ],
+      "w": 6,
+      "l": 10,
+      "last_date": "2026-05-24",
+      "league": "NL"
+    },
+    "GameWard": {
+      "rating": 1468.4,
+      "roster": [
+        "Sotsy",
+        "Stormax",
+        "Backlund",
+        "Matias",
+        "HONOR"
+      ],
+      "w": 33,
+      "l": 63,
+      "last_date": "2025-08-29",
+      "league": "LFL"
+    },
+    "Gamespace Mediterranean College Esports": {
+      "rating": 1572.8,
+      "roster": [
+        "Septico1",
+        "Elix1r",
+        "alix",
+        "Vaynedeta",
+        "Abagnale"
+      ],
+      "w": 98,
+      "l": 103,
+      "last_date": "2026-07-09",
+      "league": "HLL"
+    },
+    "Geekay Esports": {
+      "rating": 1872.0,
+      "roster": [
+        "Boda",
+        "Eckas",
+        "Giyuu",
+        "UNF0RGIVEN",
+        "B Butcher"
+      ],
+      "w": 134,
+      "l": 42,
+      "last_date": "2025-10-16",
+      "league": "EM"
+    },
+    "Gen.G": {
+      "rating": 1882.2,
+      "roster": [
+        "Kiin",
+        "Canyon",
+        "Chovy",
+        "Ruler",
+        "Duro"
+      ],
+      "w": 291,
+      "l": 100,
+      "last_date": "2026-06-14",
+      "league": "LCK"
+    },
+    "Gen.G Global Academy": {
+      "rating": 1303.6,
+      "roster": [
+        "Ripple",
+        "Courage",
+        "MUDAI",
+        "SIRIUSS",
+        "Lumos"
+      ],
+      "w": 90,
+      "l": 182,
+      "last_date": "2026-05-29",
+      "league": "LCKC"
+    },
+    "Gen.G Scholars": {
+      "rating": 1495.1,
+      "roster": [
+        "Bean",
+        "Lancelot",
+        "Hypnos",
+        "Harusary",
+        "Hayes"
+      ],
+      "w": 90,
+      "l": 108,
+      "last_date": "2026-05-17",
+      "league": "LAS"
+    },
+    "Gentle Mates": {
+      "rating": 1748.7,
+      "roster": [
+        "Empyros",
+        "Zicssi",
+        "Eika",
+        "Comp",
+        "Erdote"
+      ],
+      "w": 84,
+      "l": 82,
+      "last_date": "2025-10-12",
+      "league": "EM"
+    },
+    "GiantX": {
+      "rating": 1682.2,
+      "roster": [
+        "Lot",
+        "ISMA",
+        "Jackies",
+        "Noah",
+        "Jun"
+      ],
+      "w": 71,
+      "l": 92,
+      "last_date": "2026-06-01",
+      "league": "LEC"
+    },
+    "GnG Amazigh": {
+      "rating": 1427.0,
+      "roster": [
+        "Shourdy",
+        "Exan",
+        "Soufiane",
+        "Jasten",
+        "Enoch"
+      ],
+      "w": 82,
+      "l": 101,
+      "last_date": "2026-06-05",
+      "league": "AL"
+    },
+    "Golden Lions": {
+      "rating": 1550.0,
+      "roster": [
+        "Brayaron",
+        "Ganks",
+        "Piqueos",
+        "Self",
+        "Crecre"
+      ],
+      "w": 36,
+      "l": 23,
+      "last_date": "2026-07-10",
+      "league": "LRS"
+    },
+    "Ground Zero Gaming": {
+      "rating": 1419.5,
+      "roster": [
+        "1Jiang",
+        "Husha",
+        "JimieN",
+        "Shunn",
+        "Orca"
+      ],
+      "w": 82,
+      "l": 90,
+      "last_date": "2026-05-16",
+      "league": "LCP"
+    },
+    "Grow uP eSports": {
+      "rating": 1444.5,
+      "roster": [
+        "ffernandes",
+        "Partyfosil",
+        "V1dde",
+        "Exduardo",
+        "Legend"
+      ],
+      "w": 5,
+      "l": 7,
+      "last_date": "2025-09-02",
+      "league": "LPLOL"
+    },
+    "Guasones": {
+      "rating": 1549.0,
+      "roster": [
+        "selenex",
+        "Nyx",
+        "Macaquinho",
+        "Lelouch",
+        "Passzi"
+      ],
+      "w": 36,
+      "l": 57,
+      "last_date": "2025-09-12",
+      "league": "LVP SL"
+    },
+    "HANJIN BRION": {
+      "rating": 1537.3,
+      "roster": [
+        "Casting",
+        "GIDEON",
+        "Loki",
+        "Teddy",
+        "Namgung"
+      ],
+      "w": 89,
+      "l": 180,
+      "last_date": "2026-06-06",
+      "league": "LCK"
+    },
+    "HANJIN BRION Academy": {
+      "rating": 1323.3,
+      "roster": [
+        "nonnein",
+        "Jesus",
+        "Tobe",
+        "Wooper",
+        "Pecia"
+      ],
+      "w": 86,
+      "l": 87,
+      "last_date": "2026-05-03",
+      "league": "LAS"
+    },
+    "HANJIN BRION Challengers": {
+      "rating": 1370.7,
+      "roster": [
+        "DDahyuk",
+        "Dinai",
+        "Tempester",
+        "OddEye",
+        "PlanB"
+      ],
+      "w": 93,
+      "l": 155,
+      "last_date": "2026-05-28",
+      "league": "LCKC"
+    },
+    "HELL PIGS": {
+      "rating": 1370.7,
+      "roster": [
+        "Sailuo",
+        "TA0",
+        "godfan",
+        "XiaoYang",
+        "En"
+      ],
+      "w": 19,
+      "l": 77,
+      "last_date": "2025-08-18",
+      "league": "PCS"
+    },
+    "HMBLE": {
+      "rating": 1732.0,
+      "roster": [
+        "APP",
+        "adi1",
+        "Vigil",
+        "Tyrone",
+        "Click"
+      ],
+      "w": 35,
+      "l": 11,
+      "last_date": "2026-06-11",
+      "league": "EM"
+    },
+    "Hanwha Life Esports": {
+      "rating": 1942.2,
+      "roster": [
+        "Zeus",
+        "Kanavi",
+        "Zeka",
+        "Gumayusi",
+        "Delight"
+      ],
+      "w": 257,
+      "l": 131,
+      "last_date": "2026-07-09",
+      "league": "MSI"
+    },
+    "Hanwha Life Esports Academy": {
+      "rating": 1628.6,
+      "roster": [
+        "Achael",
+        "Flint",
+        "Buddy",
+        "Eclipse",
+        "Hailstone"
+      ],
+      "w": 137,
+      "l": 87,
+      "last_date": "2026-05-16",
+      "league": "LAS"
+    },
+    "Hanwha Life Esports Challengers": {
+      "rating": 1446.9,
+      "roster": [
+        "Panther",
+        "Jackal",
+        "Cracker",
+        "Pyeonsik",
+        "Bluffing"
+      ],
+      "w": 130,
+      "l": 149,
+      "last_date": "2026-05-28",
+      "league": "LCKC"
+    },
+    "Howl Esports": {
+      "rating": 1377.5,
+      "roster": [
+        "Dafnis",
+        "Nikolex",
+        "D1verse",
+        "SM",
+        "Jovian"
+      ],
+      "w": 7,
+      "l": 14,
+      "last_date": "2026-02-18",
+      "league": "HLL"
+    },
+    "Hurricane of Feathers": {
+      "rating": 1350.1,
+      "roster": [
+        "Julzh",
+        "Silence",
+        "Ghost2",
+        "Leazor",
+        "Phlloz"
+      ],
+      "w": 22,
+      "l": 36,
+      "last_date": "2025-08-22",
+      "league": "LPLOL"
+    },
+    "Huskies Esports": {
+      "rating": 1445.3,
+      "roster": [
+        "HKECicciopotetor",
+        "Sheshwa",
+        "HKE Malice",
+        "HKE AZE",
+        "HKE Naskito"
+      ],
+      "w": 8,
+      "l": 7,
+      "last_date": "2026-05-22",
+      "league": "LIT"
+    },
+    "INTZ": {
+      "rating": 1547.5,
+      "roster": [
+        "Kiari",
+        "StineR",
+        "Leleko",
+        "scuro",
+        "konseki"
+      ],
+      "w": 21,
+      "l": 35,
+      "last_date": "2026-05-19",
+      "league": "CD"
+    },
+    "Ici Japon Corp. Esport": {
+      "rating": 1544.3,
+      "roster": [
+        "Badlulu",
+        "Kaboom",
+        "Dajor",
+        "Soldier",
+        "whiteinn"
+      ],
+      "w": 89,
+      "l": 64,
+      "last_date": "2026-05-13",
+      "league": "LFL"
+    },
+    "Icon Esports": {
+      "rating": 1379.3,
+      "roster": [
+        "Berik",
+        "Feng",
+        "Shieldworm",
+        "ICON Intioo",
+        "BetaTwinz"
+      ],
+      "w": 9,
+      "l": 20,
+      "last_date": "2026-03-31",
+      "league": "LRN"
+    },
+    "Inferno Drive Tokyo": {
+      "rating": 1606.2,
+      "roster": [
+        "Pinnnk",
+        "Imagine",
+        "Enapon",
+        "wanan",
+        "JustFocus"
+      ],
+      "w": 28,
+      "l": 12,
+      "last_date": "2026-04-19",
+      "league": "LJL"
+    },
+    "Inside Games": {
+      "rating": 1401.4,
+      "roster": [
+        "Fejkýý",
+        "Keksik",
+        "Kadlicek",
+        "Koudys",
+        "Reddy"
+      ],
+      "w": 8,
+      "l": 30,
+      "last_date": "2026-02-04",
+      "league": "HW"
+    },
+    "Invictus Gaming": {
+      "rating": 1519.3,
+      "roster": [
+        "Breathe",
+        "Wei",
+        "Renard",
+        "JiaQi",
+        "Meiko"
+      ],
+      "w": 156,
+      "l": 159,
+      "last_date": "2026-05-23",
+      "league": "LPL"
+    },
+    "Invokers": {
+      "rating": 1533.8,
+      "roster": [
+        "Yozan",
+        "Guga",
+        "Kairos",
+        "Rosa",
+        "Elkinho"
+      ],
+      "w": 11,
+      "l": 8,
+      "last_date": "2026-06-09",
+      "league": "CD"
+    },
+    "Isurus": {
+      "rating": 1636.5,
+      "roster": [
+        "Zamudo",
+        "Josedeodo",
+        "Keine",
+        "Snaker",
+        "Ackerman"
+      ],
+      "w": 54,
+      "l": 42,
+      "last_date": "2025-10-08",
+      "league": "LTA S"
+    },
+    "IziDream": {
+      "rating": 1577.6,
+      "roster": [
+        "PatkicaA",
+        "Mafro",
+        "Sayn",
+        "Xay",
+        "Lekcyc"
+      ],
+      "w": 62,
+      "l": 54,
+      "last_date": "2025-09-14",
+      "league": "LFL2"
+    },
+    "JD Gaming": {
+      "rating": 1649.5,
+      "roster": [
+        "Xiaoxu",
+        "JunJia",
+        "HongQ",
+        "GALA",
+        "Vampire"
+      ],
+      "w": 213,
+      "l": 172,
+      "last_date": "2026-06-06",
+      "league": "LPL"
+    },
+    "JSK Esports": {
+      "rating": 1471.7,
+      "roster": [
+        "Tayron",
+        "Dean",
+        "Juggernaut",
+        "Skream",
+        "Lokmays"
+      ],
+      "w": 17,
+      "l": 23,
+      "last_date": "2026-06-04",
+      "league": "AL"
+    },
+    "Joblife": {
+      "rating": 1538.4,
+      "roster": [
+        "Vertigo",
+        "Shift",
+        "Czekolad",
+        "Comp",
+        "Mersa"
+      ],
+      "w": 50,
+      "l": 65,
+      "last_date": "2026-05-01",
+      "league": "LFL"
+    },
+    "Jörmungang": {
+      "rating": 1464.9,
+      "roster": [
+        "Fush",
+        "Janis",
+        "Druust",
+        "Rayming",
+        "Polychiki"
+      ],
+      "w": 33,
+      "l": 28,
+      "last_date": "2025-08-26",
+      "league": "ROL"
+    },
+    "KAOS e-sport": {
+      "rating": 1380.0,
+      "roster": [
+        "vayu",
+        "Sjakal",
+        "Scuffed",
+        "reje",
+        "SniIIer"
+      ],
+      "w": 19,
+      "l": 31,
+      "last_date": "2025-10-05",
+      "league": "NLC"
+    },
+    "KIA.eSuba Academy": {
+      "rating": 1378.0,
+      "roster": [
+        "Rajed",
+        "Doge",
+        "Pulzer",
+        "Etoo",
+        "Vlaren"
+      ],
+      "w": 62,
+      "l": 49,
+      "last_date": "2026-05-15",
+      "league": "HC"
+    },
+    "KT Rolster": {
+      "rating": 1653.5,
+      "roster": [
+        "PerfecT",
+        "Cuzz",
+        "Bdd",
+        "Aiming",
+        "Effort"
+      ],
+      "w": 161,
+      "l": 156,
+      "last_date": "2026-06-13",
+      "league": "LCK"
+    },
+    "KT Rolster Academy": {
+      "rating": 1380.7,
+      "roster": [
+        "Zealot",
+        "Nerion",
+        "Loid",
+        "Precede",
+        "FLOW"
+      ],
+      "w": 89,
+      "l": 98,
+      "last_date": "2026-05-09",
+      "league": "LAS"
+    },
+    "KT Rolster Challengers": {
+      "rating": 1683.1,
+      "roster": [
+        "Sero",
+        "Sylvie",
+        "Hwichan",
+        "FenRir",
+        "Pollu"
+      ],
+      "w": 228,
+      "l": 111,
+      "last_date": "2026-06-19",
+      "league": "Asia Master"
+    },
+    "KaBuM! Ilha das Lendas": {
+      "rating": 1646.0,
+      "roster": [
+        "Yupps",
+        "SCARY",
+        "Grevthar",
+        "Kojima",
+        "Guigs"
+      ],
+      "w": 44,
+      "l": 35,
+      "last_date": "2026-06-01",
+      "league": "CD"
+    },
+    "Kaeru Gyuangu": {
+      "rating": 1462.3,
+      "roster": [
+        "Drali",
+        "Kiki",
+        "Warner",
+        "Mauki",
+        "Lyrokun"
+      ],
+      "w": 7,
+      "l": 8,
+      "last_date": "2025-09-24",
+      "league": "LFL2"
+    },
+    "Karmine Corp": {
+      "rating": 1781.9,
+      "roster": [
+        "Canna",
+        "Yike",
+        "kyeahoo",
+        "Caliste",
+        "Busio"
+      ],
+      "w": 134,
+      "l": 104,
+      "last_date": "2026-06-30",
+      "league": "MSI"
+    },
+    "Karmine Corp Blue": {
+      "rating": 1763.6,
+      "roster": [
+        "Tao",
+        "Yukino",
+        "Kamiloo",
+        "Looki",
+        "Prime"
+      ],
+      "w": 174,
+      "l": 99,
+      "last_date": "2026-06-13",
+      "league": "EM"
+    },
+    "Karmine Corp Blue Stars": {
+      "rating": 1682.2,
+      "roster": [
+        "Koala",
+        "Oleg",
+        "Panda2",
+        "Looki",
+        "Alaric"
+      ],
+      "w": 36,
+      "l": 32,
+      "last_date": "2026-06-07",
+      "league": "NL"
+    },
+    "Kaufland Hangry Knights": {
+      "rating": 1633.1,
+      "roster": [
+        "Boda",
+        "Densi",
+        "Abbedagge",
+        "UNF0RGIVEN",
+        "Doss"
+      ],
+      "w": 60,
+      "l": 68,
+      "last_date": "2026-07-09",
+      "league": "PRM"
+    },
+    "Kawaii Kiwis": {
+      "rating": 1433.3,
+      "roster": [
+        "Kingsblade",
+        "Pegaso",
+        "Toumes",
+        "Sorrow",
+        "Bf"
+      ],
+      "w": 39,
+      "l": 38,
+      "last_date": "2025-11-04",
+      "league": "IC"
+    },
+    "Keypulse Esports": {
+      "rating": 1434.8,
+      "roster": [
+        "KYP Korick",
+        "saibotobias",
+        "KYP Gh0st",
+        "Dezo",
+        "Maufest"
+      ],
+      "w": 19,
+      "l": 32,
+      "last_date": "2026-02-19",
+      "league": "LPLOL"
+    },
+    "Kiwoom DRX": {
+      "rating": 1557.7,
+      "roster": [
+        "Rich",
+        "Willer",
+        "Ucal",
+        "Jiwoo",
+        "Andil"
+      ],
+      "w": 95,
+      "l": 174,
+      "last_date": "2026-05-29",
+      "league": "LCK"
+    },
+    "Kiwoom DRX Challengers": {
+      "rating": 1577.5,
+      "roster": [
+        "Frog",
+        "Winner",
+        "AKaJe",
+        "Jiwoo",
+        "Minous"
+      ],
+      "w": 159,
+      "l": 148,
+      "last_date": "2026-05-28",
+      "league": "LCKC"
+    },
+    "Kuma e-Sports": {
+      "rating": 1298.6,
+      "roster": [
+        "TiRAn",
+        "kenNedy",
+        "DarkHarvest",
+        "schastye",
+        "Velthan"
+      ],
+      "w": 3,
+      "l": 11,
+      "last_date": "2026-06-04",
+      "league": "CD"
+    },
+    "L Guide Gaming": {
+      "rating": 1469.6,
+      "roster": [
+        "SnowRabbit",
+        "p1ng",
+        "Karaage",
+        "rre",
+        "Saver"
+      ],
+      "w": 22,
+      "l": 20,
+      "last_date": "2026-06-04",
+      "league": "LJL"
+    },
+    "LGD Gaming": {
+      "rating": 1467.2,
+      "roster": [
+        "Burdol",
+        "Heng",
+        "Tangyuan",
+        "Shaoye",
+        "Ycx"
+      ],
+      "w": 93,
+      "l": 115,
+      "last_date": "2026-06-05",
+      "league": "LPL"
+    },
+    "LGD Gaming Young Team": {
+      "rating": 1621.3,
+      "roster": [
+        "Mio7",
+        "cc",
+        "Ninefog",
+        "chips",
+        "Today"
+      ],
+      "w": 48,
+      "l": 30,
+      "last_date": "2025-07-18",
+      "league": "Asia Master"
+    },
+    "LNG Academy": {
+      "rating": 1579.1,
+      "roster": [
+        "xinsheng",
+        "Tyrion",
+        "Cyku",
+        "fishone",
+        "OvO"
+      ],
+      "w": 34,
+      "l": 41,
+      "last_date": "2025-07-18",
+      "league": "Asia Master"
+    },
+    "LNG Esports": {
+      "rating": 1547.9,
+      "roster": [
+        "sheer",
+        "Croco",
+        "BuLLDoG",
+        "1xn",
+        "MISSING"
+      ],
+      "w": 111,
+      "l": 101,
+      "last_date": "2026-05-23",
+      "league": "LPL"
+    },
+    "LODIS": {
+      "rating": 1484.0,
+      "roster": [
+        "Blesia",
+        "Kokos",
+        "lee sang",
+        "Klorell",
+        "Syrpy"
+      ],
+      "w": 26,
+      "l": 56,
+      "last_date": "2026-05-20",
+      "league": "RL"
+    },
+    "LOUD": {
+      "rating": 1606.9,
+      "roster": [
+        "xyno",
+        "YoungJae",
+        "Envy",
+        "Bull",
+        "uZent"
+      ],
+      "w": 101,
+      "l": 89,
+      "last_date": "2026-06-11",
+      "league": "EWC"
+    },
+    "LUA Gaming": {
+      "rating": 1510.8,
+      "roster": [
+        "Dani",
+        "Pegaso",
+        "Hydra",
+        "Kaii",
+        "TIMR"
+      ],
+      "w": 49,
+      "l": 53,
+      "last_date": "2026-05-20",
+      "league": "LES"
+    },
+    "LYON": {
+      "rating": 1889.9,
+      "roster": [
+        "Dhokla",
+        "Inspired",
+        "Saint",
+        "Berserker",
+        "Isles"
+      ],
+      "w": 63,
+      "l": 52,
+      "last_date": "2026-07-10",
+      "league": "MSI"
+    },
+    "LYON Academy": {
+      "rating": 1406.8,
+      "roster": [
+        "Zhayend",
+        "Keis",
+        "Sweeho",
+        "Nannini",
+        "Starhide"
+      ],
+      "w": 18,
+      "l": 34,
+      "last_date": "2026-07-05",
+      "league": "LRN"
+    },
+    "Lausanne-Sport Esports": {
+      "rating": 1394.3,
+      "roster": [
+        "Kallesyn",
+        "Moto",
+        "Louis",
+        "Yen",
+        "Hexom"
+      ],
+      "w": 6,
+      "l": 11,
+      "last_date": "2026-05-24",
+      "league": "NL"
+    },
+    "Lechuga Gaming": {
+      "rating": 1512.6,
+      "roster": [
+        "Zerito",
+        "Martote",
+        "Neadz",
+        "Lyg",
+        "Pyl"
+      ],
+      "w": 9,
+      "l": 7,
+      "last_date": "2025-08-19",
+      "league": "LRS"
+    },
+    "Lenovo Legion Honvéd": {
+      "rating": 1493.8,
+      "roster": [
+        "Bala",
+        "Blueboar",
+        "Lagolinas",
+        "Endless",
+        "Mood"
+      ],
+      "w": 20,
+      "l": 33,
+      "last_date": "2026-05-21",
+      "league": "EBL"
+    },
+    "Leviatan": {
+      "rating": 1385.1,
+      "roster": [
+        "Devost",
+        "Booki",
+        "Enga",
+        "Snaker",
+        "TopLop"
+      ],
+      "w": 47,
+      "l": 89,
+      "last_date": "2026-06-08",
+      "league": "EWC"
+    },
+    "Leões Porto Salvo Esports": {
+      "rating": 1521.3,
+      "roster": [
+        "Ilyxøu",
+        "Joki37",
+        "BANKAI",
+        "Royeq",
+        "Tochas"
+      ],
+      "w": 16,
+      "l": 12,
+      "last_date": "2025-09-04",
+      "league": "LPLOL"
+    },
+    "Lille Esport": {
+      "rating": 1493.7,
+      "roster": [
+        "Sukru",
+        "shidolovell",
+        "MélyaP",
+        "Evangelyne",
+        "Satto"
+      ],
+      "w": 41,
+      "l": 56,
+      "last_date": "2026-05-31",
+      "league": "NL"
+    },
+    "Los Ratones": {
+      "rating": 1741.0,
+      "roster": [
+        "Baus",
+        "Velja",
+        "Nemesis",
+        "Crownie",
+        "Rekkles"
+      ],
+      "w": 92,
+      "l": 28,
+      "last_date": "2026-02-08",
+      "league": "LEC"
+    },
+    "Lotus": {
+      "rating": 1473.0,
+      "roster": [
+        "Geiger",
+        "Shernfire",
+        "Reppy",
+        "Shogo",
+        "Mixtsure"
+      ],
+      "w": 25,
+      "l": 19,
+      "last_date": "2026-06-19",
+      "league": "NACL"
+    },
+    "Luminosity Gaming": {
+      "rating": 1756.3,
+      "roster": [
+        "FakeGod",
+        "Tomio",
+        "Insanity",
+        "Tactical",
+        "Zeyzal"
+      ],
+      "w": 48,
+      "l": 16,
+      "last_date": "2025-10-12",
+      "league": "LTA N"
+    },
+    "Lund Esports Organization": {
+      "rating": 1445.1,
+      "roster": [
+        "Cha0s",
+        "Slice",
+        "Furby",
+        "Goldenpenny",
+        "Luis"
+      ],
+      "w": 20,
+      "l": 12,
+      "last_date": "2026-05-27",
+      "league": "NLC"
+    },
+    "Lundqvist Lightside": {
+      "rating": 1395.0,
+      "roster": [
+        "Mansterninja",
+        "Spiderlair",
+        "Unicow",
+        "Bjoernen",
+        "Lyrokun"
+      ],
+      "w": 36,
+      "l": 54,
+      "last_date": "2026-05-27",
+      "league": "NLC"
+    },
+    "Lupus Esports": {
+      "rating": 1497.7,
+      "roster": [
+        "PatkicaA",
+        "Lotuss",
+        "Pesho",
+        "Rayito",
+        "Tasteless"
+      ],
+      "w": 38,
+      "l": 64,
+      "last_date": "2026-04-28",
+      "league": "EBL"
+    },
+    "LØS": {
+      "rating": 1741.2,
+      "roster": [
+        "Zest",
+        "Curse",
+        "Feisty",
+        "Duduhh",
+        "Ackerman"
+      ],
+      "w": 79,
+      "l": 81,
+      "last_date": "2026-06-14",
+      "league": "EWC"
+    },
+    "MGN Vikings Academy": {
+      "rating": 1491.6,
+      "roster": [
+        "Nern",
+        "NPC",
+        "Seany",
+        "SkyK",
+        "Callian"
+      ],
+      "w": 12,
+      "l": 15,
+      "last_date": "2025-10-07",
+      "league": "Asia Master"
+    },
+    "MGN Vikings Esports": {
+      "rating": 1509.7,
+      "roster": [
+        "Kratos",
+        "Gury",
+        "Kati",
+        "Sty1e",
+        "SiuLoong"
+      ],
+      "w": 98,
+      "l": 72,
+      "last_date": "2025-10-09",
+      "league": "ASI"
+    },
+    "MVK Esports": {
+      "rating": 1526.1,
+      "roster": [
+        "Kratos",
+        "Gury",
+        "Seany",
+        "Harky",
+        "SiuLoong"
+      ],
+      "w": 24,
+      "l": 29,
+      "last_date": "2026-06-05",
+      "league": "LCP"
+    },
+    "MVK Esports Academy": {
+      "rating": 1465.6,
+      "roster": [
+        "Copper",
+        "NPC",
+        "Hy",
+        "SkyK",
+        "Callian"
+      ],
+      "w": 22,
+      "l": 10,
+      "last_date": "2026-05-28",
+      "league": "VCS"
+    },
+    "MY STAR": {
+      "rating": 1423.4,
+      "roster": [
+        "Balukos",
+        "kory",
+        "LakatosD",
+        "Ruf",
+        "asphyxia"
+      ],
+      "w": 12,
+      "l": 21,
+      "last_date": "2025-07-22",
+      "league": "RL"
+    },
+    "Magaza Esports": {
+      "rating": 1561.5,
+      "roster": [
+        "Archfiend",
+        "Metroflox",
+        "FSZ",
+        "Crem",
+        "justcan"
+      ],
+      "w": 17,
+      "l": 24,
+      "last_date": "2026-06-08",
+      "league": "EM"
+    },
+    "Malvinas Gaming": {
+      "rating": 1465.6,
+      "roster": [
+        "Termo",
+        "Tinchoxar",
+        "Nobody",
+        "Hika",
+        "Fortu"
+      ],
+      "w": 35,
+      "l": 35,
+      "last_date": "2026-07-09",
+      "league": "LRS"
+    },
+    "Maryville University": {
+      "rating": 1602.0,
+      "roster": [
+        "Keii",
+        "Yuuji",
+        "Spirax",
+        "ScaryJerry",
+        "Obstinatus"
+      ],
+      "w": 47,
+      "l": 23,
+      "last_date": "2026-05-21",
+      "league": "NACL"
+    },
+    "Maze Gaming": {
+      "rating": 1528.3,
+      "roster": [
+        "Wamu",
+        "Neo",
+        "Hitsu",
+        "Naitz",
+        "Shu Hari"
+      ],
+      "w": 39,
+      "l": 31,
+      "last_date": "2026-07-09",
+      "league": "LRS"
+    },
+    "Meavedron": {
+      "rating": 1480.1,
+      "roster": [
+        "Baro",
+        "Albi",
+        "Dyego",
+        "Royeq",
+        "SiroN1"
+      ],
+      "w": 65,
+      "l": 61,
+      "last_date": "2026-05-31",
+      "league": "HM"
+    },
+    "Misa Esports": {
+      "rating": 1817.4,
+      "roster": [
+        "Ragner",
+        "113",
+        "Kofte",
+        "Ruep",
+        "Carry"
+      ],
+      "w": 148,
+      "l": 80,
+      "last_date": "2026-06-13",
+      "league": "EM"
+    },
+    "Movistar KOI": {
+      "rating": 1766.6,
+      "roster": [
+        "Myrwn",
+        "Elyoya",
+        "Jojopyun",
+        "Supa",
+        "Alvaro"
+      ],
+      "w": 132,
+      "l": 110,
+      "last_date": "2026-06-06",
+      "league": "LEC"
+    },
+    "Movistar KOI Fénix": {
+      "rating": 1701.5,
+      "roster": [
+        "NightSlayer",
+        "Time",
+        "Fresskowy",
+        "13",
+        "Myrtus"
+      ],
+      "w": 49,
+      "l": 42,
+      "last_date": "2026-06-05",
+      "league": "LES"
+    },
+    "Myth Esports": {
+      "rating": 1401.1,
+      "roster": [
+        "Sprotte",
+        "Ferrari",
+        "Boye",
+        "BunnyBeast",
+        "Dovendyr"
+      ],
+      "w": 62,
+      "l": 69,
+      "last_date": "2026-05-14",
+      "league": "ROL"
+    },
+    "NCG Esports": {
+      "rating": 1516.3,
+      "roster": [
+        "Tuercas",
+        "Veiga",
+        "Vares",
+        "Fatorix",
+        "Chikitow"
+      ],
+      "w": 10,
+      "l": 13,
+      "last_date": "2026-07-05",
+      "league": "LRN"
+    },
+    "NORD Esports": {
+      "rating": 1656.8,
+      "roster": [
+        "Vizicsacsi",
+        "Jankos",
+        "Zwyroo",
+        "Hid0",
+        "Treatz"
+      ],
+      "w": 65,
+      "l": 52,
+      "last_date": "2025-08-20",
+      "league": "NLC"
+    },
+    "NOVEX": {
+      "rating": 1472.9,
+      "roster": [
+        "PonG",
+        "Aquila",
+        "Cryo",
+        "Sunleaf",
+        "Ls"
+      ],
+      "w": 21,
+      "l": 16,
+      "last_date": "2026-04-19",
+      "league": "LJL"
+    },
+    "NRG": {
+      "rating": 1567.5,
+      "roster": [
+        "Zamudo",
+        "Kisno",
+        "PhyMini",
+        "Sushee",
+        "Spica"
+      ],
+      "w": 34,
+      "l": 39,
+      "last_date": "2026-05-28",
+      "league": "NACL"
+    },
+    "Natus Vincere": {
+      "rating": 1679.2,
+      "roster": [
+        "Maynter",
+        "Rhilech",
+        "Poby",
+        "SamD",
+        "Parus"
+      ],
+      "w": 29,
+      "l": 35,
+      "last_date": "2026-05-30",
+      "league": "LEC"
+    },
+    "Nerd's Gangster's Carecas": {
+      "rating": 1472.5,
+      "roster": [
+        "jmz",
+        "Levizin",
+        "Pilot",
+        "Juliera",
+        "Krastyel"
+      ],
+      "w": 7,
+      "l": 5,
+      "last_date": "2026-03-01",
+      "league": "CD"
+    },
+    "Never Give Up": {
+      "rating": 1462.2,
+      "roster": [
+        "Souma",
+        "tiphat",
+        "TT",
+        "Slowz",
+        "Seebulabu"
+      ],
+      "w": 9,
+      "l": 17,
+      "last_date": "2025-07-19",
+      "league": "VCS"
+    },
+    "New Meta": {
+      "rating": 1556.1,
+      "roster": [
+        "advance",
+        "HRK",
+        "Alps",
+        "suyahime",
+        "UKyo"
+      ],
+      "w": 34,
+      "l": 23,
+      "last_date": "2026-06-03",
+      "league": "LJL"
+    },
+    "NextGeneration Esports": {
+      "rating": 1295.0,
+      "roster": [
+        "MegaJ",
+        "Fr0m 0 2 Her0",
+        "Kaine",
+        "BipolarXD",
+        "Sundax"
+      ],
+      "w": 13,
+      "l": 31,
+      "last_date": "2026-06-03",
+      "league": "AL"
+    },
+    "Ngựa Hí Esports": {
+      "rating": 1382.1,
+      "roster": [
+        "TiSaD",
+        "NtNt",
+        "Vin",
+        "VietThanh",
+        "Blue"
+      ],
+      "w": 3,
+      "l": 8,
+      "last_date": "2026-03-14",
+      "league": "VCS"
+    },
+    "Nightbirds": {
+      "rating": 1713.9,
+      "roster": [
+        "SLT",
+        "Savero",
+        "Vasco",
+        "Strode",
+        "denyk"
+      ],
+      "w": 98,
+      "l": 41,
+      "last_date": "2026-06-08",
+      "league": "EM"
+    },
+    "Ninjas in Pyjamas": {
+      "rating": 1557.9,
+      "roster": [
+        "HOYA",
+        "Guwon",
+        "Care",
+        "Assum",
+        "Zhuo"
+      ],
+      "w": 151,
+      "l": 158,
+      "last_date": "2026-05-24",
+      "league": "LPL"
+    },
+    "Nocturne Gale": {
+      "rating": 1523.6,
+      "roster": [
+        "StarScreen",
+        "Alexx",
+        "Yuros",
+        "Kaii",
+        "Deleted"
+      ],
+      "w": 36,
+      "l": 14,
+      "last_date": "2025-11-13",
+      "league": "IC"
+    },
+    "Nongshim Esports Academy": {
+      "rating": 1599.9,
+      "roster": [
+        "Janus",
+        "Mihawk",
+        "SeTab",
+        "Lucy",
+        "Pleata"
+      ],
+      "w": 152,
+      "l": 144,
+      "last_date": "2026-06-18",
+      "league": "Asia Master"
+    },
+    "Nongshim RedForce": {
+      "rating": 1514.4,
+      "roster": [
+        "Kingen",
+        "Sponge",
+        "Scout",
+        "Diable",
+        "Lehends"
+      ],
+      "w": 115,
+      "l": 191,
+      "last_date": "2026-05-31",
+      "league": "LCK"
+    },
+    "Nongshim RedForce Academy": {
+      "rating": 1331.0,
+      "roster": [
+        "Amelia",
+        "Ark",
+        "Crow",
+        "White",
+        "Namsi"
+      ],
+      "w": 75,
+      "l": 137,
+      "last_date": "2026-05-03",
+      "league": "LAS"
+    },
+    "ODD Esports": {
+      "rating": 1368.7,
+      "roster": [
+        "Whitew0lf",
+        "Vares",
+        "Fallo",
+        "Andathy",
+        "lll"
+      ],
+      "w": 9,
+      "l": 27,
+      "last_date": "2025-08-17",
+      "league": "LRN"
+    },
+    "Odivelas Sports Club": {
+      "rating": 1530.6,
+      "roster": [
+        "Shourdy",
+        "D4SH",
+        "Zuhy",
+        "ardaffler",
+        "Rutzou"
+      ],
+      "w": 36,
+      "l": 46,
+      "last_date": "2025-10-07",
+      "league": "EM"
+    },
+    "Oh My God": {
+      "rating": 1374.1,
+      "roster": [
+        "Hery",
+        "re0",
+        "haichao",
+        "Photic",
+        "Moham"
+      ],
+      "w": 69,
+      "l": 93,
+      "last_date": "2026-05-15",
+      "league": "LPL"
+    },
+    "Oh My God Academy": {
+      "rating": 1518.6,
+      "roster": [
+        "lamb",
+        "Tianzhen",
+        "charlotte",
+        "Starry",
+        "Moham"
+      ],
+      "w": 31,
+      "l": 33,
+      "last_date": "2025-07-17",
+      "league": "Asia Master"
+    },
+    "Once Upon A Team": {
+      "rating": 1504.1,
+      "roster": [
+        "Owpi",
+        "Baumeef",
+        "rym",
+        "Space",
+        "Colomblbl"
+      ],
+      "w": 50,
+      "l": 74,
+      "last_date": "2026-05-28",
+      "league": "ROL"
+    },
+    "One More Esports": {
+      "rating": 1393.5,
+      "roster": [
+        "Zero0o",
+        "Silva2",
+        "Peaker",
+        "Syzyfek",
+        "IHEBIC"
+      ],
+      "w": 51,
+      "l": 98,
+      "last_date": "2026-05-06",
+      "league": "AL"
+    },
+    "Onion Team": {
+      "rating": 1391.6,
+      "roster": [
+        "didie",
+        "ONT nvidek",
+        "Inspire",
+        "Drzemik",
+        "ONT Barti"
+      ],
+      "w": 7,
+      "l": 21,
+      "last_date": "2026-05-17",
+      "league": "HM"
+    },
+    "Otter Side": {
+      "rating": 1654.2,
+      "roster": [
+        "TheGreatGary",
+        "Lulas",
+        "Camana",
+        "Cimpo",
+        "kkero"
+      ],
+      "w": 39,
+      "l": 16,
+      "last_date": "2026-06-08",
+      "league": "EM"
+    },
+    "Oxygen Gaming": {
+      "rating": 1491.5,
+      "roster": [
+        "ManoloGap",
+        "Nacho",
+        "Młody G",
+        "Adryh",
+        "Kellie"
+      ],
+      "w": 31,
+      "l": 25,
+      "last_date": "2025-11-06",
+      "league": "IC"
+    },
+    "Ozarox Esports": {
+      "rating": 1548.8,
+      "roster": [
+        "StarScreen",
+        "Cape",
+        "Fade",
+        "Grave",
+        "monkaS"
+      ],
+      "w": 10,
+      "l": 10,
+      "last_date": "2026-05-26",
+      "league": "TCL"
+    },
+    "P11 Esports": {
+      "rating": 1599.6,
+      "roster": [
+        "P11 Demo",
+        "P11 Keyross",
+        "Budino",
+        "Huubiii",
+        "Pinguino"
+      ],
+      "w": 18,
+      "l": 16,
+      "last_date": "2026-05-24",
+      "league": "LIT"
+    },
+    "PCIFIC Esports": {
+      "rating": 1593.6,
+      "roster": [
+        "Aytekn",
+        "Stalken",
+        "FireAscept",
+        "Nawa",
+        "Beplush"
+      ],
+      "w": 24,
+      "l": 26,
+      "last_date": "2026-06-11",
+      "league": "EM"
+    },
+    "PSG Talon": {
+      "rating": 1633.5,
+      "roster": [
+        "Azhi",
+        "Karsa",
+        "Maple",
+        "Betty",
+        "Woody"
+      ],
+      "w": 118,
+      "l": 73,
+      "last_date": "2025-10-19",
+      "league": "WLDs"
+    },
+    "PSG Talon Academy": {
+      "rating": 1551.7,
+      "roster": [
+        "Weizhe",
+        "Dinai",
+        "Adiogs",
+        "Dotmm",
+        "Orca"
+      ],
+      "w": 77,
+      "l": 48,
+      "last_date": "2025-08-30",
+      "league": "PCS"
+    },
+    "Papara SuperMassive": {
+      "rating": 1534.9,
+      "roster": [
+        "Armut",
+        "Kaboom",
+        "Mask",
+        "BAO",
+        "Carry"
+      ],
+      "w": 86,
+      "l": 68,
+      "last_date": "2025-08-31",
+      "league": "TCL"
+    },
+    "Partizan Sangal": {
+      "rating": 1814.5,
+      "roster": [
+        "Chan",
+        "Ferret",
+        "Ruby",
+        "Shy Carry",
+        "Erdote"
+      ],
+      "w": 87,
+      "l": 34,
+      "last_date": "2026-06-11",
+      "league": "EM"
+    },
+    "Polar Squad Esports": {
+      "rating": 1404.3,
+      "roster": [
+        "LupiyoElPiyo",
+        "Chomu",
+        "Shao",
+        "Rokecs",
+        "Zamacona"
+      ],
+      "w": 7,
+      "l": 16,
+      "last_date": "2026-07-05",
+      "league": "LRN"
+    },
+    "Priority": {
+      "rating": 1579.9,
+      "roster": [
+        "VOPI",
+        "Arp",
+        "Kaka",
+        "Woda",
+        "Envy"
+      ],
+      "w": 36,
+      "l": 35,
+      "last_date": "2026-06-14",
+      "league": "HC"
+    },
+    "Project Conquerors": {
+      "rating": 1590.1,
+      "roster": [
+        "Bambi",
+        "Frost",
+        "UniqueCORN",
+        "Avarice",
+        "Sunfry"
+      ],
+      "w": 68,
+      "l": 63,
+      "last_date": "2026-06-07",
+      "league": "NL"
+    },
+    "Pyramid IV Esports": {
+      "rating": 1359.1,
+      "roster": [
+        "Nireo",
+        "Silva2",
+        "VAEII",
+        "Caner",
+        "Biskoo"
+      ],
+      "w": 4,
+      "l": 6,
+      "last_date": "2026-06-05",
+      "league": "AL"
+    },
+    "QT DIG∞": {
+      "rating": 1694.9,
+      "roster": [
+        "Washidai",
+        "Van1",
+        "DICE",
+        "Yuhi",
+        "Hetel"
+      ],
+      "w": 61,
+      "l": 62,
+      "last_date": "2025-10-01",
+      "league": "LCP"
+    },
+    "RAYN Clocks": {
+      "rating": 1535.6,
+      "roster": [
+        "Gecko",
+        "Kangkuk",
+        "Razer",
+        "Fluid",
+        "chico"
+      ],
+      "w": 50,
+      "l": 44,
+      "last_date": "2026-06-04",
+      "league": "LJL"
+    },
+    "RED Academy": {
+      "rating": 1450.4,
+      "roster": [
+        "jmz",
+        "Guizzy",
+        "Fuuu",
+        "Rabelo",
+        "Houndin"
+      ],
+      "w": 55,
+      "l": 40,
+      "last_date": "2026-05-18",
+      "league": "CD"
+    },
+    "RED Canids": {
+      "rating": 1645.9,
+      "roster": [
+        "zynts",
+        "STEPZ",
+        "Kaze",
+        "Morttheus",
+        "frosty"
+      ],
+      "w": 106,
+      "l": 83,
+      "last_date": "2026-06-14",
+      "league": "EWC"
+    },
+    "REJECT": {
+      "rating": 1689.4,
+      "roster": [
+        "Kinatu",
+        "Forest",
+        "Recap",
+        "Samver",
+        "Raina"
+      ],
+      "w": 47,
+      "l": 13,
+      "last_date": "2025-09-15",
+      "league": "LJL"
+    },
+    "RMD Gaming": {
+      "rating": 1386.0,
+      "roster": [
+        "cRa",
+        "Randal",
+        "Blacky",
+        "Celo",
+        "Manel"
+      ],
+      "w": 4,
+      "l": 11,
+      "last_date": "2026-04-28",
+      "league": "CD"
+    },
+    "ROSSMANN Centaurs": {
+      "rating": 1557.6,
+      "roster": [
+        "Leks",
+        "jokaa",
+        "c0st0m",
+        "Hazel",
+        "Infoneral"
+      ],
+      "w": 60,
+      "l": 80,
+      "last_date": "2026-07-09",
+      "league": "PRM"
+    },
+    "Rage Bait e-Sports": {
+      "rating": 1447.7,
+      "roster": [
+        "Misaki",
+        "Cebolas",
+        "Mettalica",
+        "Qu4rtzo",
+        "Adri"
+      ],
+      "w": 4,
+      "l": 6,
+      "last_date": "2026-02-12",
+      "league": "LPLOL"
+    },
+    "Ramboot Club": {
+      "rating": 1490.7,
+      "roster": [
+        "Knika",
+        "naau",
+        "Midnight",
+        "Marcv1",
+        "Rito"
+      ],
+      "w": 57,
+      "l": 55,
+      "last_date": "2025-11-13",
+      "league": "IC"
+    },
+    "Revolution Victory X": {
+      "rating": 1296.6,
+      "roster": [
+        "RVX Poro",
+        "Ham",
+        "Jericho",
+        "RVX jisyoku",
+        "RVX RefK"
+      ],
+      "w": 1,
+      "l": 12,
+      "last_date": "2026-02-08",
+      "league": "LJL"
+    },
+    "Rich Gang": {
+      "rating": 1565.5,
+      "roster": [
+        "Matixx",
+        "Oguzkhan",
+        "Dehaste",
+        "kehvo",
+        "Alaric"
+      ],
+      "w": 28,
+      "l": 33,
+      "last_date": "2025-09-24",
+      "league": "EM"
+    },
+    "Rise Gaming": {
+      "rating": 1368.6,
+      "roster": [
+        "Yupps",
+        "Sting",
+        "Lynkez",
+        "RAV3N",
+        "zay"
+      ],
+      "w": 22,
+      "l": 39,
+      "last_date": "2025-09-16",
+      "league": "CD"
+    },
+    "Rising Gaming": {
+      "rating": 1714.8,
+      "roster": [
+        "YellowYoshi",
+        "ankochan",
+        "Ramune",
+        "Archer",
+        "Patch"
+      ],
+      "w": 37,
+      "l": 19,
+      "last_date": "2026-06-14",
+      "league": "LJL"
+    },
+    "Ronaldo Team": {
+      "rating": 1484.7,
+      "roster": [
+        "Dreampull",
+        "FallenBandit",
+        "Nomanz",
+        "Shiganari",
+        "RDT raisu"
+      ],
+      "w": 5,
+      "l": 6,
+      "last_date": "2026-05-29",
+      "league": "LPLOL"
+    },
+    "Ruddy Corporation": {
+      "rating": 1539.4,
+      "roster": [
+        "ugandan fighter",
+        "Markus",
+        "Ag0nyPain",
+        "MadsF",
+        "FredSpaghet"
+      ],
+      "w": 71,
+      "l": 78,
+      "last_date": "2026-06-08",
+      "league": "EM"
+    },
+    "Rugby Club Havířov": {
+      "rating": 1314.0,
+      "roster": [
+        "Kopec",
+        "Kaeru",
+        "GARADOR",
+        "Kargic",
+        "Danden"
+      ],
+      "w": 3,
+      "l": 14,
+      "last_date": "2026-05-14",
+      "league": "HC"
+    },
+    "S2G Esports": {
+      "rating": 1712.4,
+      "roster": [
+        "DnDn",
+        "Bonnie",
+        "Kofte",
+        "Scorth",
+        "Mersa"
+      ],
+      "w": 17,
+      "l": 12,
+      "last_date": "2026-03-15",
+      "league": "EM"
+    },
+    "SDM Tigres": {
+      "rating": 1493.4,
+      "roster": [
+        "Steellar",
+        "Mitir",
+        "Deadly",
+        "Raysito",
+        "Erk"
+      ],
+      "w": 43,
+      "l": 31,
+      "last_date": "2026-07-05",
+      "league": "LRN"
+    },
+    "SK Gaming": {
+      "rating": 1514.4,
+      "roster": [
+        "Wunder",
+        "Skeanz",
+        "LIDER",
+        "Jopa",
+        "Mikyx"
+      ],
+      "w": 45,
+      "l": 82,
+      "last_date": "2026-05-02",
+      "league": "LEC"
+    },
+    "SN CyberCore Esports": {
+      "rating": 1448.6,
+      "roster": [
+        "Ryuk",
+        "NtNt",
+        "Vin",
+        "Vit",
+        "Shogun"
+      ],
+      "w": 21,
+      "l": 39,
+      "last_date": "2026-06-14",
+      "league": "VCS"
+    },
+    "SNOOZE Esports": {
+      "rating": 1456.3,
+      "roster": [
+        "Hatsu",
+        "Rising",
+        "Salaterka",
+        "Guppy",
+        "D0kai"
+      ],
+      "w": 27,
+      "l": 27,
+      "last_date": "2026-06-11",
+      "league": "ROL"
+    },
+    "SPAXFAMILY": {
+      "rating": 1417.8,
+      "roster": [
+        "Busvicke",
+        "Malyrinn",
+        "Dyego",
+        "Ludas Matyi",
+        "Tyrant"
+      ],
+      "w": 5,
+      "l": 9,
+      "last_date": "2026-02-19",
+      "league": "HW"
+    },
+    "SPIKE Syndicate": {
+      "rating": 1428.9,
+      "roster": [
+        "Kaylem",
+        "Exile1",
+        "VeRu",
+        "vladichich",
+        "Candy"
+      ],
+      "w": 72,
+      "l": 69,
+      "last_date": "2026-05-13",
+      "league": "EBL"
+    },
+    "SU Esports": {
+      "rating": 1561.0,
+      "roster": [
+        "Leks",
+        "RAMES",
+        "Secrett",
+        "Vespa",
+        "Seneca"
+      ],
+      "w": 23,
+      "l": 22,
+      "last_date": "2026-05-22",
+      "league": "TCL"
+    },
+    "Saigon Dino": {
+      "rating": 1533.4,
+      "roster": [
+        "Virgo",
+        "rayq",
+        "Emo",
+        "Easylove",
+        "Elio"
+      ],
+      "w": 60,
+      "l": 46,
+      "last_date": "2026-06-20",
+      "league": "VCS"
+    },
+    "Saigon Warriors": {
+      "rating": 1673.0,
+      "roster": [
+        "Nern",
+        "j1n5",
+        "AisyL",
+        "Aomine",
+        "kairi"
+      ],
+      "w": 36,
+      "l": 20,
+      "last_date": "2026-06-20",
+      "league": "VCS"
+    },
+    "Senshi eSports": {
+      "rating": 1514.2,
+      "roster": [
+        "Ilyxøu",
+        "Guertas",
+        "Numandiel",
+        "Sidav",
+        "Enkil"
+      ],
+      "w": 52,
+      "l": 50,
+      "last_date": "2026-05-21",
+      "league": "ROL"
+    },
+    "Sentinels": {
+      "rating": 1605.4,
+      "roster": [
+        "Impact",
+        "HamBak",
+        "DARKWINGS",
+        "Rahel",
+        "huhi"
+      ],
+      "w": 30,
+      "l": 31,
+      "last_date": "2026-05-30",
+      "league": "LCS"
+    },
+    "Seven Dark": {
+      "rating": 1340.4,
+      "roster": [
+        "Giankios",
+        "Zheir",
+        "Klyer",
+        "KUMEW",
+        "chilD"
+      ],
+      "w": 18,
+      "l": 45,
+      "last_date": "2026-07-10",
+      "league": "LRS"
+    },
+    "Shadow Keepers Esports": {
+      "rating": 1543.9,
+      "roster": [
+        "Weizhe",
+        "Cedric",
+        "1116",
+        "Prage",
+        "Ashlomailma"
+      ],
+      "w": 6,
+      "l": 5,
+      "last_date": "2026-06-01",
+      "league": "PCS"
+    },
+    "Shifters": {
+      "rating": 1556.2,
+      "roster": [
+        "Rooster",
+        "Sheo",
+        "nuc",
+        "Paduck",
+        "Trymbi"
+      ],
+      "w": 14,
+      "l": 26,
+      "last_date": "2026-05-14",
+      "league": "EWC"
+    },
+    "Shopify Rebellion": {
+      "rating": 1421.9,
+      "roster": [
+        "Fudge",
+        "Contractz",
+        "Zinie",
+        "Bvoy",
+        "Ceos"
+      ],
+      "w": 40,
+      "l": 81,
+      "last_date": "2026-05-31",
+      "league": "LCS"
+    },
+    "Sicar Esports": {
+      "rating": 1489.1,
+      "roster": [
+        "Buggax",
+        "Pancake",
+        "Kiefer",
+        "Warangelus",
+        "Shu Hari"
+      ],
+      "w": 20,
+      "l": 19,
+      "last_date": "2025-09-30",
+      "league": "LTA S"
+    },
+    "SillySilly Gaming": {
+      "rating": 1564.8,
+      "roster": [
+        "Hasu7",
+        "Tianzhen",
+        "Xzz",
+        "Wako",
+        "En"
+      ],
+      "w": 13,
+      "l": 8,
+      "last_date": "2026-06-05",
+      "league": "Asia Master"
+    },
+    "Skillcamp": {
+      "rating": 1472.7,
+      "roster": [
+        "Yeti",
+        "SPOOKY",
+        "Nafkelah",
+        "Deadly",
+        "Steeelback"
+      ],
+      "w": 24,
+      "l": 51,
+      "last_date": "2026-05-01",
+      "league": "LFL"
+    },
+    "Solary": {
+      "rating": 1956.0,
+      "roster": [
+        "Kryze",
+        "Zicssi",
+        "Jool",
+        "Aetinoth",
+        "Piero"
+      ],
+      "w": 115,
+      "l": 77,
+      "last_date": "2026-06-15",
+      "league": "EM"
+    },
+    "Spartans EU": {
+      "rating": 1445.2,
+      "roster": [
+        "Libra",
+        "Xeonerr",
+        "Alex",
+        "SM",
+        "Lagas"
+      ],
+      "w": 8,
+      "l": 14,
+      "last_date": "2026-07-09",
+      "league": "HLL"
+    },
+    "Stellae Gaming": {
+      "rating": 1507.0,
+      "roster": [
+        "Forlin",
+        "juny",
+        "Krastyel",
+        "Matsukaze",
+        "Wos"
+      ],
+      "w": 26,
+      "l": 20,
+      "last_date": "2025-08-12",
+      "league": "CD"
+    },
+    "StoneHenge Esports": {
+      "rating": 1423.6,
+      "roster": [
+        "Doxy",
+        "Leader",
+        "Wall",
+        "xHikama",
+        "S1D"
+      ],
+      "w": 4,
+      "l": 14,
+      "last_date": "2026-05-23",
+      "league": "LIT"
+    },
+    "StormMedia Fajnie Mieć Skład": {
+      "rating": 1695.4,
+      "roster": [
+        "frajgo",
+        "Rybson",
+        "Mrozku",
+        "zamulek",
+        "minemaciek"
+      ],
+      "w": 41,
+      "l": 32,
+      "last_date": "2025-10-08",
+      "league": "EM"
+    },
+    "Super Stars": {
+      "rating": 1503.7,
+      "roster": [
+        "DANKI",
+        "Fallen",
+        "Sayn",
+        "SS Kuroko",
+        "Leo s Man"
+      ],
+      "w": 7,
+      "l": 3,
+      "last_date": "2026-04-01",
+      "league": "AL"
+    },
+    "Supernova": {
+      "rating": 1570.2,
+      "roster": [
+        "Horder",
+        "Music",
+        "shochi",
+        "Levitate",
+        "Zyko"
+      ],
+      "w": 74,
+      "l": 65,
+      "last_date": "2026-05-28",
+      "league": "NACL"
+    },
+    "T1": {
+      "rating": 1920.7,
+      "roster": [
+        "Doran",
+        "Oner",
+        "Faker",
+        "Peyz",
+        "Keria"
+      ],
+      "w": 301,
+      "l": 168,
+      "last_date": "2026-07-08",
+      "league": "MSI"
+    },
+    "T1 Esports Academy": {
+      "rating": 1677.3,
+      "roster": [
+        "Haetae",
+        "Painter",
+        "Guti",
+        "Cypher",
+        "Cloud"
+      ],
+      "w": 200,
+      "l": 153,
+      "last_date": "2026-06-21",
+      "league": "Asia Master"
+    },
+    "T1 Esports Academy Rookies": {
+      "rating": 1721.5,
+      "roster": [
+        "Weather",
+        "Carim",
+        "Solbon",
+        "Jinbeom",
+        "Aether"
+      ],
+      "w": 187,
+      "l": 72,
+      "last_date": "2026-05-17",
+      "league": "LAS"
+    },
+    "TITANS": {
+      "rating": 1333.0,
+      "roster": [
+        "Lerax",
+        "Lesranct",
+        "Daskhai",
+        "RaptoSauros",
+        "Bubba"
+      ],
+      "w": 2,
+      "l": 8,
+      "last_date": "2026-04-30",
+      "league": "LIT"
+    },
+    "TLN Pirates": {
+      "rating": 1691.7,
+      "roster": [
+        "Spooder",
+        "Stefan",
+        "Toffe",
+        "Axelent",
+        "Thomas"
+      ],
+      "w": 24,
+      "l": 17,
+      "last_date": "2026-05-28",
+      "league": "LFL"
+    },
+    "TQ DURPA KASHLQ": {
+      "rating": 1420.3,
+      "roster": [
+        "Draxo5",
+        "Death",
+        "Krisimaru",
+        "mirza",
+        "floreNNNz"
+      ],
+      "w": 2,
+      "l": 9,
+      "last_date": "2026-05-20",
+      "league": "EBL"
+    },
+    "Tan'i eSports CZ": {
+      "rating": 1574.6,
+      "roster": [
+        "welcom",
+        "Carnage",
+        "Tibor",
+        "Esko",
+        "Smarty"
+      ],
+      "w": 27,
+      "l": 31,
+      "last_date": "2025-08-24",
+      "league": "HM"
+    },
+    "Team BDS": {
+      "rating": 1445.7,
+      "roster": [
+        "Rooster",
+        "Boukada",
+        "nuc",
+        "Ice",
+        "Parus"
+      ],
+      "w": 64,
+      "l": 67,
+      "last_date": "2025-09-06",
+      "league": "LEC"
+    },
+    "Team BDS Academy": {
+      "rating": 1646.2,
+      "roster": [
+        "Papiteero",
+        "Shlatan",
+        "Toffe",
+        "Mishi",
+        "Myrtus"
+      ],
+      "w": 88,
+      "l": 57,
+      "last_date": "2025-09-18",
+      "league": "LFL"
+    },
+    "Team Heretics": {
+      "rating": 1460.9,
+      "roster": [
+        "Tracyn",
+        "Daglas",
+        "Serin",
+        "Ice",
+        "Way"
+      ],
+      "w": 48,
+      "l": 91,
+      "last_date": "2026-05-03",
+      "league": "LEC"
+    },
+    "Team Heretics Academy": {
+      "rating": 1849.5,
+      "roster": [
+        "Papiteero",
+        "Lurox",
+        "Mercy9",
+        "Lure",
+        "Batuuu"
+      ],
+      "w": 171,
+      "l": 86,
+      "last_date": "2026-06-13",
+      "league": "EM"
+    },
+    "Team Insidious": {
+      "rating": 1579.7,
+      "roster": [
+        "Addusto",
+        "Drofan",
+        "alix",
+        "Nikiyas",
+        "Lekcyc"
+      ],
+      "w": 56,
+      "l": 51,
+      "last_date": "2026-05-14",
+      "league": "HLL"
+    },
+    "Team Liquid": {
+      "rating": 1748.9,
+      "roster": [
+        "Morgan",
+        "Josedeodo",
+        "Quid",
+        "Yeon",
+        "CoreJJ"
+      ],
+      "w": 131,
+      "l": 101,
+      "last_date": "2026-07-01",
+      "league": "MSI"
+    },
+    "Team Phantasma": {
+      "rating": 1655.4,
+      "roster": [
+        "Goldmen",
+        "Drofan",
+        "Secrett",
+        "Evangelyne",
+        "Centu"
+      ],
+      "w": 152,
+      "l": 71,
+      "last_date": "2026-07-09",
+      "league": "HLL"
+    },
+    "Team Phoenix": {
+      "rating": 1407.9,
+      "roster": [
+        "Hecabrand",
+        "meto",
+        "SmallBugi",
+        "Raen1",
+        "Bmoooo"
+      ],
+      "w": 5,
+      "l": 18,
+      "last_date": "2026-05-15",
+      "league": "TCL"
+    },
+    "Team Secret": {
+      "rating": 1715.0,
+      "roster": [
+        "Pun",
+        "Hizto",
+        "Dire",
+        "Eddie",
+        "Bie"
+      ],
+      "w": 46,
+      "l": 28,
+      "last_date": "2026-05-20",
+      "league": "EWC"
+    },
+    "Team Secret Whales": {
+      "rating": 1756.3,
+      "roster": [
+        "Pun",
+        "Hizto",
+        "Dire",
+        "Eddie",
+        "Bie"
+      ],
+      "w": 97,
+      "l": 61,
+      "last_date": "2026-07-08",
+      "league": "MSI"
+    },
+    "Team Solid": {
+      "rating": 1533.3,
+      "roster": [
+        "Forlin",
+        "Aegis",
+        "Dioge",
+        "bipi",
+        "Cavalo"
+      ],
+      "w": 9,
+      "l": 12,
+      "last_date": "2026-06-09",
+      "league": "CD"
+    },
+    "Team UNiTY": {
+      "rating": 1485.1,
+      "roster": [
+        "Bobsik",
+        "eaRyz",
+        "Marbirius",
+        "Petersen",
+        "Zyres"
+      ],
+      "w": 66,
+      "l": 78,
+      "last_date": "2025-08-23",
+      "league": "HM"
+    },
+    "Team Vitality": {
+      "rating": 1621.0,
+      "roster": [
+        "Naak Nako",
+        "Lyncas",
+        "Humanoid",
+        "Carzzy",
+        "Fleshy"
+      ],
+      "w": 73,
+      "l": 81,
+      "last_date": "2026-05-31",
+      "league": "LEC"
+    },
+    "Team WE": {
+      "rating": 1636.2,
+      "roster": [
+        "Cube",
+        "Monki",
+        "Karis",
+        "About",
+        "Erha"
+      ],
+      "w": 120,
+      "l": 181,
+      "last_date": "2026-06-13",
+      "league": "LPL"
+    },
+    "Team WE Academy": {
+      "rating": 1553.2,
+      "roster": [
+        "Beluga",
+        "Yanxiang",
+        "sinian",
+        "Relaxing",
+        "TENG"
+      ],
+      "w": 24,
+      "l": 27,
+      "last_date": "2025-07-17",
+      "league": "Asia Master"
+    },
+    "TeamOrangeGaming": {
+      "rating": 1601.3,
+      "roster": [
+        "zorenous",
+        "Woldjo",
+        "SAJATOR",
+        "Ryuk",
+        "Lilipp"
+      ],
+      "w": 66,
+      "l": 62,
+      "last_date": "2026-07-09",
+      "league": "PRM"
+    },
+    "The Bandits": {
+      "rating": 1578.0,
+      "roster": [
+        "Bisk",
+        "Luncafoer",
+        "bbmuffin",
+        "CaviaVampier",
+        "AwerpiS"
+      ],
+      "w": 31,
+      "l": 25,
+      "last_date": "2026-06-02",
+      "league": "ROL"
+    },
+    "The Forbidden Five": {
+      "rating": 1384.8,
+      "roster": [
+        "Tayron",
+        "Kurama",
+        "helforca",
+        "Kakarot",
+        "hidududu"
+      ],
+      "w": 0,
+      "l": 14,
+      "last_date": "2025-08-27",
+      "league": "TCL"
+    },
+    "The New Kings": {
+      "rating": 1438.8,
+      "roster": [
+        "Acce",
+        "KinGi",
+        "SkyMind",
+        "Warangelus",
+        "Shu Hari"
+      ],
+      "w": 7,
+      "l": 14,
+      "last_date": "2026-05-12",
+      "league": "LRS"
+    },
+    "The ParadOx Invaders": {
+      "rating": 1479.1,
+      "roster": [
+        "Loading",
+        "MrJackson",
+        "Jimsnop",
+        "Aggress1on",
+        "RaFaL"
+      ],
+      "w": 42,
+      "l": 68,
+      "last_date": "2026-07-08",
+      "league": "HLL"
+    },
+    "The Secret Club": {
+      "rating": 1540.9,
+      "roster": [
+        "Falleo",
+        "Ryuzaki",
+        "STANIK",
+        "Mihai",
+        "Passzi"
+      ],
+      "w": 31,
+      "l": 37,
+      "last_date": "2026-05-27",
+      "league": "EBL"
+    },
+    "ThunderTalk Gaming": {
+      "rating": 1478.8,
+      "roster": [
+        "Keshi",
+        "Junhao",
+        "Heru",
+        "Ahn",
+        "Feather"
+      ],
+      "w": 87,
+      "l": 134,
+      "last_date": "2026-06-02",
+      "league": "LPL"
+    },
+    "ThunderTalk Gaming Young": {
+      "rating": 1434.2,
+      "roster": [
+        "Jiux",
+        "putaogou",
+        "0909",
+        "Ryan3",
+        "CbhhuZi"
+      ],
+      "w": 38,
+      "l": 35,
+      "last_date": "2025-07-14",
+      "league": "Asia Master"
+    },
+    "Top Esports": {
+      "rating": 1718.9,
+      "roster": [
+        "ZUIAN",
+        "Tian",
+        "Creme",
+        "JackeyLove",
+        "fengyue"
+      ],
+      "w": 257,
+      "l": 157,
+      "last_date": "2026-07-05",
+      "league": "MSI"
+    },
+    "Top Esports Challenger": {
+      "rating": 1584.2,
+      "roster": [
+        "pool",
+        "XBY",
+        "SYWJJ",
+        "Bolt",
+        "hanghang"
+      ],
+      "w": 43,
+      "l": 41,
+      "last_date": "2026-06-15",
+      "league": "Asia Master"
+    },
+    "Tu Papá Esports": {
+      "rating": 1359.8,
+      "roster": [
+        "Galileo",
+        "TPA Piwo",
+        "Gus",
+        "Renyu",
+        "Iska"
+      ],
+      "w": 1,
+      "l": 12,
+      "last_date": "2026-04-14",
+      "league": "LRS"
+    },
+    "UB Alma Mater": {
+      "rating": 1324.5,
+      "roster": [
+        "Pasameelcelo",
+        "Ivama",
+        "Pauporter",
+        "adrianlaneitor",
+        "Xixauxas"
+      ],
+      "w": 2,
+      "l": 17,
+      "last_date": "2026-05-20",
+      "league": "LES"
+    },
+    "UCAM Esports": {
+      "rating": 1786.7,
+      "roster": [
+        "Kozi",
+        "bluerzor",
+        "ESCIK",
+        "ANDARIEL",
+        "iLEVI"
+      ],
+      "w": 94,
+      "l": 82,
+      "last_date": "2026-06-14",
+      "league": "EM"
+    },
+    "UEC eSports PlusPlus": {
+      "rating": 1263.0,
+      "roster": [
+        "UEC clodmattya",
+        "UEC Fahren",
+        "UEC ks76",
+        "UEC Ruunan",
+        "UEC Fragrance"
+      ],
+      "w": 1,
+      "l": 13,
+      "last_date": "2026-02-08",
+      "league": "LJL"
+    },
+    "ULF Esports": {
+      "rating": 1582.6,
+      "roster": [
+        "Chasy",
+        "Typhoon",
+        "Gori",
+        "Kaori",
+        "Farfetch"
+      ],
+      "w": 39,
+      "l": 46,
+      "last_date": "2025-10-06",
+      "league": "EM"
+    },
+    "UTeSports": {
+      "rating": 1263.6,
+      "roster": [
+        "UT ringoriiii",
+        "UT Hase",
+        "UT Aware",
+        "UT Louis",
+        "UT K1ngNoth1ng"
+      ],
+      "w": 1,
+      "l": 11,
+      "last_date": "2026-04-19",
+      "league": "LJL"
+    },
+    "Ultra Prime": {
+      "rating": 1429.1,
+      "roster": [
+        "sasi",
+        "Climber",
+        "Saber",
+        "Hena",
+        "Xiaoxia"
+      ],
+      "w": 61,
+      "l": 114,
+      "last_date": "2026-05-15",
+      "league": "LPL"
+    },
+    "Unicorns of Love Sexy Edition": {
+      "rating": 1679.2,
+      "roster": [
+        "Fornoreason",
+        "White",
+        "RoyalKanin",
+        "DenVoksne",
+        "Twiizt"
+      ],
+      "w": 148,
+      "l": 108,
+      "last_date": "2026-07-09",
+      "league": "PRM"
+    },
+    "Uwinks": {
+      "rating": 1578.3,
+      "roster": [
+        "tol2",
+        "Elative",
+        "Jericho",
+        "Gimi",
+        "f4ke"
+      ],
+      "w": 29,
+      "l": 23,
+      "last_date": "2026-06-13",
+      "league": "LJL"
+    },
+    "V3 Esports": {
+      "rating": 1203.1,
+      "roster": [
+        "jejemua",
+        "V3 Luka",
+        "Asagao",
+        "hinami",
+        "ezman"
+      ],
+      "w": 27,
+      "l": 80,
+      "last_date": "2026-04-19",
+      "league": "LJL"
+    },
+    "VARREL YOUTH": {
+      "rating": 1547.6,
+      "roster": [
+        "antana",
+        "Ryo",
+        "Karaage",
+        "Vox",
+        "f4ke"
+      ],
+      "w": 43,
+      "l": 33,
+      "last_date": "2026-04-19",
+      "league": "LJL"
+    },
+    "Vancouver Impact": {
+      "rating": 1334.8,
+      "roster": [
+        "Dragoon",
+        "Will",
+        "Sudzzi",
+        "Zev",
+        "Nukez"
+      ],
+      "w": 2,
+      "l": 12,
+      "last_date": "2025-09-16",
+      "league": "NACL"
+    },
+    "Vantex Esports": {
+      "rating": 1520.8,
+      "roster": [
+        "TheGreatGary",
+        "Renewal",
+        "Inzuh",
+        "Ace",
+        "Tochas"
+      ],
+      "w": 8,
+      "l": 8,
+      "last_date": "2026-03-12",
+      "league": "EM"
+    },
+    "Vasco E-Sports": {
+      "rating": 1564.8,
+      "roster": [
+        "Hoben",
+        "Leba",
+        "Cristal",
+        "IsDEAD",
+        "Oxala"
+      ],
+      "w": 8,
+      "l": 4,
+      "last_date": "2026-05-22",
+      "league": "CD"
+    },
+    "VelbeliKaizokudan": {
+      "rating": 1369.4,
+      "roster": [
+        "udon",
+        "Sassappel",
+        "velbellys",
+        "VK jisyoku",
+        "VK NishinoHawk"
+      ],
+      "w": 18,
+      "l": 46,
+      "last_date": "2026-04-19",
+      "league": "LJL"
+    },
+    "Veni Vidi Vici": {
+      "rating": 1556.1,
+      "roster": [
+        "Send0o",
+        "DahVys",
+        "Javier",
+        "Rayito",
+        "Simpy"
+      ],
+      "w": 58,
+      "l": 52,
+      "last_date": "2025-11-22",
+      "league": "IC"
+    },
+    "Venomcrest Esports": {
+      "rating": 1408.5,
+      "roster": [
+        "Bust",
+        "Kobs",
+        "Air",
+        "CaptainSexy",
+        "Eskiper"
+      ],
+      "w": 49,
+      "l": 51,
+      "last_date": "2025-08-13",
+      "league": "NLC"
+    },
+    "Verdant": {
+      "rating": 1698.9,
+      "roster": [
+        "bobista",
+        "NoName",
+        "Furuy",
+        "Mishi",
+        "Guggu"
+      ],
+      "w": 95,
+      "l": 61,
+      "last_date": "2026-06-09",
+      "league": "EM"
+    },
+    "VfB eSports": {
+      "rating": 1419.4,
+      "roster": [
+        "Sven",
+        "ZWICKL",
+        "Luke",
+        "Tazaku",
+        "Jakobobbi"
+      ],
+      "w": 8,
+      "l": 25,
+      "last_date": "2026-07-09",
+      "league": "PRM"
+    },
+    "Vitality.Bee": {
+      "rating": 1625.8,
+      "roster": [
+        "Potent",
+        "Dawciu",
+        "Czajek",
+        "Yakkey",
+        "Dekap"
+      ],
+      "w": 118,
+      "l": 86,
+      "last_date": "2026-05-21",
+      "league": "LFL"
+    },
+    "Vivo Keyd Stars": {
+      "rating": 1575.9,
+      "roster": [
+        "zekas",
+        "Disamis",
+        "Mireu",
+        "ceo",
+        "scamber"
+      ],
+      "w": 102,
+      "l": 88,
+      "last_date": "2026-06-13",
+      "league": "EWC"
+    },
+    "Vivo Keyd Stars Academy": {
+      "rating": 1688.3,
+      "roster": [
+        "zekas",
+        "Disamis",
+        "Qats",
+        "Buero",
+        "scamber"
+      ],
+      "w": 99,
+      "l": 51,
+      "last_date": "2026-06-01",
+      "league": "CD"
+    },
+    "Volticons": {
+      "rating": 1671.4,
+      "roster": [
+        "Chordy",
+        "Martote",
+        "DiDi",
+        "ianshaka",
+        "Camilo"
+      ],
+      "w": 30,
+      "l": 15,
+      "last_date": "2026-07-09",
+      "league": "LRS"
+    },
+    "WAP Esports": {
+      "rating": 1437.1,
+      "roster": [
+        "Zeycce",
+        "Trashy",
+        "Termo",
+        "Hika",
+        "Fortu"
+      ],
+      "w": 32,
+      "l": 37,
+      "last_date": "2025-08-03",
+      "league": "LRS"
+    },
+    "WLGaming Esports": {
+      "rating": 1656.8,
+      "roster": [
+        "Mietek",
+        "Pallet",
+        "Tsiper",
+        "Vzz",
+        "REAVER"
+      ],
+      "w": 97,
+      "l": 82,
+      "last_date": "2026-07-08",
+      "league": "HLL"
+    },
+    "Weibo Gaming": {
+      "rating": 1582.3,
+      "roster": [
+        "Zika",
+        "Jiejie",
+        "Xiaohu",
+        "Elk",
+        "TheHank"
+      ],
+      "w": 180,
+      "l": 195,
+      "last_date": "2026-05-24",
+      "league": "LPL"
+    },
+    "Weibo Gaming Youth Team": {
+      "rating": 1473.7,
+      "roster": [
+        "Thor",
+        "Yanxiang",
+        "0909",
+        "Later",
+        "ZiYe"
+      ],
+      "w": 38,
+      "l": 32,
+      "last_date": "2026-06-11",
+      "league": "Asia Master"
+    },
+    "West Point Esports": {
+      "rating": 1498.7,
+      "roster": [
+        "Hasu7",
+        "whisper",
+        "BuLuKaKa",
+        "ChiCh1",
+        "TNS"
+      ],
+      "w": 55,
+      "l": 74,
+      "last_date": "2025-08-19",
+      "league": "PCS"
+    },
+    "Winthrop University": {
+      "rating": 1594.5,
+      "roster": [
+        "Denathor",
+        "Wilson",
+        "Zach",
+        "Mobility",
+        "Kim Down"
+      ],
+      "w": 54,
+      "l": 70,
+      "last_date": "2026-06-05",
+      "league": "NACL"
+    },
+    "Witchcraft": {
+      "rating": 1705.6,
+      "roster": [
+        "Bwipo",
+        "Velja",
+        "Nemesis",
+        "Crownie",
+        "Rekkles"
+      ],
+      "w": 6,
+      "l": 4,
+      "last_date": "2026-03-14",
+      "league": "EM"
+    },
+    "Yang Yang Gaming": {
+      "rating": 1446.7,
+      "roster": [
+        "iu",
+        "YYG NONO",
+        "YYG Nafta",
+        "kumuo",
+        "wada1"
+      ],
+      "w": 39,
+      "l": 34,
+      "last_date": "2026-04-19",
+      "league": "LJL"
+    },
+    "ZEN Esports": {
+      "rating": 1437.5,
+      "roster": [
+        "Respeta",
+        "QQMore",
+        "Doni",
+        "TomnaM",
+        "Viico"
+      ],
+      "w": 14,
+      "l": 22,
+      "last_date": "2026-07-09",
+      "league": "LRS"
+    },
+    "ZETA": {
+      "rating": 1461.4,
+      "roster": [
+        "CPM",
+        "Nasser",
+        "Xico",
+        "Afriibi",
+        "escoX"
+      ],
+      "w": 16,
+      "l": 55,
+      "last_date": "2025-07-31",
+      "league": "LVP SL"
+    },
+    "ZYB Esport": {
+      "rating": 1521.3,
+      "roster": [
+        "Wao",
+        "Manaty",
+        "Nisqy",
+        "Jezu",
+        "Riippp"
+      ],
+      "w": 9,
+      "l": 17,
+      "last_date": "2026-05-13",
+      "league": "LFL"
+    },
+    "Zena Esports": {
+      "rating": 1493.0,
+      "roster": [
+        "Raffy",
+        "Jekko",
+        "MeMo1",
+        "ilyy",
+        "OrthoZero"
+      ],
+      "w": 38,
+      "l": 42,
+      "last_date": "2026-05-08",
+      "league": "LIT"
+    },
+    "ZennIT": {
+      "rating": 1443.5,
+      "roster": [
+        "Smart",
+        "Hatred",
+        "Dolis",
+        "Jamie",
+        "Sïgma"
+      ],
+      "w": 97,
+      "l": 79,
+      "last_date": "2026-06-11",
+      "league": "ROL"
+    },
+    "Zenshi Gaming": {
+      "rating": 1417.5,
+      "roster": [
+        "Berik",
+        "Nxi",
+        "Cupic",
+        "Globby",
+        "Kim Down"
+      ],
+      "w": 5,
+      "l": 6,
+      "last_date": "2025-09-17",
+      "league": "NACL"
+    },
+    "Zephyr Esport": {
+      "rating": 1393.9,
+      "roster": [
+        "ZPR Navi",
+        "denizzz",
+        "Yuros",
+        "Lixo",
+        "CHARMANDERBOT"
+      ],
+      "w": 4,
+      "l": 12,
+      "last_date": "2026-05-24",
+      "league": "NL"
+    },
+    "Zer0 Trein0": {
+      "rating": 1377.5,
+      "roster": [
+        "jmz",
+        "Ancrath",
+        "Eltrico",
+        "Taara",
+        "Vahvel"
+      ],
+      "w": 3,
+      "l": 7,
+      "last_date": "2025-09-18",
+      "league": "CD"
+    },
+    "Zerance": {
+      "rating": 1436.7,
+      "roster": [
+        "Koala",
+        "Krimson",
+        "iwanan",
+        "Notiko",
+        "Lucker"
+      ],
+      "w": 26,
+      "l": 53,
+      "last_date": "2025-08-31",
+      "league": "LFL2"
+    },
+    "Zero Tenacity": {
+      "rating": 1732.5,
+      "roster": [
+        "Kozi",
+        "Twight",
+        "Vasco",
+        "Woolite",
+        "Jactroll"
+      ],
+      "w": 155,
+      "l": 77,
+      "last_date": "2025-10-08",
+      "league": "EM"
+    },
+    "ZeroZone Gaming": {
+      "rating": 1368.8,
+      "roster": [
+        "JoKozz",
+        "salgueir0",
+        "LONVEY",
+        "bakisa",
+        "Coli"
+      ],
+      "w": 7,
+      "l": 26,
+      "last_date": "2026-05-22",
+      "league": "LPLOL"
+    },
+    "Zerolag Esports": {
+      "rating": 1330.1,
+      "roster": [
+        "SoimuMIC",
+        "Leao",
+        "helforca",
+        "Messclick",
+        "Virgo"
+      ],
+      "w": 25,
+      "l": 59,
+      "last_date": "2026-07-08",
+      "league": "HLL"
+    },
+    "Zeu5 Esports": {
+      "rating": 1579.0,
+      "roster": [
+        "Keii",
+        "Blind Walker",
+        "Zelt",
+        "Intio",
+        "Kita"
+      ],
+      "w": 40,
+      "l": 36,
+      "last_date": "2026-07-05",
+      "league": "LRN"
+    },
+    "aNc Legends": {
+      "rating": 1372.9,
+      "roster": [
+        "Deidara",
+        "Fragola",
+        "Vyctor",
+        "PiskHello",
+        "Brizz"
+      ],
+      "w": 7,
+      "l": 23,
+      "last_date": "2025-09-23",
+      "league": "EM"
+    },
+    "devils.one inStreamly": {
+      "rating": 1440.7,
+      "roster": [
+        "Goldmen",
+        "belit",
+        "fantomisto",
+        "Faetski",
+        "Calmsky"
+      ],
+      "w": 20,
+      "l": 45,
+      "last_date": "2026-05-21",
+      "league": "RL"
+    },
+    "e-Champ Gaming": {
+      "rating": 1427.4,
+      "roster": [
+        "Hakari",
+        "Anato",
+        "Peco",
+        "Gru",
+        "bulas"
+      ],
+      "w": 7,
+      "l": 10,
+      "last_date": "2025-08-26",
+      "league": "CD"
+    },
+    "eSuba": {
+      "rating": 1622.8,
+      "roster": [
+        "Bobsik",
+        "qualzy",
+        "Adyyy",
+        "raining",
+        "Mita"
+      ],
+      "w": 118,
+      "l": 82,
+      "last_date": "2026-06-02",
+      "league": "HM"
+    },
+    "mCon esports": {
+      "rating": 1563.3,
+      "roster": [
+        "MaiYuk",
+        "Pipibaat",
+        "Tibor",
+        "Aliplane",
+        "ScienTrist"
+      ],
+      "w": 99,
+      "l": 88,
+      "last_date": "2026-06-08",
+      "league": "EM"
+    },
+    "paiN Gaming": {
+      "rating": 1473.0,
+      "roster": [
+        "Boal",
+        "CarioK",
+        "Keine",
+        "Marvin",
+        "Kuri"
+      ],
+      "w": 95,
+      "l": 85,
+      "last_date": "2026-06-10",
+      "league": "EWC"
+    },
+    "paiN Gaming Academy": {
+      "rating": 1613.4,
+      "roster": [
+        "Zoen",
+        "Samkz",
+        "Namiru",
+        "Marvin",
+        "Gatovisck"
+      ],
+      "w": 70,
+      "l": 32,
+      "last_date": "2026-05-27",
+      "league": "CD"
+    },
+    "wangting": {
+      "rating": 1568.2,
+      "roster": [
+        "Rbow",
+        "Killer2",
+        "Cid",
+        "Dotmm",
+        "Feng55"
+      ],
+      "w": 30,
+      "l": 35,
+      "last_date": "2026-05-27",
+      "league": "PCS"
+    }
+  }
+}
