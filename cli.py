@@ -65,10 +65,19 @@ def cmd_snapshot(game):
         if (w + l) >= 8 and last_date[t] >= cut:
             teams[t] = {"rating": round(eng.team_strength(t, roster), 1),
                         "w": w, "l": l, "last_date": last_date[t]}
+    p = os.path.join(ROOT, "games", game, "ratings.json")
+    # 防呆:新快照过小(常见于数据抓取失败),拒绝覆盖已有的好快照
+    if os.path.exists(p):
+        try:
+            old_n = json.load(open(p, encoding="utf-8")).get("n_teams", 0)
+        except Exception:
+            old_n = 0
+        if old_n and len(teams) < max(5, 0.5 * old_n):
+            print(f"[{c['name']}] ⚠ 拒绝写入:新快照仅 {len(teams)} 队(旧 {old_n}),疑似数据异常,保留旧快照")
+            return
     out = {"game": game, "updated": datetime.date.today().isoformat(),
            "scale": c["scale"], "shrink": c["shrink"], "n_teams": len(teams),
            "teams": dict(sorted(teams.items()))}
-    p = os.path.join(ROOT, "games", game, "ratings.json")
     json.dump(out, open(p, "w"), ensure_ascii=False, indent=1)
     print(f"[{c['name']}] 写出 {len(teams)} 队 → {p}")
 
