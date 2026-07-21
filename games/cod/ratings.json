@@ -1,0 +1,86 @@
+{
+ "game": "cod",
+ "updated": "2026-07-21",
+ "scale": 400,
+ "n_teams": 13,
+ "teams": {
+  "OpTic Texas": {
+   "rating": 1712.4,
+   "w": 66,
+   "l": 34,
+   "last_date": "2026-07-19"
+  },
+  "FaZe Vegas": {
+   "rating": 1709.9,
+   "w": 36,
+   "l": 21,
+   "last_date": "2026-07-18"
+  },
+  "Los Angeles Thieves": {
+   "rating": 1650.8,
+   "w": 75,
+   "l": 30,
+   "last_date": "2026-07-17"
+  },
+  "Paris Gentle Mates": {
+   "rating": 1614.7,
+   "w": 31,
+   "l": 25,
+   "last_date": "2026-07-18"
+  },
+  "Riyadh Falcons": {
+   "rating": 1600.3,
+   "w": 27,
+   "l": 22,
+   "last_date": "2026-07-19"
+  },
+  "Project Notorious": {
+   "rating": 1576.8,
+   "w": 7,
+   "l": 5,
+   "last_date": "2026-05-15"
+  },
+  "G2 Minnesota": {
+   "rating": 1533.5,
+   "w": 22,
+   "l": 28,
+   "last_date": "2026-07-18"
+  },
+  "Toronto KOI": {
+   "rating": 1514.5,
+   "w": 26,
+   "l": 25,
+   "last_date": "2026-07-17"
+  },
+  "Carolina Royal Ravens": {
+   "rating": 1485.0,
+   "w": 36,
+   "l": 44,
+   "last_date": "2026-06-26"
+  },
+  "Boston Breach": {
+   "rating": 1473.8,
+   "w": 32,
+   "l": 48,
+   "last_date": "2026-06-26"
+  },
+  "Miami Heretics": {
+   "rating": 1467.5,
+   "w": 45,
+   "l": 47,
+   "last_date": "2026-07-18"
+  },
+  "Vancouver Surge": {
+   "rating": 1452.4,
+   "w": 43,
+   "l": 47,
+   "last_date": "2026-06-26"
+  },
+  "Cloud9 New York": {
+   "rating": 1353.8,
+   "w": 16,
+   "l": 55,
+   "last_date": "2026-06-26"
+  }
+ }
+}
