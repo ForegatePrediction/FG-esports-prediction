@@ -1,0 +1,393 @@
+{
+ "game": "sc2",
+ "updated": "2026-07-21",
+ "scale": 400,
+ "shrink": 1.0,
+ "n_teams": 64,
+ "teams": {
+  "Arrogfire": {
+   "rating": 1496.6,
+   "w": 16,
+   "l": 31,
+   "last_date": "2026-07-03"
+  },
+  "BabyMarine": {
+   "rating": 1445.8,
+   "w": 35,
+   "l": 53,
+   "last_date": "2026-07-04"
+  },
+  "Bunny": {
+   "rating": 1694.2,
+   "w": 230,
+   "l": 240,
+   "last_date": "2026-07-11"
+  },
+  "ByuN": {
+   "rating": 1713.0,
+   "w": 596,
+   "l": 529,
+   "last_date": "2026-07-11"
+  },
+  "Cellsidus": {
+   "rating": 1394.1,
+   "w": 2,
+   "l": 9,
+   "last_date": "2026-07-04"
+  },
+  "Cham": {
+   "rating": 1545.6,
+   "w": 77,
+   "l": 80,
+   "last_date": "2026-03-08"
+  },
+  "Classic": {
+   "rating": 1709.7,
+   "w": 456,
+   "l": 410,
+   "last_date": "2026-07-19"
+  },
+  "Clem": {
+   "rating": 1964.7,
+   "w": 845,
+   "l": 458,
+   "last_date": "2026-07-18"
+  },
+  "Coffee": {
+   "rating": 1540.0,
+   "w": 56,
+   "l": 53,
+   "last_date": "2026-06-25"
+  },
+  "Creator": {
+   "rating": 1661.9,
+   "w": 292,
+   "l": 321,
+   "last_date": "2026-02-19"
+  },
+  "Cure": {
+   "rating": 1786.4,
+   "w": 616,
+   "l": 492,
+   "last_date": "2026-07-18"
+  },
+  "Cyan": {
+   "rating": 1505.7,
+   "w": 58,
+   "l": 95,
+   "last_date": "2026-06-27"
+  },
+  "Elazer": {
+   "rating": 1617.0,
+   "w": 220,
+   "l": 211,
+   "last_date": "2026-07-05"
+  },
+  "Fjant": {
+   "rating": 1422.5,
+   "w": 28,
+   "l": 60,
+   "last_date": "2026-07-04"
+  },
+  "Gerald": {
+   "rating": 1553.1,
+   "w": 151,
+   "l": 245,
+   "last_date": "2026-07-04"
+  },
+  "GgMaChine": {
+   "rating": 1493.9,
+   "w": 2,
+   "l": 9,
+   "last_date": "2026-07-11"
+  },
+  "GuMiHo": {
+   "rating": 1624.5,
+   "w": 383,
+   "l": 395,
+   "last_date": "2026-05-21"
+  },
+  "Harstem": {
+   "rating": 1480.5,
+   "w": 149,
+   "l": 177,
+   "last_date": "2026-07-05"
+  },
+  "HeRoMaRinE": {
+   "rating": 1648.2,
+   "w": 300,
+   "l": 243,
+   "last_date": "2026-07-03"
+  },
+  "HolyHit": {
+   "rating": 1297.5,
+   "w": 3,
+   "l": 29,
+   "last_date": "2026-07-03"
+  },
+  "INnoVation": {
+   "rating": 1544.9,
+   "w": 10,
+   "l": 11,
+   "last_date": "2026-06-27"
+  },
+  "Jieshi": {
+   "rating": 1462.9,
+   "w": 54,
+   "l": 64,
+   "last_date": "2026-06-27"
+  },
+  "Jumy": {
+   "rating": 1386.9,
+   "w": 48,
+   "l": 102,
+   "last_date": "2026-07-03"
+  },
+  "Kelazhur": {
+   "rating": 1444.7,
+   "w": 149,
+   "l": 177,
+   "last_date": "2026-06-26"
+  },
+  "Krystianer": {
+   "rating": 1591.7,
+   "w": 111,
+   "l": 147,
+   "last_date": "2026-07-05"
+  },
+  "Lambo": {
+   "rating": 1773.3,
+   "w": 250,
+   "l": 238,
+   "last_date": "2026-07-18"
+  },
+  "LetaleX": {
+   "rating": 1313.7,
+   "w": 1,
+   "l": 20,
+   "last_date": "2026-07-04"
+  },
+  "Lorimbo": {
+   "rating": 1470.7,
+   "w": 4,
+   "l": 9,
+   "last_date": "2026-07-03"
+  },
+  "MaNa": {
+   "rating": 1531.6,
+   "w": 186,
+   "l": 221,
+   "last_date": "2026-05-22"
+  },
+  "MacSed": {
+   "rating": 1400.9,
+   "w": 12,
+   "l": 21,
+   "last_date": "2026-06-26"
+  },
+  "Maru": {
+   "rating": 1784.2,
+   "w": 492,
+   "l": 286,
+   "last_date": "2026-07-12"
+  },
+  "MaxPax": {
+   "rating": 1974.6,
+   "w": 478,
+   "l": 305,
+   "last_date": "2026-06-21"
+  },
+  "Mixu": {
+   "rating": 1415.2,
+   "w": 37,
+   "l": 90,
+   "last_date": "2026-07-04"
+  },
+  "Neeb": {
+   "rating": 1685.5,
+   "w": 70,
+   "l": 41,
+   "last_date": "2026-06-28"
+  },
+  "Nicoract": {
+   "rating": 1542.5,
+   "w": 24,
+   "l": 59,
+   "last_date": "2026-05-21"
+  },
+  "NightMare": {
+   "rating": 1608.0,
+   "w": 191,
+   "l": 237,
+   "last_date": "2026-07-12"
+  },
+  "Oliveira": {
+   "rating": 1673.7,
+   "w": 200,
+   "l": 148,
+   "last_date": "2026-06-28"
+  },
+  "Percival": {
+   "rating": 1672.1,
+   "w": 49,
+   "l": 85,
+   "last_date": "2026-06-09"
+  },
+  "Reynor": {
+   "rating": 1869.2,
+   "w": 512,
+   "l": 375,
+   "last_date": "2026-07-05"
+  },
+  "Rogue": {
+   "rating": 1845.1,
+   "w": 214,
+   "l": 224,
+   "last_date": "2026-07-12"
+  },
+  "Ryung": {
+   "rating": 1477.9,
+   "w": 160,
+   "l": 216,
+   "last_date": "2026-05-28"
+  },
+  "SHIN": {
+   "rating": 1766.2,
+   "w": 452,
+   "l": 447,
+   "last_date": "2026-07-19"
+  },
+  "SKillous": {
+   "rating": 1687.1,
+   "w": 242,
+   "l": 249,
+   "last_date": "2026-07-05"
+  },
+  "Scarlett": {
+   "rating": 1696.0,
+   "w": 186,
+   "l": 185,
+   "last_date": "2026-07-18"
+  },
+  "Serral": {
+   "rating": 2053.4,
+   "w": 563,
+   "l": 198,
+   "last_date": "2026-07-11"
+  },
+  "Shameless": {
+   "rating": 1607.2,
+   "w": 34,
+   "l": 46,
+   "last_date": "2026-06-02"
+  },
+  "Shino": {
+   "rating": 1436.4,
+   "w": 8,
+   "l": 17,
+   "last_date": "2026-07-03"
+  },
+  "ShoWTimE": {
+   "rating": 1689.9,
+   "w": 395,
+   "l": 324,
+   "last_date": "2026-07-03"
+  },
+  "Solar": {
+   "rating": 1804.1,
+   "w": 526,
+   "l": 487,
+   "last_date": "2026-07-12"
+  },
+  "SortOf": {
+   "rating": 1476.3,
+   "w": 3,
+   "l": 5,
+   "last_date": "2026-03-27"
+  },
+  "Spirit": {
+   "rating": 1616.8,
+   "w": 270,
+   "l": 310,
+   "last_date": "2026-03-06"
+  },
+  "Strange": {
+   "rating": 1558.0,
+   "w": 24,
+   "l": 33,
+   "last_date": "2026-05-28"
+  },
+  "TY": {
+   "rating": 1541.6,
+   "w": 12,
+   "l": 21,
+   "last_date": "2026-06-28"
+  },
+  "Trap": {
+   "rating": 1482.5,
+   "w": 9,
+   "l": 16,
+   "last_date": "2026-07-19"
+  },
+  "Vaeda": {
+   "rating": 1320.2,
+   "w": 9,
+   "l": 40,
+   "last_date": "2026-07-04"
+  },
+  "XY": {
+   "rating": 1423.7,
+   "w": 15,
+   "l": 23,
+   "last_date": "2026-06-25"
+  },
+  "Zoun": {
+   "rating": 1772.6,
+   "w": 321,
+   "l": 310,
+   "last_date": "2026-06-21"
+  },
+  "herO": {
+   "rating": 1891.7,
+   "w": 743,
+   "l": 489,
+   "last_date": "2026-07-19"
+  },
+  "sOs": {
+   "rating": 1594.0,
+   "w": 41,
+   "l": 55,
+   "last_date": "2026-05-20"
+  },
+  "sebesdes": {
+   "rating": 1460.2,
+   "w": 15,
+   "l": 28,
+   "last_date": "2026-07-03"
+  },
+  "soO": {
+   "rating": 1676.9,
+   "w": 79,
+   "l": 89,
+   "last_date": "2026-06-27"
+  },
+  "trigger": {
+   "rating": 1636.8,
+   "w": 204,
+   "l": 258,
+   "last_date": "2026-06-16"
+  },
+  "uThermal": {
+   "rating": 1501.4,
+   "w": 58,
+   "l": 68,
+   "last_date": "2026-07-04"
+  },
+  "youngYakov": {
+   "rating": 1548.8,
+   "w": 43,
+   "l": 104,
+   "last_date": "2026-03-27"
+  }
+ }
+}

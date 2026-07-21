@@ -33,6 +33,8 @@ games/
     adapter.py config.json fetch.py ratings.json
   scbw/               星际争霸:母巢之战(1v1,数据: PandaScore 免费档)
     adapter.py config.json fetch.py ratings.json
+  sc2/                星际争霸 II(1v1,数据: PandaScore 免费档)
+    adapter.py config.json fetch.py ratings.json
 cli.py                统一命令入口
 ```
 
@@ -63,6 +65,7 @@ python3 cli.py list dota2 Spirit       # 模糊查队名
 | 斗阵特攻 Overwatch | 71.8% | ~75% | 0.194 | 队伍级(按地图展开);6年数据,分层清晰,最好预测 |
 | 使命召唤 Call of Duty | 62.3% | ~67.7% | 0.233 | 队伍级(按地图展开);约2年,CDL 12队闭环 |
 | 星际:母巢之战 Brood War | 59.4% | ~59.8% | 0.243 | 1v1(选手评级);PandaScore 覆盖到 2025-10 |
+| 星际争霸 II StarCraft II | 64.2% | ~69.7% | 0.223 | 1v1(选手评级);约4年数据,PandaScore |
 
 > 诚实说明:命中率是游戏本身特性决定的——LoL 分层清晰(~65%),Dota2 爆冷多(~57%)。两者概率都已校准(Brier/LogLoss 优于瞎猜)。对外按真实数字设预期,按多场累计判断,不虚高。
 
