@@ -95,8 +95,9 @@ class H(BaseHTTPRequestHandler):
                 bo = int(q["bo"]) if q.get("bo") else None
                 hcap = float(q.get("hcap", 1.5))
                 total = float(q["total"]) if q.get("total") else None
+                lang = "en" if q.get("lang") == "en" else "zh"
                 try:
-                    r = P.predict(g, a, b, bo=bo, hcap=hcap, total=total)
+                    r = P.predict(g, a, b, bo=bo, hcap=hcap, total=total, lang=lang)
                 except FileNotFoundError:
                     return self._send(404, {"error": f"unknown game {g}"})
                 return self._send(200 if "error" not in r else 400, r)

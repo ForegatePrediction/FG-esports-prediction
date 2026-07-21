@@ -21,17 +21,45 @@ def _find(teams, name):
     return max(c, key=lambda t: teams[t].get("w", 0) + teams[t].get("l", 0)) if c else None
 
 
-def predict(game, A, B, bo=None, hcap=1.5, total=None):
+def _reasons(A, B, rA, rB, mk, bo, lang):
+    d = round(abs(rA - rB)); p = mk["single_map"]; sw = mk["series_winner"]
+    favN, favP = (A, sw["A"]) if sw["A"] >= sw["B"] else (B, sw["B"])
+    strong = A if rA >= rB else B
+    coverFav = mk["map_handicap"]["A_cover"] if strong == A else mk["map_handicap"]["B_cover"]
+    tm = mk["total_maps"]; longish = tm["over"] >= tm["under"]
+    pc = lambda x: f"{round(x*100)}%"
+    hl = mk["map_handicap"]["line"]; tl = tm["line"]
+    if lang == "en":
+        return {
+            "winner": [f"{A} rating {round(rA)} vs {B} {round(rB)} (gap {d})",
+                       f"Bo{bo} amplifies the stronger side → {favN} {pc(favP)}"],
+            "game1": [f"Single-map: {A} {pc(p)} / {B} {pc(1-p)}"],
+            "handicap": [f"P({strong} covers -{hl}, i.e. wins by ≥2 maps) = {pc(coverFav)}"],
+            "total": [f"{'Tends to go long / more maps' if longish else 'Tends to be short'} — Over {tl} {pc(tm['over'])}"],
+        }
+    return {
+        "winner": [f"{A} 评级 {round(rA)} vs {B} {round(rB)}(相差 {d} 分)",
+                   f"Bo{bo} 系列赛放大强队优势 → 倾向 {favN} {pc(favP)}"],
+        "game1": [f"单图胜率:{A} {pc(p)} / {B} {pc(1-p)}"],
+        "handicap": [f"{strong} 净胜 ≥2 局(-{hl},横扫/大比分)概率 {pc(coverFav)}"],
+        "total": [f"{'偏向打满 / 局数偏多' if longish else '偏向速战 / 局数偏少'} — 大于 {tl} 概率 {pc(tm['over'])}"],
+    }
+
+
+def predict(game, A, B, bo=None, hcap=1.5, total=None, lang="zh"):
     cfg, teams = _load(game)
     a, b = _find(teams, A), _find(teams, B)
     if not a or not b:
-        return {"error": f"未找到:{A if not a else B}"}
+        return {"error": f"未找到:{A if not a else B}", "missing": A if not a else B}
     bo = bo or cfg.get("default_bo", 3)
-    p = 0.5 + (expect(teams[a]["rating"] - teams[b]["rating"], cfg.get("scale", 400)) - 0.5) * cfg.get("shrink", 1.0)
+    exact = (A == a and B == b)
+    rA, rB = teams[a]["rating"], teams[b]["rating"]
+    p = 0.5 + (expect(rA - rB, cfg.get("scale", 400)) - 0.5) * cfg.get("shrink", 1.0)
     mk = four_markets(p, bo, hcap_line=hcap, total_line=total)
     mk["per_game"] = per_game_markets(p, bo)
-    return {"game": game, "A": a, "B": b, "bo": bo,
-            "ratings": {a: teams[a]["rating"], b: teams[b]["rating"]}, "markets": mk}
+    return {"game": game, "A": a, "B": b, "bo": bo, "lang": lang, "matched_exact": exact,
+            "ratings": {a: rA, b: rB}, "markets": mk,
+            "reasons": _reasons(a, b, rA, rB, mk, bo, lang)}
 
 
 def list_teams(game, kw):
