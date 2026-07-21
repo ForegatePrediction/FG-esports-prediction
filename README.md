@@ -25,6 +25,8 @@ games/
     adapter.py config.json fetch.py ratings.json
   mlbb/               决胜巅峰 / Mobile Legends(数据: PandaScore 免费档)
     adapter.py config.json fetch.py ratings.json
+  r6/                 彩虹六号围攻(数据: PandaScore 免费档)
+    adapter.py config.json fetch.py ratings.json
 cli.py                统一命令入口
 ```
 
@@ -51,6 +53,7 @@ python3 cli.py list dota2 Spirit       # 模糊查队名
 | 无畏契约 Valorant | 60.6% | ~61.8% | 0.235 | 队伍级(按地图展开);一年数据,PandaScore |
 | 王者荣耀 King of Glory | 59.3% | ~65% | 0.239 | 队伍级(按小局展开);约1.5年数据,PandaScore |
 | 决胜巅峰 Mobile Legends | 65.6% | ~68% | 0.219 | 队伍级(按小局展开);约2.5年数据,PandaScore |
+| 彩虹六号围攻 R6 | 62.3% | ~61.9% | 0.231 | 队伍级(按地图展开);约1.5年数据,PandaScore |
 
 > 诚实说明:命中率是游戏本身特性决定的——LoL 分层清晰(~65%),Dota2 爆冷多(~57%)。两者概率都已校准(Brier/LogLoss 优于瞎猜)。对外按真实数字设预期,按多场累计判断,不虚高。
 
