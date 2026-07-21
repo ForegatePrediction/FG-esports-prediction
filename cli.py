@@ -56,7 +56,9 @@ def cmd_snapshot(game):
             if m["date"] >= last_date.get(t, ""):
                 last_date[t] = m["date"]; last_roster[t] = side["ents"]
             w = wl.setdefault(t, [0, 0]); w[0 if won else 1] += 1
-    cut = (datetime.date.today() - datetime.timedelta(days=150)).isoformat()
+    # 活跃窗口:相对"数据最新日期"而非今天,兼容数据停更的游戏(如星际)
+    ref = max(last_date.values()) if last_date else datetime.date.today().isoformat()
+    cut = (datetime.date.fromisoformat(ref) - datetime.timedelta(days=150)).isoformat()
     teams = {}
     for t, roster in last_roster.items():
         w, l = wl[t]
