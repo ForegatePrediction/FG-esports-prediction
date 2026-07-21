@@ -1,81 +1,91 @@
-# ForeGate 电竞预测 · 统一框架(foregate-esports-prediction)
+# FG-esports-prediction
 
-一套框架覆盖所有电竞项目。共用一个核心引擎,每个游戏只是一个"适配器"(数据源 + 配置 + 评级快照)。加新游戏 = 加一个 `games/<game>/` 文件夹,不改引擎。
+An open-source **esports match-prediction framework**. One shared rating engine + series-probability math produces pre-match win probabilities across **11 esports titles**, from a single command-line interface.
 
-核心思路:**评级 → 单局胜率 p → 系列赛数学 → 4 玩法(赛事胜负 / 第一局 / 局数让分 / 总局数)**。
+一套开源的电竞赛事预测框架:共用「评级引擎 + 系列赛概率数学」,覆盖 11 款电竞项目,统一命令行调用。
 
-## 目录
+> **Disclaimer / 免责声明** — Research & educational framework. All outputs are pre-match statistical estimates and **do not constitute betting or investment advice**. 预测均为盘前统计估计,不构成投注或投资建议。
+
+---
+
+## Core idea
+
+**Rating → single-game win probability `p` → best-of series math → 4 markets.**
+
+Each title reduces to estimating one number — the probability a side wins a single game/map — from which four markets are derived analytically:
+
+- **Match (series) winner** 赛事胜负
+- **First game/map winner** 第一局/图胜负
+- **Map/game handicap** (e.g. −1.5) 让分
+- **Total maps/games** over/under 总局数/图数
+
+The same math serves team games (5v5 MOBA/FPS) and 1v1 (StarCraft): a side is a list of entities (players, or the team itself), so the engine covers `team-only`, `player+team blend`, and `1v1` purely by configuration.
+
+## Supported titles & out-of-sample accuracy
+
+Walk-forward backtest (train on the past, predict forward, no look-ahead). "Series acc." = match-winner hit rate.
+
+| Title | 项目 | Series acc. | Data source |
+|---|---|---|---|
+| Overwatch | 斗阵特攻 | ~75% | PandaScore |
+| League of Legends | 英雄联盟 | ~71% | Oracle's Elixir |
+| StarCraft II (1v1) | 星际争霸 II | ~70% | PandaScore |
+| Mobile Legends | 决胜巅峰 | ~68% | PandaScore |
+| Call of Duty | 使命召唤 | ~68% | PandaScore |
+| King of Glory | 王者荣耀 | ~65% | PandaScore |
+| Rainbow Six Siege | 彩虹六号 | ~62% | PandaScore |
+| Valorant | 无畏契约 | ~62% | PandaScore |
+| Brood War (1v1) | 星际:母巢之战 | ~60% | PandaScore |
+| CS2 | 反恐精英2 | ~58% | bo3.gg |
+| Dota 2 | Dota 2 | ~58% | OpenDota |
+
+Accuracy reflects each title's intrinsic variance (MOBAs and 1v1 predict best; some FPS scenes carry more upsets). Probabilities are calibrated — judge over many matches, not a single one. Details in `docs/METHODOLOGY.md`.
+
+## Repository layout
 
 ```
-core/                 全游戏共用
-  engine.py           通用评级引擎(队伍级 / 选手+队伍融合 / 1v1,配置切换)
-  series.py           系列赛 4 玩法数学
-  backtest.py         走查式回测(单局 + 系列)
-  predict.py          零训练轻量预测(读 config + ratings.json)
-games/
-  lol/                英雄联盟(数据: Oracle's Elixir 免费)
-    adapter.py config.json fetch.py ratings.json
-  dota2/              Dota2(数据: OpenDota 免费)
-    adapter.py config.json fetch.py ratings.json
-  cs2/                CS2(数据: bo3.gg 免费)
-    adapter.py config.json fetch.py ratings.json
-  valorant/           无畏契约(数据: PandaScore 免费档)
-    adapter.py config.json fetch.py ratings.json
-  kog/                王者荣耀(数据: PandaScore 免费档)
-    adapter.py config.json fetch.py ratings.json
-  mlbb/               决胜巅峰 / Mobile Legends(数据: PandaScore 免费档)
-    adapter.py config.json fetch.py ratings.json
-  r6/                 彩虹六号围攻(数据: PandaScore 免费档)
-    adapter.py config.json fetch.py ratings.json
-  ow/                 斗阵特攻 Overwatch(数据: PandaScore 免费档)
-    adapter.py config.json fetch.py ratings.json
-  cod/                使命召唤 Call of Duty(数据: PandaScore 免费档)
-    adapter.py config.json fetch.py ratings.json
-  scbw/               星际争霸:母巢之战(1v1,数据: PandaScore 免费档)
-    adapter.py config.json fetch.py ratings.json
-  sc2/                星际争霸 II(1v1,数据: PandaScore 免费档)
-    adapter.py config.json fetch.py ratings.json
-cli.py                统一命令入口
+core/                 shared across all titles
+  engine.py           rating engine (team / player+team blend / 1v1)
+  series.py           best-of series -> 4 markets
+  backtest.py         walk-forward validation (single-game + series)
+  predict.py          zero-training prediction from a ratings snapshot
+games/<title>/        one adapter per title
+  adapter.py          data -> unified match format + engine config
+  config.json         scale / shrink / default best-of / market lines
+  fetch.py            pull matches from the free data source
+  ratings.json        precomputed rating snapshot (used for prediction)
+cli.py                unified entry point
 ```
 
-## 用法(一套命令,所有游戏)
+## Quickstart
 
 ```bash
-python3 cli.py backtest lol            # 走查回测(样本外准确率)
-python3 cli.py backtest dota2
-python3 cli.py snapshot dota2          # 由数据重建评级快照 ratings.json
+# Predict (reads the committed ratings snapshot -- no training needed)
 python3 cli.py predict lol  "T1" "Gen.G" --bo 5
-python3 cli.py predict dota2 "Team Falcons" "Team Liquid" --bo 3
-python3 cli.py list dota2 Spirit       # 模糊查队名
+python3 cli.py predict cs2  "Vitality" "Spirit" --bo 3
+python3 cli.py list  sc2  Serral
+
+# Refresh data & re-validate (data is fetched on demand, never committed)
+python3 games/<title>/fetch.py       # PandaScore titles need PANDASCORE_TOKEN env
+python3 cli.py backtest <title>      # walk-forward accuracy
+python3 cli.py snapshot <title>      # rebuild ratings.json
 ```
 
-给运营 / AI agent:直接读 `games/<game>/ratings.json` 的 `rating`,套 `p = shrink*(logistic((rA-rB)/scale)-0.5)+0.5`,再由 `core/series.py` 展开 4 玩法即可。
+Pure Python standard library — no third-party dependencies. Match data is **not** committed (fetched on demand); API tokens live only in environment variables / CI secrets.
 
-## 各游戏样本外准确率(走查式、纯样本外)
+## Adding a new title
 
-| 游戏 | 单局命中率 | 系列赛命中率 | Brier | 说明 |
-|---|---|---|---|---|
-| 英雄联盟 LoL | 65.4% | 70.7% | 0.216 | 选手+队伍融合评级 |
-| Dota2 | 57.6% | 57.7% | 0.239 | 队伍级;高方差游戏,天花板偏低 |
-| CS2 | 57.0% | ~58% | 0.245 | 队伍级(按地图展开);数据 3.5 个月,历史越多越稳 |
-| 无畏契约 Valorant | 60.6% | ~61.8% | 0.235 | 队伍级(按地图展开);一年数据,PandaScore |
-| 王者荣耀 King of Glory | 59.3% | ~65% | 0.239 | 队伍级(按小局展开);约1.5年数据,PandaScore |
-| 决胜巅峰 Mobile Legends | 65.6% | ~68% | 0.219 | 队伍级(按小局展开);约2.5年数据,PandaScore |
-| 彩虹六号围攻 R6 | 62.3% | ~61.9% | 0.231 | 队伍级(按地图展开);约1.5年数据,PandaScore |
-| 斗阵特攻 Overwatch | 71.8% | ~75% | 0.194 | 队伍级(按地图展开);6年数据,分层清晰,最好预测 |
-| 使命召唤 Call of Duty | 62.3% | ~67.7% | 0.233 | 队伍级(按地图展开);约2年,CDL 12队闭环 |
-| 星际:母巢之战 Brood War | 59.4% | ~59.8% | 0.243 | 1v1(选手评级);PandaScore 覆盖到 2025-10 |
-| 星际争霸 II StarCraft II | 64.2% | ~69.7% | 0.223 | 1v1(选手评级);约4年数据,PandaScore |
+1. `games/<title>/adapter.py` — `load()` maps the source into the unified match format; `make_engine()` returns a configured `RatingEngine`.
+2. `config.json` — scale, shrink, side advantage, default best-of, market lines.
+3. `fetch.py` — pull from the free data source.
+4. `python3 cli.py snapshot <title>` then `backtest <title>` to validate.
 
-> 诚实说明:命中率是游戏本身特性决定的——LoL 分层清晰(~65%),Dota2 爆冷多(~57%)。两者概率都已校准(Brier/LogLoss 优于瞎猜)。对外按真实数字设预期,按多场累计判断,不虚高。
+No changes to `core/` — that is the point of the framework.
 
-## 加一个新游戏怎么做
+## Data sources
 
-1. 建 `games/<game>/`,写 `adapter.py`:`load()` 把该游戏数据转成统一 match 格式,`make_engine()` 返回配好参数的 `RatingEngine`。
-2. 写 `config.json`(scale / shrink / side_adv / default_bo / 盘口线 / 回测方式)。
-3. 写 `fetch.py`(免费数据源采集)。
-4. `python3 cli.py snapshot <game>` 生成评级快照;`backtest` 验证准确率。
+Oracle's Elixir (LoL), OpenDota (Dota 2), bo3.gg (CS2), PandaScore (the rest). All match data is the property of the respective providers / game publishers and is used here for analysis. Review each provider's terms before production use.
 
-数据文件不入库(`games/*/data/` 已在 .gitignore),用各游戏 `fetch.py` 现拉;每日 GitHub Action 可自动刷新。
+## License
 
-> 预测均为盘前统计估计,不构成投注建议。
+MIT — see `LICENSE`.
