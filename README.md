@@ -73,6 +73,26 @@ python3 cli.py snapshot <title>      # rebuild ratings.json
 
 Pure Python standard library — no third-party dependencies. Match data is **not** committed (fetched on demand); API tokens live only in environment variables / CI secrets.
 
+## HTTP API
+
+Zero-dependency server that reads the committed rating snapshots — millisecond responses, no data fetch per request.
+
+```bash
+python3 server.py            # PORT env, default 8000
+```
+
+| Endpoint | 说明 |
+|---|---|
+| `GET /health` | 健康检查 + 游戏列表 |
+| `GET /games` | 所有游戏 + 默认 BO + 准确率 |
+| `GET /teams?game=lol&q=T1` | 查队伍/选手(快照内) |
+| `GET /predict?game=lol&a=T1&b=Gen.G&bo=5` | 4 玩法 + 逐局胜负 |
+| `GET /stats[?game=lol]` | 准确率 |
+
+`/predict` 可选参数:`bo`(默认取该游戏配置)、`hcap`(让分线,默认 1.5)、`total`(总局数线)。CORS 全开,前端可直连。示例返回含 `series_winner / game1_winner / map_handicap / total_maps / correct_score / per_game`。
+
+部署:仓库含 `render.yaml`,在 Render 连接本仓库即可一键部署为 Web 服务(常驻实例秒级响应)。
+
 ## Adding a new title
 
 1. `games/<title>/adapter.py` — `load()` maps the source into the unified match format; `make_engine()` returns a configured `RatingEngine`.

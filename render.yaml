@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: foregate-esports-api
+    runtime: python
+    plan: starter
+    buildCommand: "python3 --version"
+    startCommand: "python3 server.py"
+    envVars:
+      - key: PYTHON_VERSION
+        value: "3.11.9"
