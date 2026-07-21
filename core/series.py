@@ -20,6 +20,27 @@ def series_scores(p, best_of):
     return out
 
 
+def per_game_markets(p, best_of):
+    """每一局(地图)的胜负 + 该局被打到的概率。
+    近似每局独立、单局胜率=p:
+      - reach   : 系列赛打到第 k 局的概率(前 k-1 局未分出胜负)
+      - A_if_played / B_if_played : 在第 k 局被打的前提下,双方胜率(= p / 1-p)
+      - A_uncond: 无条件"A 赢下第 k 局"概率(= reach × p),供需要该口径的玩法
+    """
+    K = (best_of + 1) // 2
+    q = 1 - p
+    out = []
+    for k in range(1, best_of + 1):
+        reach = 0.0
+        for i in range(0, k):           # 前 k-1 局中 A 赢 i 局
+            if i <= K - 1 and (k - 1 - i) <= K - 1:
+                reach += _comb(k - 1, i) * p ** i * q ** (k - 1 - i)
+        out.append({"game": k, "reach": reach,
+                    "A_if_played": p, "B_if_played": q,
+                    "A_uncond": reach * p, "B_uncond": reach * q})
+    return out
+
+
 def four_markets(p, best_of, hcap_line=1.5, total_line=None):
     if total_line is None:
         total_line = 2.5 if best_of == 3 else 4.5

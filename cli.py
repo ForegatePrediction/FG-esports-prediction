@@ -85,6 +85,9 @@ def cmd_predict(game, A, B, bo, hcap, total):
     hc = mk["map_handicap"]; print(f"  ③ 让分 {a} -{hc['line']}: {pct(hc['A_cover'])} | {b} +{hc['line']}: {pct(hc['B_cover'])}")
     tm = mk["total_maps"]; print(f"  ④ 总局数 O/U {tm['line']}: Over {pct(tm['over'])} | Under {pct(tm['under'])}")
     print("     正确比分: " + "  ".join(f"{lbl} {pct(pr)}" for lbl, _, pr in mk["correct_score"]))
+    print("  ⑤ 逐局胜负(在该局被打到的前提下 / 打到该局概率):")
+    for g in mk["per_game"]:
+        print(f"       第{g['game']}局: {a} {pct(g['A_if_played'])} | {b} {pct(g['B_if_played'])}   (打到该局 {pct(g['reach'])})")
 
 
 def main():

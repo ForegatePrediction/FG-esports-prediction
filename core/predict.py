@@ -2,7 +2,7 @@
 """通用轻量预测(全游戏共用)。读 games/<game>/config.json + ratings.json,零训练秒出 4 玩法。"""
 import json, os
 from .engine import expect
-from .series import four_markets
+from .series import four_markets, per_game_markets
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -29,6 +29,7 @@ def predict(game, A, B, bo=None, hcap=1.5, total=None):
     bo = bo or cfg.get("default_bo", 3)
     p = 0.5 + (expect(teams[a]["rating"] - teams[b]["rating"], cfg.get("scale", 400)) - 0.5) * cfg.get("shrink", 1.0)
     mk = four_markets(p, bo, hcap_line=hcap, total_line=total)
+    mk["per_game"] = per_game_markets(p, bo)
     return {"game": game, "A": a, "B": b, "bo": bo,
             "ratings": {a: teams[a]["rating"], b: teams[b]["rating"]}, "markets": mk}
 
