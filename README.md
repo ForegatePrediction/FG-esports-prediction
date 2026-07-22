@@ -35,9 +35,9 @@ Walk-forward backtest (train on the past, predict forward, no look-ahead). "Seri
 | King of Glory | 王者荣耀 | ~65% | PandaScore |
 | Rainbow Six Siege | 彩虹六号 | ~62% | PandaScore |
 | Valorant | 无畏契约 | ~62% | PandaScore |
+| Dota 2 | Dota 2 | ~62% | PandaScore |
+| CS2 | 反恐精英2 | ~62% | PandaScore |
 | Brood War (1v1) | 星际:母巢之战 | ~60% | PandaScore |
-| CS2 | 反恐精英2 | ~58% | bo3.gg |
-| Dota 2 | Dota 2 | ~58% | OpenDota |
 
 Accuracy reflects each title's intrinsic variance (MOBAs and 1v1 predict best; some FPS scenes carry more upsets). Probabilities are calibrated — judge over many matches, not a single one. Details in `docs/METHODOLOGY.md`.
 
@@ -104,7 +104,10 @@ No changes to `core/` — that is the point of the framework.
 
 ## Data sources
 
-Oracle's Elixir (LoL), OpenDota (Dota 2), bo3.gg (CS2), PandaScore (the rest). All match data is the property of the respective providers / game publishers and is used here for analysis. Review each provider's terms before production use.
+- **League of Legends → Oracle's Elixir** (free; gives per-game rosters, so LoL uses a player+team blended rating — its edge). Kept on OE deliberately: highest accuracy (65% single-map) and widest team coverage.
+- **All other 10 titles → PandaScore** (`PANDASCORE_TOKEN` env/secret): consistent, clean (inline team names/scores/BO), broad coverage. Dota 2 and CS2 were migrated from OpenDota / bo3.gg to PandaScore (wider coverage + higher accuracy).
+
+All match data is the property of the respective providers / game publishers and is used here for analysis. Review each provider's terms before production use.
 
 ## License
 
