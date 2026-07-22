@@ -13,7 +13,7 @@ PY = sys.executable
 # 每个游戏:fetch 命令(相对 games/<g>/fetch.py)+ 采集产出的文件名(会被移进 data/)+ 是否需要 token
 SPEC = {
     "lol":      {"args": [],                 "outputs": ["oe_2024.csv", "oe_2025.csv", "oe_2026.csv"], "token": False},
-    "dota2":    {"args": [],                 "outputs": ["dota_big.json"],                              "token": False},
+    "dota2":    {"args": [],                 "outputs": ["dota2_matches.json"],                         "token": True},
     "cs2":      {"args": [],                 "outputs": ["cs2_matches.json", "cs2_teams.json"],         "token": False},
     "valorant": {"args": [],                 "outputs": ["val_matches.json"],                           "token": True},
     "kog":      {"args": [],                 "outputs": ["kog_matches.json"],                           "token": True},
