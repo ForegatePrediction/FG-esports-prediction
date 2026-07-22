@@ -14,7 +14,7 @@ PY = sys.executable
 SPEC = {
     "lol":      {"args": [],                 "outputs": ["oe_2024.csv", "oe_2025.csv", "oe_2026.csv"], "token": False},
     "dota2":    {"args": [],                 "outputs": ["dota2_matches.json"],                         "token": True},
-    "cs2":      {"args": [],                 "outputs": ["cs2_matches.json", "cs2_teams.json"],         "token": False},
+    "cs2":      {"args": [],                 "outputs": ["csgo_matches.json"],                          "token": True},
     "valorant": {"args": [],                 "outputs": ["val_matches.json"],                           "token": True},
     "kog":      {"args": [],                 "outputs": ["kog_matches.json"],                           "token": True},
     "mlbb":     {"args": [],                 "outputs": ["mlbb_matches.json"],                          "token": True},

@@ -1,52 +1,99 @@
 #!/usr/bin/env python3
 """
-拉取 CS2 职业比赛数据(bo3.gg 免费公开 API)。系列级 + 地图比分 + 队名。
-用法: python3 fetch_cs2.py [回溯到的日期,默认2025-07-01]
-每日 GitHub Action 重跑即可增量刷新。
-"""
-import urllib.request, json, gzip, sys, os, time
-HERE=os.path.dirname(os.path.abspath(__file__))
-CUT=sys.argv[1] if len(sys.argv)>1 else "2025-07-01"
-UA="Mozilla/5.0 (ForeGate; davewell@gphtech.com)"
+拉取CS2 (Counter-Strike)职业比赛(PandaScore 免费档)。
+token 从环境变量读,绝不写进代码/聊天。King of Glory 的接口 slug 默认 "kog",
+若不对,先用 --list-games 查你账号里的确切 slug,再用 --game=<slug> 覆盖。
 
-def getj(url):
+用法:
+  export PANDASCORE_TOKEN=你的token
+  python3 fetch_kog.py --list-games         # 列出可用游戏和 slug(确认王者的 slug)
+  python3 fetch_kog.py --test               # 只拉 1 页验证
+  python3 fetch_kog.py                       # 正式拉,回溯到 2025-01-01
+  python3 fetch_kog.py --game=kog 2025-01-01
+"""
+import os, sys, json, time, urllib.request, urllib.error
+
+TOKEN = os.environ.get("PANDASCORE_TOKEN")
+if not TOKEN:
+    sys.exit("请先设置环境变量 PANDASCORE_TOKEN")
+
+HERE = os.path.dirname(os.path.abspath(__file__))
+GAME = "csgo"
+for a in sys.argv[1:]:
+    if a.startswith("--game="):
+        GAME = a.split("=", 1)[1]
+TEST = "--test" in sys.argv
+LIST = "--list-games" in sys.argv
+pos = [a for a in sys.argv[1:] if not a.startswith("--")]
+CUT = pos[0] if pos else "2025-01-01"
+
+
+def api(path):
+    req = urllib.request.Request("https://api.pandascore.co" + path,
+                                 headers={"Authorization": f"Bearer {TOKEN}", "Accept": "application/json"})
     for _ in range(3):
         try:
-            req=urllib.request.Request(url,headers={"User-Agent":UA,"Accept-Encoding":"gzip"})
-            r=urllib.request.urlopen(req,timeout=12); d=r.read()
-            if r.headers.get("Content-Encoding")=="gzip": d=gzip.decompress(d)
-            return json.loads(d)
-        except Exception: time.sleep(0.6)
+            return json.loads(urllib.request.urlopen(req, timeout=20).read())
+        except urllib.error.HTTPError as e:
+            if e.code in (401, 403):
+                sys.exit(f"认证失败({e.code}):检查 token / 该游戏是否有权限")
+            if e.code == 404:
+                return {"__404__": True}
+            time.sleep(1.5)
+        except Exception:
+            time.sleep(1.5)
     return None
 
-def fetch_matches():
-    rows=json.load(open(os.path.join(HERE,"cs2_matches.json"))) if os.path.exists(os.path.join(HERE,"cs2_matches.json")) else []
-    have=set(x["id"] for x in rows); off=0
-    while off < 40000:
-        j=getj(f"https://api.bo3.gg/api/v1/matches?filter[status]=finished&filter[discipline_id]=1&sort=-start_date&page[limit]=100&page[offset]={off}")
-        if not j or not j.get("results"): break
-        for m in j["results"]:
-            if m["id"] in have: continue
-            have.add(m["id"]); rows.append({"id":m["id"],"t1":m["team1_id"],"t2":m["team2_id"],
-                "w":m["winner_team_id"],"s1":m["team1_score"],"s2":m["team2_score"],
-                "bo":m["bo_type"],"date":m["start_date"][:10],"tier":m.get("tier")})
-        off+=100
-        if rows and rows[-1]["date"]<CUT: break
-        time.sleep(0.1)
-    json.dump(rows,open(os.path.join(HERE,"cs2_matches.json"),"w"))
-    return rows
 
-def fetch_names(rows):
-    names=json.load(open(os.path.join(HERE,"cs2_teams.json"))) if os.path.exists(os.path.join(HERE,"cs2_teams.json")) else {}
-    for off in range(0,2000,100):
-        j=getj(f"https://api.bo3.gg/api/v1/teams?sort=rank&page[limit]=100&page[offset]={off}")
-        if not j or not j.get("results"): break
-        for t in j["results"]:
-            if t.get("name"): names[str(t["id"])]=t["name"]
-        time.sleep(0.05)
-    json.dump(names,open(os.path.join(HERE,"cs2_teams.json"),"w"),ensure_ascii=False)
-    return names
+def list_games():
+    j = api("/videogames")
+    if isinstance(j, list):
+        for g in j:
+            print(f"  id={g.get('id')}  slug={g.get('slug')!r}  name={g.get('name')!r}")
+    else:
+        print("无法获取:", j)
 
-if __name__=="__main__":
-    r=fetch_matches(); print("matches:",len(r))
-    n=fetch_names(r); print("team names:",len(n))
+
+def extract(m):
+    ops = m.get("opponents") or []
+    if len(ops) != 2:
+        return None
+    t1, t2 = ops[0]["opponent"], ops[1]["opponent"]
+    res = {r["team_id"]: r.get("score") for r in (m.get("results") or [])}
+    return {"id": m["id"], "date": (m.get("begin_at") or "")[:10], "t1": t1["name"], "t2": t2["name"],
+            "s1": res.get(t1["id"]), "s2": res.get(t2["id"]), "bo": m.get("number_of_games"),
+            "w": (1 if m.get("winner_id") == t1["id"] else 2 if m.get("winner_id") == t2["id"] else None)}
+
+
+def main():
+    if LIST:
+        return list_games()
+    out_path = os.path.join(HERE, f"{GAME}_matches.json")
+    rows = json.load(open(out_path)) if os.path.exists(out_path) else []
+    have = set(x["id"] for x in rows); page = 1
+    while page <= (1 if TEST else 400):
+        batch = api(f"/{GAME}/matches/past?sort=-begin_at&page[size]=100&page[number]={page}")
+        if isinstance(batch, dict) and batch.get("__404__"):
+            sys.exit(f"slug '{GAME}' 不对,请先 --list-games 查正确 slug,再 --game=<slug>")
+        if not batch:
+            break
+        added = 0
+        for m in batch:
+            r = extract(m)
+            if not r or r["id"] in have:
+                continue
+            have.add(r["id"]); rows.append(r); added += 1
+        json.dump(rows, open(out_path, "w"), ensure_ascii=False)
+        oldest = min((x["date"] for x in rows if x["date"]), default="")
+        print(f"page {page}: +{added}, total {len(rows)}, oldest {oldest}")
+        if TEST:
+            print("SAMPLE:", json.dumps(rows[0], ensure_ascii=False) if rows else "无数据"); break
+        if oldest and oldest < CUT:
+            break
+        page += 1; time.sleep(0.2)
+    fin = [x for x in rows if isinstance(x["s1"], int) and isinstance(x["s2"], int) and x["w"]]
+    print(f"完成:总 {len(rows)},有效 {len(fin)} → {GAME}_matches.json")
+
+
+if __name__ == "__main__":
+    main()
