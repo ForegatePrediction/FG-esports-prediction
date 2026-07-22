@@ -1,6 +1,6 @@
 {
  "game": "kog",
- "updated": "2026-07-21",
+ "updated": "2026-07-22",
  "scale": 400,
  "shrink": 1.0,
  "n_teams": 57,
@@ -12,7 +12,7 @@
    "last_date": "2026-04-11"
   },
   "AG Super Play": {
-   "rating": 1722.5,
+   "rating": 1722.0,
    "w": 262,
    "l": 132,
    "last_date": "2026-07-19"
@@ -66,19 +66,19 @@
    "last_date": "2026-07-19"
   },
   "Douyu Gaming": {
-   "rating": 1441.3,
+   "rating": 1440.8,
    "w": 75,
    "l": 122,
    "last_date": "2026-07-18"
   },
   "Dragon Ranger Gaming": {
-   "rating": 1486.2,
+   "rating": 1485.7,
    "w": 191,
    "l": 169,
    "last_date": "2026-07-21"
   },
   "EDward Gaming": {
-   "rating": 1502.4,
+   "rating": 1501.9,
    "w": 134,
    "l": 176,
    "last_date": "2026-07-21"
@@ -108,7 +108,7 @@
    "last_date": "2026-03-22"
   },
   "Hero JiuJing": {
-   "rating": 1509.9,
+   "rating": 1509.4,
    "w": 123,
    "l": 131,
    "last_date": "2026-07-17"
@@ -126,19 +126,19 @@
    "last_date": "2026-03-22"
   },
   "JA Gaming": {
-   "rating": 1411.5,
+   "rating": 1411.3,
    "w": 15,
    "l": 22,
    "last_date": "2026-07-20"
   },
   "JD Gaming": {
-   "rating": 1696.4,
+   "rating": 1695.9,
    "w": 177,
    "l": 164,
    "last_date": "2026-07-19"
   },
   "JLY": {
-   "rating": 1228.4,
+   "rating": 1228.1,
    "w": 128,
    "l": 184,
    "last_date": "2026-07-20"
@@ -150,31 +150,31 @@
    "last_date": "2026-06-27"
   },
   "Koala Game": {
-   "rating": 1555.7,
+   "rating": 1555.4,
    "w": 144,
    "l": 151,
    "last_date": "2026-07-20"
   },
   "Kuaishou Gaming": {
-   "rating": 1743.4,
+   "rating": 1742.9,
    "w": 217,
    "l": 167,
    "last_date": "2026-07-17"
   },
   "LGD NBW": {
-   "rating": 1576.0,
+   "rating": 1575.5,
    "w": 180,
    "l": 170,
    "last_date": "2026-07-19"
   },
   "LT Gaming": {
-   "rating": 1468.0,
+   "rating": 1467.7,
    "w": 199,
    "l": 175,
    "last_date": "2026-07-20"
   },
   "Mighty Tiger Gaming": {
-   "rating": 1369.8,
+   "rating": 1369.5,
    "w": 142,
    "l": 182,
    "last_date": "2026-07-20"
@@ -192,19 +192,19 @@
    "last_date": "2026-06-27"
   },
   "Qing Jiu Club": {
-   "rating": 1600.7,
+   "rating": 1600.3,
    "w": 146,
    "l": 174,
    "last_date": "2026-07-19"
   },
   "Rogue Warriors": {
-   "rating": 1579.3,
-   "w": 137,
+   "rating": 1618.3,
+   "w": 140,
    "l": 159,
-   "last_date": "2026-07-19"
+   "last_date": "2026-07-21"
   },
   "Royal Never Give Up": {
-   "rating": 1488.9,
+   "rating": 1488.4,
    "w": 96,
    "l": 113,
    "last_date": "2026-07-18"
@@ -216,10 +216,10 @@
    "last_date": "2026-06-25"
   },
   "SYGaming": {
-   "rating": 1586.7,
+   "rating": 1546.7,
    "w": 105,
-   "l": 79,
-   "last_date": "2026-07-18"
+   "l": 82,
+   "last_date": "2026-07-21"
   },
   "Saigon Phantom": {
    "rating": 1533.6,
@@ -234,13 +234,13 @@
    "last_date": "2026-04-12"
   },
   "TOP Esports Armor": {
-   "rating": 1634.0,
+   "rating": 1633.5,
    "w": 129,
    "l": 133,
    "last_date": "2026-07-21"
   },
   "Talent Gaming": {
-   "rating": 1749.9,
+   "rating": 1749.3,
    "w": 198,
    "l": 176,
    "last_date": "2026-07-19"
@@ -258,7 +258,7 @@
    "last_date": "2026-04-12"
   },
   "Team WE": {
-   "rating": 1479.5,
+   "rating": 1479.0,
    "w": 72,
    "l": 125,
    "last_date": "2026-07-21"
@@ -270,19 +270,19 @@
    "last_date": "2026-03-22"
   },
   "Titan King's Legion": {
-   "rating": 1408.9,
+   "rating": 1408.6,
    "w": 160,
    "l": 149,
    "last_date": "2026-07-19"
   },
   "To Champion Group": {
-   "rating": 1532.7,
+   "rating": 1532.4,
    "w": 159,
    "l": 172,
    "last_date": "2026-07-20"
   },
   "UU Gamers": {
-   "rating": 1510.0,
+   "rating": 1509.7,
    "w": 173,
    "l": 154,
    "last_date": "2026-07-19"
@@ -294,43 +294,43 @@
    "last_date": "2026-06-28"
   },
   "WLT Esports Club": {
-   "rating": 1429.6,
+   "rating": 1429.3,
    "w": 76,
    "l": 74,
    "last_date": "2026-07-20"
   },
   "WST": {
-   "rating": 1581.0,
+   "rating": 1580.5,
    "w": 219,
    "l": 179,
    "last_date": "2026-07-18"
   },
   "WanZhen Esports Club": {
-   "rating": 1389.6,
+   "rating": 1389.3,
    "w": 137,
    "l": 176,
    "last_date": "2026-07-20"
   },
   "Weibo Gaming": {
-   "rating": 1824.0,
-   "w": 242,
+   "rating": 1823.5,
+   "w": 240,
    "l": 168,
    "last_date": "2026-07-17"
   },
   "Wolves": {
-   "rating": 1719.2,
+   "rating": 1718.7,
    "w": 257,
    "l": 160,
    "last_date": "2026-07-18"
   },
   "XQG Esports Club": {
-   "rating": 1377.1,
+   "rating": 1376.9,
    "w": 40,
    "l": 49,
    "last_date": "2026-04-04"
   },
   "Xianyou Gaming": {
-   "rating": 1618.8,
+   "rating": 1618.5,
    "w": 202,
    "l": 152,
    "last_date": "2026-07-19"
@@ -342,7 +342,7 @@
    "last_date": "2026-03-22"
   },
   "eStar Pro": {
-   "rating": 1457.6,
+   "rating": 1457.1,
    "w": 94,
    "l": 123,
    "last_date": "2026-07-16"
