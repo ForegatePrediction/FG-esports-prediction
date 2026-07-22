@@ -25,10 +25,13 @@ def _reasons(A, B, rA, rB, mk, bo, lang):
     d = round(abs(rA - rB)); p = mk["single_map"]; sw = mk["series_winner"]
     favN, favP = (A, sw["A"]) if sw["A"] >= sw["B"] else (B, sw["B"])
     strong = A if rA >= rB else B
-    coverFav = mk["map_handicap"]["A_cover"] if strong == A else mk["map_handicap"]["B_cover"]
     tm = mk["total_maps"]; longish = tm["over"] >= tm["under"]
     pc = lambda x: f"{round(x*100)}%"
     hl = mk["map_handicap"]["line"]; tl = tm["line"]
+    # 强队自己净胜 >hl 局(-hl 让分/横扫)的概率:从比分分布取该方大比分获胜之和
+    sl = "A" if strong == A else "B"
+    coverFav = sum(pr for sc, w, pr in mk["correct_score"]
+                   if w == sl and abs(int(sc.split("-")[0]) - int(sc.split("-")[1])) > hl)
     if lang == "en":
         return {
             "winner": [f"{A} rating {round(rA)} vs {B} {round(rB)} (gap {d})",
