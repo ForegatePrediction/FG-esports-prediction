@@ -40,6 +40,14 @@ def _reasons(A, B, rA, rB, mk, bo, lang):
             "handicap": [f"P({strong} covers -{hl}, i.e. wins by ≥2 maps) = {pc(coverFav)}"],
             "total": [f"{'Tends to go long / more maps' if longish else 'Tends to be short'} — Over {tl} {pc(tm['over'])}"],
         }
+    if lang == "vi":
+        return {
+            "winner": [f"{A} điểm {round(rA)} vs {B} {round(rB)} (chênh {d})",
+                       f"Bo{bo} khuếch đại lợi thế đội mạnh → nghiêng về {favN} {pc(favP)}"],
+            "game1": [f"Tỷ lệ thắng 1 ván: {A} {pc(p)} / {B} {pc(1-p)}"],
+            "handicap": [f"P({strong} thắng cách biệt ≥2 ván, chấp -{hl}) = {pc(coverFav)}"],
+            "total": [f"{'Xu hướng kéo dài / nhiều ván' if longish else 'Xu hướng ít ván / kết thúc nhanh'} — Tài {tl} {pc(tm['over'])}"],
+        }
     return {
         "winner": [f"{A} 评级 {round(rA)} vs {B} {round(rB)}(相差 {d} 分)",
                    f"Bo{bo} 系列赛放大强队优势 → 倾向 {favN} {pc(favP)}"],

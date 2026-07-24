@@ -161,7 +161,7 @@ class H(BaseHTTPRequestHandler):
                 bo = int(q["bo"]) if q.get("bo") else None
                 hcap = float(q.get("hcap", 1.5))
                 total = float(q["total"]) if q.get("total") else None
-                lang = "en" if q.get("lang") == "en" else "zh"
+                lang = q.get("lang") if q.get("lang") in ("en", "vi") else "zh"
                 try:
                     r = P.predict(g, a, b, bo=bo, hcap=hcap, total=total, lang=lang)
                 except FileNotFoundError:
