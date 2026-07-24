@@ -36,8 +36,68 @@ def list_games():
         if os.path.isfile(cfg):
             c = json.load(open(cfg, encoding="utf-8"))
             out[g] = {"name": c.get("name", g), "default_bo": c.get("default_bo", 3),
-                      "accuracy": c.get("accuracy", ""), "source": c.get("source", "")}
+                      "accuracy": c.get("accuracy", ""), "source": c.get("source", ""),
+                      "category_id": c.get("category_id"), "category_name": c.get("category_name")}
     return out
+
+
+def category_map():
+    """Foregate 内部分类 id -> 本项目 game 代码(以 config.json 为单一事实来源)。"""
+    return {str(v["category_id"]): g for g, v in list_games().items() if v.get("category_id") is not None}
+
+
+# 常见简写/别名 -> game 代码(全小写匹配)。分类名与 game 代码本身会自动并入,无需在此重复。
+ALIAS = {
+    "lol": ["league", "leagueoflegends", "league of legends", "英雄联盟", "撸啊撸", "lpl"],
+    "cs2": ["cs", "csgo", "cs:go", "cs go", "counter-strike", "counterstrike", "counter strike", "反恐精英"],
+    "dota2": ["dota", "dota 2", "dota-2", "d2", "刀塔", "刀塔2"],
+    "valorant": ["val", "valo", "无畏契约", "特战英豪", "瓦罗兰特"],
+    "mlbb": ["ml", "mobilelegends", "mobile legends", "决胜巅峰", "无尽对决"],
+    "r6": ["r6s", "rainbow6", "rainbowsix", "rainbow six", "rainbow six siege", "彩虹六号", "彩虹6号"],
+    "ow": ["ow2", "overwatch", "overwatch2", "斗阵特攻", "守望先锋"],
+    "kog": ["hok", "honorofkings", "honor of kings", "王者荣耀", "aov", "arena of valor"],
+    "cod": ["callofduty", "call of duty", "使命召唤", "codmw"],
+    "scbw": ["bw", "broodwar", "brood war", "starcraft:brood war", "starcraft brood war", "母巢之战", "星际争霸:母巢之战"],
+    "sc2": ["starcraft2", "starcraft 2", "starcraft ii", "星际争霸2", "星际争霸ii"],
+}
+
+
+def alias_map():
+    """统一别名表(全小写):分类名 + game 代码 + 常见简写 -> game 代码。"""
+    m = {}
+    for g, v in list_games().items():
+        m[g.lower()] = g                                   # game 代码本身
+        if v.get("category_name"):
+            m[v["category_name"].strip().lower()] = g       # Foregate 分类名
+    for g, alist in ALIAS.items():                          # 简写/中文别名
+        for a in alist:
+            m[a.strip().lower()] = g
+    return m
+
+
+def resolve_game(q):
+    """兼容多种传参,优先级:categoryId > name > game(均含别名/简写容错)。
+    - categoryId : Foregate 分类 id(如 20140)
+    - name       : 分类名/简写(如 "LOL" / "Dota 2" / "CSGO" / "Mobile Legends: Bang Bang",不分大小写)
+    - game       : 项目游戏代码或简写(如 lol / dota2 / csgo);未识别则原样透传
+    返回 (game_code, error_dict_or_None)。"""
+    cid = q.get("categoryId") or q.get("category_id") or q.get("catId")
+    if cid:
+        g = category_map().get(str(cid).strip())
+        if not g:
+            return None, {"error": f"未知 categoryId: {cid}", "categoryId": cid}
+        return g, None
+    am = alias_map()
+    nm = q.get("name") or q.get("categoryName") or q.get("category_name")
+    if nm:
+        g = am.get(nm.strip().lower())
+        if not g:
+            return None, {"error": f"未识别的分类 name: {nm}", "name": nm}
+        return g, None
+    gm = q.get("game")
+    if gm:
+        return am.get(gm.strip().lower(), gm.strip()), None  # 命中别名则转换,否则原样透传
+    return None, {"error": "需要 game / categoryId / name 参数"}
 
 
 class H(BaseHTTPRequestHandler):
@@ -71,16 +131,19 @@ class H(BaseHTTPRequestHandler):
                 return self._send(200, list_games())
             if path == "/stats":
                 gl = list_games()
-                if q.get("game"):
-                    g = q["game"]
+                if any(q.get(k) for k in ("game", "categoryId", "category_id", "catId", "name", "categoryName", "category_name")):
+                    g, err = resolve_game(q)
+                    if err:
+                        return self._send(404 if ("categoryId" in err or "name" in err) else 400, err)
                     return self._send(200 if g in gl else 404,
                                       gl.get(g, {"error": f"unknown game {g}"}))
-                return self._send(200, {g: {"name": v["name"], "accuracy": v["accuracy"]}
-                                        for g, v in gl.items()})
+                return self._send(200, {g: {"name": v["name"], "category_id": v["category_id"],
+                                            "accuracy": v["accuracy"]} for g, v in gl.items()})
             if path == "/teams":
-                g = q.get("game"); kw = q.get("q", "")
-                if not g:
-                    return self._send(400, {"error": "缺少 game 参数"})
+                g, err = resolve_game(q)
+                if err:
+                    return self._send(404 if ("categoryId" in err or "name" in err) else 400, err)
+                kw = q.get("q", "")
                 try:
                     hits = P.list_teams(g, kw)
                 except FileNotFoundError:
@@ -89,9 +152,12 @@ class H(BaseHTTPRequestHandler):
                                         "teams": [{"name": t, "rating": v["rating"],
                                                    "w": v.get("w"), "l": v.get("l")} for t, v in hits[:60]]})
             if path == "/predict":
-                g = q.get("game"); a = q.get("a"); b = q.get("b")
-                if not (g and a and b):
-                    return self._send(400, {"error": "需要 game / a / b 参数"})
+                g, err = resolve_game(q)
+                if err:
+                    return self._send(404 if ("categoryId" in err or "name" in err) else 400, err)
+                a = q.get("a"); b = q.get("b")
+                if not (a and b):
+                    return self._send(400, {"error": "需要 a / b 参数"})
                 bo = int(q["bo"]) if q.get("bo") else None
                 hcap = float(q.get("hcap", 1.5))
                 total = float(q["total"]) if q.get("total") else None
