@@ -32,6 +32,8 @@ def _reasons(A, B, rA, rB, mk, bo, lang):
     sl = "A" if strong == A else "B"
     coverFav = sum(pr for sc, w, pr in mk["correct_score"]
                    if w == sl and abs(int(sc.split("-")[0]) - int(sc.split("-")[1])) > hl)
+    cs = mk.get("correct_score", [])[:3]
+    cs_str = " · ".join(f"{sc} {pc(pr)}" for sc, w, pr in cs)
     if lang == "en":
         return {
             "winner": [f"{A} rating {round(rA)} vs {B} {round(rB)} (gap {d})",
@@ -39,6 +41,7 @@ def _reasons(A, B, rA, rB, mk, bo, lang):
             "game1": [f"Single-map: {A} {pc(p)} / {B} {pc(1-p)}"],
             "handicap": [f"P({strong} covers -{hl}, i.e. wins by ≥2 maps) = {pc(coverFav)}"],
             "total": [f"{'Tends to go long / more maps' if longish else 'Tends to be short'} — Over {tl} {pc(tm['over'])}"],
+            "series_score": [f"Most likely series score: {cs_str}"],
         }
     if lang == "vi":
         return {
@@ -47,13 +50,15 @@ def _reasons(A, B, rA, rB, mk, bo, lang):
             "game1": [f"Tỷ lệ thắng 1 ván: {A} {pc(p)} / {B} {pc(1-p)}"],
             "handicap": [f"P({strong} thắng cách biệt ≥2 ván, chấp -{hl}) = {pc(coverFav)}"],
             "total": [f"{'Xu hướng kéo dài / nhiều ván' if longish else 'Xu hướng ít ván / kết thúc nhanh'} — Tài {tl} {pc(tm['over'])}"],
+            "series_score": [f"Tỉ số loạt khả dĩ nhất: {cs_str}"],
         }
-    return {
-        "winner": [f"{A} 评级 {round(rA)} vs {B} {round(rB)}(相差 {d} 分)",
-                   f"Bo{bo} 系列赛放大强队优势 → 倾向 {favN} {pc(favP)}"],
-        "game1": [f"单图胜率:{A} {pc(p)} / {B} {pc(1-p)}"],
-        "handicap": [f"{strong} 净胜 ≥2 局(-{hl},横扫/大比分)概率 {pc(coverFav)}"],
-        "total": [f"{'偏向打满 / 局数偏多' if longish else '偏向速战 / 局数偏少'} — 大于 {tl} 概率 {pc(tm['over'])}"],
+    return {  # zh — 繁體中文
+        "winner": [f"{A} 評級 {round(rA)} vs {B} {round(rB)}(相差 {d} 分)",
+                   f"Bo{bo} 系列賽放大強隊優勢 → 傾向 {favN} {pc(favP)}"],
+        "game1": [f"單圖勝率:{A} {pc(p)} / {B} {pc(1-p)}"],
+        "handicap": [f"{strong} 淨勝 ≥2 局(-{hl},橫掃/大比分)機率 {pc(coverFav)}"],
+        "total": [f"{'偏向打滿 / 局數偏多' if longish else '偏向速戰 / 局數偏少'} — 大於 {tl} 機率 {pc(tm['over'])}"],
+        "series_score": [f"最可能系列賽比分:{cs_str}"],
     }
 
 
