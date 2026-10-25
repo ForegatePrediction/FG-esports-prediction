@@ -9,6 +9,13 @@ sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
 from sources import pandascore as p
 
 class PandaScoreTests(unittest.TestCase):
+    def test_individual_player_scores_keep_winner_and_opponent_identity(self):
+        match = self.match(12, '2026-10-24')
+        match['results'] = [{'player_id':1,'score':3}, {'player_id':2,'score':1}]
+        row = p.extract(match)
+        self.assertEqual((row['t1'], row['t2'], row['s1'], row['s2'], row['w']),
+                         ('A', 'B', 3, 1, 1))
+
     def match(self,identifier,date):
         return {'id':identifier,'begin_at':date+'T12:00:00Z','opponents':[{'opponent':{'id':1,'name':'A'}},{'opponent':{'id':2,'name':'B'}}],
                 'results':[{'team_id':1,'score':2},{'team_id':2,'score':0}],'winner_id':1,'number_of_games':3,'league':{'name':'Major'}}

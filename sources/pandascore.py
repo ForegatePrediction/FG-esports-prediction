@@ -41,7 +41,8 @@ def extract(match):
     if len(opponents) != 2:
         return None
     a, b = [x['opponent'] for x in opponents]
-    scores = {x['team_id']: x.get('score') for x in match.get('results', [])}
+    scores = {(x.get('team_id') or x.get('player_id')): x.get('score')
+              for x in (match.get('results') or [])}
     return {'id': match['id'], 'date': (match.get('begin_at') or '')[:10],
             't1': a['name'], 't2': b['name'], 's1': scores.get(a['id']), 's2': scores.get(b['id']),
             'bo': match.get('number_of_games'),
