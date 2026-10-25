@@ -1,0 +1,544 @@
+{
+  "lol": {
+    "checked_at": "2026-10-25T04:38:21.711481+00:00",
+    "source": "Oracle's Elixir",
+    "leagues": {
+      "DCup": {
+        "matches": 99,
+        "latest_match": "2026-01-03",
+        "latest_event": ""
+      },
+      "TSC": {
+        "matches": 107,
+        "latest_match": "2024-10-25",
+        "latest_event": ""
+      },
+      "LEC": {
+        "matches": 985,
+        "latest_match": "2026-09-20",
+        "latest_event": ""
+      },
+      "LCKC": {
+        "matches": 1544,
+        "latest_match": "2026-09-15",
+        "latest_event": ""
+      },
+      "LCO": {
+        "matches": 154,
+        "latest_match": "2024-07-22",
+        "latest_event": ""
+      },
+      "UL": {
+        "matches": 159,
+        "latest_match": "2024-09-18",
+        "latest_event": ""
+      },
+      "LLA": {
+        "matches": 213,
+        "latest_match": "2024-08-24",
+        "latest_event": ""
+      },
+      "LCK": {
+        "matches": 1539,
+        "latest_match": "2026-09-13",
+        "latest_event": ""
+      },
+      "PRM": {
+        "matches": 864,
+        "latest_match": "2026-09-17",
+        "latest_event": ""
+      },
+      "LVP SL": {
+        "matches": 506,
+        "latest_match": "2025-09-12",
+        "latest_event": ""
+      },
+      "LFL": {
+        "matches": 830,
+        "latest_match": "2026-09-16",
+        "latest_event": ""
+      },
+      "PCS": {
+        "matches": 685,
+        "latest_match": "2026-09-06",
+        "latest_event": ""
+      },
+      "LJL": {
+        "matches": 885,
+        "latest_match": "2026-09-06",
+        "latest_event": ""
+      },
+      "VCS": {
+        "matches": 548,
+        "latest_match": "2026-10-11",
+        "latest_event": ""
+      },
+      "CBLOL": {
+        "matches": 562,
+        "latest_match": "2026-10-12",
+        "latest_event": ""
+      },
+      "LCS": {
+        "matches": 475,
+        "latest_match": "2026-10-13",
+        "latest_event": ""
+      },
+      "NACL": {
+        "matches": 1044,
+        "latest_match": "2026-09-11",
+        "latest_event": ""
+      },
+      "LPL": {
+        "matches": 2196,
+        "latest_match": "2026-09-13",
+        "latest_event": ""
+      },
+      "HM": {
+        "matches": 519,
+        "latest_match": "2026-09-20",
+        "latest_event": ""
+      },
+      "GLL": {
+        "matches": 153,
+        "latest_match": "2024-07-30",
+        "latest_event": ""
+      },
+      "ESLOL": {
+        "matches": 291,
+        "latest_match": "2024-11-10",
+        "latest_event": ""
+      },
+      "NLC": {
+        "matches": 668,
+        "latest_match": "2026-09-16",
+        "latest_event": ""
+      },
+      "TCL": {
+        "matches": 640,
+        "latest_match": "2026-10-11",
+        "latest_event": ""
+      },
+      "LIT": {
+        "matches": 568,
+        "latest_match": "2026-09-19",
+        "latest_event": ""
+      },
+      "LPLOL": {
+        "matches": 474,
+        "latest_match": "2026-09-13",
+        "latest_event": ""
+      },
+      "LDL": {
+        "matches": 565,
+        "latest_match": "2024-06-05",
+        "latest_event": ""
+      },
+      "EBL": {
+        "matches": 546,
+        "latest_match": "2026-09-10",
+        "latest_event": ""
+      },
+      "CBLOLA": {
+        "matches": 276,
+        "latest_match": "2024-08-25",
+        "latest_event": ""
+      },
+      "AL": {
+        "matches": 795,
+        "latest_match": "2026-09-17",
+        "latest_event": ""
+      },
+      "HC": {
+        "matches": 516,
+        "latest_match": "2026-10-11",
+        "latest_event": ""
+      },
+      "PCL": {
+        "matches": 341,
+        "latest_match": "2024-08-09",
+        "latest_event": ""
+      },
+      "LFL2": {
+        "matches": 408,
+        "latest_match": "2025-09-24",
+        "latest_event": ""
+      },
+      "NEXO": {
+        "matches": 314,
+        "latest_match": "2025-06-26",
+        "latest_event": ""
+      },
+      "LRN": {
+        "matches": 418,
+        "latest_match": "2026-09-08",
+        "latest_event": ""
+      },
+      "LRS": {
+        "matches": 425,
+        "latest_match": "2026-09-08",
+        "latest_event": ""
+      },
+      "EM": {
+        "matches": 1362,
+        "latest_match": "2026-10-22",
+        "latest_event": ""
+      },
+      "MSI": {
+        "matches": 229,
+        "latest_match": "2026-07-12",
+        "latest_event": ""
+      },
+      "IGNIS": {
+        "matches": 55,
+        "latest_match": "2024-11-16",
+        "latest_event": ""
+      },
+      "LAS": {
+        "matches": 1306,
+        "latest_match": "2026-10-24",
+        "latest_event": ""
+      },
+      "CT": {
+        "matches": 89,
+        "latest_match": "2025-07-16",
+        "latest_event": ""
+      },
+      "EPL": {
+        "matches": 151,
+        "latest_match": "2024-09-23",
+        "latest_event": ""
+      },
+      "EWC": {
+        "matches": 284,
+        "latest_match": "2026-07-19",
+        "latest_event": ""
+      },
+      "WLDs": {
+        "matches": 277,
+        "latest_match": "2026-10-24",
+        "latest_event": ""
+      },
+      "AmCh": {
+        "matches": 35,
+        "latest_match": "2024-09-22",
+        "latest_event": ""
+      },
+      "CDF": {
+        "matches": 69,
+        "latest_match": "2024-10-23",
+        "latest_event": ""
+      },
+      "PRMP": {
+        "matches": 207,
+        "latest_match": "2025-08-30",
+        "latest_event": ""
+      },
+      "USP": {
+        "matches": 38,
+        "latest_match": "2024-10-26",
+        "latest_event": ""
+      },
+      "HW": {
+        "matches": 301,
+        "latest_match": "2026-03-07",
+        "latest_event": ""
+      },
+      "NLC Aurora Open": {
+        "matches": 77,
+        "latest_match": "2024-11-12",
+        "latest_event": ""
+      },
+      "EBLPA": {
+        "matches": 25,
+        "latest_match": "2024-10-25",
+        "latest_event": ""
+      },
+      "GLLPA": {
+        "matches": 38,
+        "latest_match": "2024-10-24",
+        "latest_event": ""
+      },
+      "IC": {
+        "matches": 96,
+        "latest_match": "2025-11-22",
+        "latest_event": ""
+      },
+      "KeSPA Cup": {
+        "matches": 166,
+        "latest_match": "2026-08-18",
+        "latest_event": ""
+      },
+      "LCP": {
+        "matches": 574,
+        "latest_match": "2026-08-30",
+        "latest_event": ""
+      },
+      "HLL": {
+        "matches": 456,
+        "latest_match": "2026-09-12",
+        "latest_event": ""
+      },
+      "LTA S": {
+        "matches": 222,
+        "latest_match": "2025-10-08",
+        "latest_event": ""
+      },
+      "LTA N": {
+        "matches": 214,
+        "latest_match": "2025-10-12",
+        "latest_event": ""
+      },
+      "RL": {
+        "matches": 450,
+        "latest_match": "2026-09-19",
+        "latest_event": ""
+      },
+      "CD": {
+        "matches": 559,
+        "latest_match": "2026-09-14",
+        "latest_event": ""
+      },
+      "ROL": {
+        "matches": 469,
+        "latest_match": "2026-10-08",
+        "latest_event": ""
+      },
+      "LTA": {
+        "matches": 40,
+        "latest_match": "2025-09-28",
+        "latest_event": ""
+      },
+      "FST": {
+        "matches": 80,
+        "latest_match": "2026-03-22",
+        "latest_event": ""
+      },
+      "AM": {
+        "matches": 240,
+        "latest_match": "2026-06-21",
+        "latest_event": ""
+      },
+      "ASI": {
+        "matches": 42,
+        "latest_match": "2025-10-12",
+        "latest_event": ""
+      },
+      "CCWS": {
+        "matches": 40,
+        "latest_match": "2026-02-05",
+        "latest_event": ""
+      },
+      "LES": {
+        "matches": 208,
+        "latest_match": "2026-09-25",
+        "latest_event": ""
+      },
+      "AC": {
+        "matches": 19,
+        "latest_match": "2026-03-08",
+        "latest_event": ""
+      },
+      "NL": {
+        "matches": 149,
+        "latest_match": "2026-09-25",
+        "latest_event": ""
+      },
+      "WLRQ": {
+        "matches": 6,
+        "latest_match": "2026-08-27",
+        "latest_event": ""
+      },
+      "WSCI": {
+        "matches": 85,
+        "latest_match": "2026-10-02",
+        "latest_event": ""
+      },
+      "DCGI": {
+        "matches": 71,
+        "latest_match": "2026-10-17",
+        "latest_event": ""
+      }
+    }
+  },
+  "dota2": {
+    "checked_at": "2026-10-25T04:40:55.289404+00:00",
+    "source": "PandaScore free Fixtures",
+    "leagues": {
+      "PARI Universe": {
+        "matches": 26,
+        "latest_match": "2026-10-24",
+        "latest_event": "2026 Group A"
+      },
+      "EPL Masters": {
+        "matches": 194,
+        "latest_match": "2026-10-24",
+        "latest_event": "Season 3 2026 Group A"
+      },
+      "EPL World Series": {
+        "matches": 608,
+        "latest_match": "2026-10-24",
+        "latest_event": "Southeast Asia season 19 2026 Group Stage"
+      },
+      "1win Streamers League": {
+        "matches": 21,
+        "latest_match": "2026-10-18",
+        "latest_event": "#3 2026 Playoffs"
+      },
+      "DreamLeague": {
+        "matches": 1311,
+        "latest_match": "2026-10-17",
+        "latest_event": "Southeast Asia Closed Qualifier season 30 2026 Playoffs"
+      },
+      "BLAST Slam": {
+        "matches": 648,
+        "latest_match": "2026-10-17",
+        "latest_event": "China Closed Qualifier season 9 2026 Playoffs"
+      },
+      "BetBoom Streamers Battle": {
+        "matches": 200,
+        "latest_match": "2026-10-03",
+        "latest_event": "Season 15 2026 Playoffs"
+      },
+      "PGL": {
+        "matches": 675,
+        "latest_match": "2026-09-27",
+        "latest_event": "Wallachia season 9 2026 Playoffs"
+      },
+      "European Pro League": {
+        "matches": 773,
+        "latest_match": "2026-09-25",
+        "latest_event": "Season 40 2026 Playoffs"
+      },
+      "Winline Star Series": {
+        "matches": 89,
+        "latest_match": "2026-09-19",
+        "latest_event": "Season 4 2026 Playoffs"
+      },
+      "The International": {
+        "matches": 434,
+        "latest_match": "2026-08-23",
+        "latest_event": "2026 Playoffs"
+      },
+      "Asgard Championship": {
+        "matches": 14,
+        "latest_match": "2026-08-11",
+        "latest_event": "Season 1 2026 Playoffs"
+      },
+      "1win Essence": {
+        "matches": 59,
+        "latest_match": "2026-08-05",
+        "latest_event": "Season 2 2026 Playoffs"
+      },
+      "Games of the Future": {
+        "matches": 48,
+        "latest_match": "2026-08-05",
+        "latest_event": "2026 Playoffs"
+      },
+      "Paragon Turbina": {
+        "matches": 13,
+        "latest_match": "2026-07-25",
+        "latest_event": "2026 Group A"
+      },
+      "Esports World Cup": {
+        "matches": 240,
+        "latest_match": "2026-07-19",
+        "latest_event": "2026 Playoffs"
+      },
+      "Esports Nations Cup": {
+        "matches": 69,
+        "latest_match": "2026-07-01",
+        "latest_event": "North America Qualifier 2026 Playoffs"
+      },
+      "ACL X ESL Challenger China": {
+        "matches": 28,
+        "latest_match": "2026-05-03",
+        "latest_event": "Season 3 2026 Playoffs"
+      },
+      "CCT": {
+        "matches": 369,
+        "latest_match": "2026-04-17",
+        "latest_event": "South America Series  #4 season 2 2026 Playoffs"
+      },
+      "PREMIER SERIES": {
+        "matches": 68,
+        "latest_match": "2026-04-11",
+        "latest_event": "2026 Playoffs"
+      },
+      "ESL One": {
+        "matches": 321,
+        "latest_match": "2026-03-29",
+        "latest_event": "Birmingham 2026 Playoffs"
+      },
+      "Tennisi Stampede Champions": {
+        "matches": 27,
+        "latest_match": "2026-03-27",
+        "latest_event": "Season 2 2026 Playoffs"
+      },
+      "EPL Championship": {
+        "matches": 56,
+        "latest_match": "2026-02-28",
+        "latest_event": "Season 2 2026 Playoffs"
+      },
+      "Lunar Snake Trophy": {
+        "matches": 91,
+        "latest_match": "2026-02-25",
+        "latest_event": "Season 6 2026 Group B"
+      },
+      "FISSURE Universe": {
+        "matches": 271,
+        "latest_match": "2026-02-01",
+        "latest_event": "Episode 8 2026 Playoffs"
+      },
+      "ESL Challenger China": {
+        "matches": 27,
+        "latest_match": "2026-02-01",
+        "latest_event": "2026 Playoffs"
+      },
+      "Asia Pacific Predator League": {
+        "matches": 23,
+        "latest_match": "2026-01-11",
+        "latest_event": "2026 Playoffs"
+      },
+      "CIS Battle": {
+        "matches": 151,
+        "latest_match": "2025-12-30",
+        "latest_event": "Season 4 2025 Playoffs"
+      },
+      "FISSURE PLAYGROUND": {
+        "matches": 225,
+        "latest_match": "2025-11-02",
+        "latest_event": "#2 2025 Playoffs"
+      },
+      "Clavision Snow Ruyi Invitational": {
+        "matches": 34,
+        "latest_match": "2025-08-03",
+        "latest_event": "2025 Playoffs"
+      },
+      "Asian Champions League": {
+        "matches": 3,
+        "latest_match": "2025-05-16",
+        "latest_event": "2025 Playoffs"
+      },
+      "FISSURE Special": {
+        "matches": 26,
+        "latest_match": "2025-04-13",
+        "latest_event": "2025 Playoffs"
+      },
+      "Asian Dragon Series": {
+        "matches": 20,
+        "latest_match": "2025-02-10",
+        "latest_event": "Continental Collision 2025 Playoffs"
+      },
+      "Asia Pro League": {
+        "matches": 22,
+        "latest_match": "2025-02-04",
+        "latest_event": "Season 2 2025 Playoffs"
+      },
+      "1win Series": {
+        "matches": 4,
+        "latest_match": "2024-12-22",
+        "latest_event": "Punch 2024 Playoffs"
+      }
+    }
+  }
+}
