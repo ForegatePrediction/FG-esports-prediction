@@ -42,7 +42,7 @@ def api(path):
             time.sleep(1.5)
         except Exception:
             time.sleep(1.5)
-    return None
+    raise RuntimeError("PandaScore 请求重试耗尽")
 
 
 def list_games():
@@ -75,6 +75,8 @@ def main():
         batch = api(f"/{GAME}/matches/past?sort=-begin_at&page[size]=100&page[number]={page}")
         if isinstance(batch, dict) and batch.get("__404__"):
             sys.exit(f"slug '{GAME}' 不对,请先 --list-games 查正确 slug,再 --game=<slug>")
+        if not isinstance(batch, list):
+            raise RuntimeError("PandaScore 响应不是比赛列表")
         if not batch:
             break
         added = 0
@@ -91,6 +93,8 @@ def main():
         if oldest and oldest < CUT:
             break
         page += 1; time.sleep(0.2)
+    latest = max((x["date"] for x in rows if x["date"]), default=None)
+    print(f"source_latest_match_date={latest}")
     fin = [x for x in rows if isinstance(x["s1"], int) and isinstance(x["s2"], int) and x["w"]]
     print(f"完成:总 {len(rows)},有效 {len(fin)} → {GAME}_matches.json")
 

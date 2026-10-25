@@ -74,11 +74,17 @@ def cmd_snapshot(game):
             old_n = 0
         if old_n and len(teams) < max(5, 0.5 * old_n):
             print(f"[{c['name']}] ⚠ 拒绝写入:新快照仅 {len(teams)} 队(旧 {old_n}),疑似数据异常,保留旧快照")
-            return
+            raise RuntimeError("拒绝覆盖已有评级：新快照过小")
+    if not teams:
+        raise RuntimeError("没有有效队伍，拒绝生成空快照")
     out = {"game": game, "updated": datetime.date.today().isoformat(),
+           "last_match_date": max(last_date.values()),
+           "source_matches": len(matches),
            "scale": c["scale"], "shrink": c["shrink"], "n_teams": len(teams),
            "teams": dict(sorted(teams.items()))}
-    json.dump(out, open(p, "w"), ensure_ascii=False, indent=1)
+    with open(p + ".tmp", "w", encoding="utf-8") as f:
+        json.dump(out, f, ensure_ascii=False, indent=1)
+    os.replace(p + ".tmp", p)
     print(f"[{c['name']}] 写出 {len(teams)} 队 → {p}")
 
 

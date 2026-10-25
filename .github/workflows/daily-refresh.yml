@@ -23,19 +23,31 @@ jobs:
         with:
           python-version: "3.11"
 
+      - name: Regression tests
+        run: python3 -m unittest discover -s tests -v
       - name: Refresh all games' ratings
         env:
           PANDASCORE_TOKEN: ${{ secrets.PANDASCORE_TOKEN }}
         run: python3 refresh.py
 
       - name: Commit updated snapshots
+        if: ${{ !cancelled() }}
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add games/*/ratings.json
+          [ ! -f refresh-status.json ] || git add refresh-status.json
           if git diff --cached --quiet; then
             echo "没有评级更新,跳过提交"
           else
             git commit -m "chore: daily ratings refresh [skip ci]"
             git push
           fi
+
+      - name: Upload refresh diagnostics
+        if: ${{ !cancelled() }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: refresh-status
+          path: refresh-status.json
+          if-no-files-found: ignore
