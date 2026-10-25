@@ -17,6 +17,7 @@ from urllib.parse import urlparse, parse_qs
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from core import predict as P
+from core import storage
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 GAMES_DIR = os.path.join(ROOT, "games")
@@ -126,7 +127,7 @@ class H(BaseHTTPRequestHandler):
         try:
             if path in ("/", "/health"):
                 return self._send(200, {"status": "ok", "service": "foregate-esports-prediction",
-                                        "games": list(list_games().keys())})
+                                        "games": list(list_games().keys()), "data": storage.provenance()})
             if path == "/games":
                 return self._send(200, list_games())
             if path == "/stats":
