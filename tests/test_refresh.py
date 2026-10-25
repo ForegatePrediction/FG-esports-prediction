@@ -32,6 +32,19 @@ class RefreshTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as tmp, patch.object(refresh,'ROOT',tmp),patch.object(sys,'argv',['refresh.py','lol','cod']),patch.object(refresh,'refresh',side_effect=['fail','ok']):
             with self.assertRaises(SystemExit): refresh.main()
             self.assertEqual(json.loads((Path(tmp)/'refresh-status.json').read_text())['games']['lol'],'fail')
+    def test_source_coverage_records_event_date_not_build_date(self):
+        with tempfile.TemporaryDirectory() as tmp,patch.object(refresh,'ROOT',tmp):
+            d=Path(tmp)/'games/cod/data';d.mkdir(parents=True)
+            rows=[{'s1':3,'s2':1,'w':1,'date':'2026-08-09','league':'Call of Duty League',
+                   'series':'2026','tournament':'Championship'},
+                  {'s1':None,'s2':None,'w':None,'date':'2026-10-24','league':'Other'}]
+            (d/'codmw_matches.json').write_text(json.dumps(rows))
+            refresh.source_coverage('cod',refresh.SPEC['cod'])
+            report=json.loads((Path(tmp)/'source-coverage.json').read_text())
+            league=report['cod']['leagues']['Call of Duty League']
+            self.assertEqual(league['latest_match'],'2026-08-09')
+            self.assertEqual(league['latest_event'],'2026 Championship')
+            self.assertNotIn('Other',report['cod']['leagues'])
     def test_unknown_game_is_error(self):
         with patch.object(sys,'argv',['refresh.py','typo']):
             with self.assertRaises(SystemExit): refresh.main()

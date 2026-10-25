@@ -70,6 +70,11 @@ def main():
         if not fid:
             raise RuntimeError(f"{y}: 文件夹里没找到，拒绝生成不完整快照")
         dest = os.path.join(HERE, f"oe_{y}.csv")
+        if int(y) < datetime.date.today().year and os.path.isfile(dest):
+            with open(dest, encoding="utf-8") as cached:
+                if cached.read(80).startswith("gameid,"):
+                    print(f"[cached] {y}: reuse complete historical CSV")
+                    continue
         temporary = dest + ".tmp"
         size = download(fid, temporary)
         # 校验:必须是 CSV(以 gameid 开头),不能是 HTML 错误页

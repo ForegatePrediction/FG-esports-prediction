@@ -73,6 +73,15 @@ def refresh(game, spec):
     if not fs:
         print(f"[skip] {game}: 找不到 fetch 脚本"); return "skip"
     try:
+        # Restore complete collection inputs; each fetch writes a new atomic batch.
+        ddir = os.path.join(gdir, "data")
+        os.makedirs(ddir, exist_ok=True)
+        for pattern in spec["outputs"]:
+            for src in glob.glob(os.path.join(ddir, pattern)):
+                shutil.copy2(src, os.path.join(gdir, os.path.basename(src)))
+                marker = os.path.splitext(src)[0] + ".complete.json"
+                if os.path.isfile(marker):
+                    shutil.copy2(marker, os.path.join(gdir, os.path.basename(marker)))
         subprocess.run([PY, fs] + spec["args"], cwd=gdir, check=True, timeout=1200)
         # 采集产出在 games/<g>/ 根目录,移进 data/(适配器从 data/ 读)
         ddir = os.path.join(gdir, "data"); os.makedirs(ddir, exist_ok=True)
@@ -82,6 +91,9 @@ def refresh(game, spec):
                 raise RuntimeError(f"采集缺少输出: {pattern}")
             for src in files:
                 shutil.move(src, os.path.join(ddir, os.path.basename(src)))
+                marker = os.path.splitext(src)[0] + ".complete.json"
+                if os.path.isfile(marker):
+                    shutil.move(marker, os.path.join(ddir, os.path.basename(marker)))
         subprocess.run([PY, os.path.join(ROOT, "cli.py"), "snapshot", game], check=True, timeout=600)
         snap = json.load(open(os.path.join(gdir, "ratings.json"), encoding="utf-8"))
         source_coverage(game, spec)
@@ -104,7 +116,12 @@ def main():
         sys.exit(f"未知游戏: {sorted(unknown)}")
     result = {g: refresh(g, SPEC[g]) for g in games if g in SPEC}
     print("\n汇总:", result)
-    report = {"checked_at": datetime.datetime.now(datetime.timezone.utc).isoformat(), "games": result}
+    previous_path = os.path.join(ROOT, "refresh-status.json")
+    previous = json.load(open(previous_path)) if os.path.isfile(previous_path) else {}
+    now = datetime.datetime.now(datetime.timezone.utc).isoformat()
+    checked = {game: previous.get("game_checked_at", {}).get(game, previous.get("checked_at", now)) for game in previous.get("games", {})}
+    checked.update({game: now for game in result})
+    report = {"checked_at": now, "games": {**previous.get("games", {}), **result}, "game_checked_at": checked}
     with open(os.path.join(ROOT, "refresh-status.json"), "w", encoding="utf-8") as f:
         json.dump(report, f, ensure_ascii=False, indent=2)
     summary = os.environ.get("GITHUB_STEP_SUMMARY")

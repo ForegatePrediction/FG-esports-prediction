@@ -3,7 +3,16 @@ name: daily-refresh
 on:
   schedule:
     - cron: "0 4 * * *"        # 每天 04:00 UTC(约北京中午 12:00)刷新
-  workflow_dispatch: {}         # 也可在 Actions 页手动触发
+  workflow_dispatch:
+    inputs:
+      games:
+        description: "Optional space-separated games; empty = all"
+        type: string
+        default: ""
+      probe_only:
+        description: "Read-only authentication and free API quota check"
+        type: boolean
+        default: false
 
 permissions:
   contents: write               # 允许提交更新后的 ratings.json
@@ -23,15 +32,30 @@ jobs:
         with:
           python-version: "3.11"
 
+      - uses: actions/cache/restore@v4
+        if: ${{ !inputs.probe_only }}
+        with:
+          path: games/*/data/
+          key: esports-source-v1-${{ runner.os }}-${{ github.run_id }}
+          restore-keys: esports-source-v1-${{ runner.os }}-
+      - name: Probe free Fixtures authentication and quota
+        if: ${{ inputs.probe_only }}
+        env:
+          PANDASCORE_TOKEN: ${{ secrets.PANDASCORE_TOKEN }}
+        run: python3 sources/pandascore.py
       - name: Regression tests
         run: python3 -m unittest discover -s tests -v
       - name: Refresh all games' ratings
+        if: ${{ !inputs.probe_only }}
         env:
           PANDASCORE_TOKEN: ${{ secrets.PANDASCORE_TOKEN }}
-        run: python3 refresh.py
+          SELECTED_GAMES: ${{ inputs.games }}
+        run: |
+          read -r -a games <<< "$SELECTED_GAMES"
+          python3 refresh.py "${games[@]}"
 
       - name: Commit updated snapshots
-        if: ${{ !cancelled() }}
+        if: ${{ !cancelled() && !inputs.probe_only }}
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
@@ -46,7 +70,7 @@ jobs:
           fi
 
       - name: Upload refresh diagnostics
-        if: ${{ !cancelled() }}
+        if: ${{ !cancelled() && !inputs.probe_only }}
         uses: actions/upload-artifact@v4
         with:
           name: refresh-status
@@ -54,3 +78,10 @@ jobs:
             refresh-status.json
             source-coverage.json
           if-no-files-found: ignore
+
+      - name: Preserve complete source inputs for next daily increment
+        if: ${{ !cancelled() && !inputs.probe_only }}
+        uses: actions/cache/save@v4
+        with:
+          path: games/*/data/
+          key: esports-source-v1-${{ runner.os }}-${{ github.run_id }}
