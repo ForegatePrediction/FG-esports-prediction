@@ -1,6 +1,6 @@
 {
   "lol": {
-    "checked_at": "2026-10-25T04:59:45.590245+00:00",
+    "checked_at": "2026-10-25T05:02:39.682352+00:00",
     "source": "Oracle's Elixir",
     "leagues": {
       "DCup": {
@@ -361,7 +361,7 @@
     }
   },
   "dota2": {
-    "checked_at": "2026-10-25T04:40:55.289404+00:00",
+    "checked_at": "2026-10-25T05:04:37.585223+00:00",
     "source": "PandaScore free Fixtures",
     "leagues": {
       "PARI Universe": {
@@ -538,6 +538,1383 @@
         "matches": 4,
         "latest_match": "2024-12-22",
         "latest_event": "Punch 2024 Playoffs"
+      }
+    }
+  },
+  "cs2": {
+    "checked_at": "2026-10-25T05:12:08.970147+00:00",
+    "source": "PandaScore free Fixtures",
+    "leagues": {
+      "CCT North America": {
+        "matches": 104,
+        "latest_match": "2026-10-24",
+        "latest_event": "Cup #1 2026 Playoffs"
+      },
+      "CCT South America": {
+        "matches": 903,
+        "latest_match": "2026-10-24",
+        "latest_event": "Series 7 2026 Playoffs"
+      },
+      "Circuit X": {
+        "matches": 89,
+        "latest_match": "2026-10-24",
+        "latest_event": "Curitiba season 4 2026 Playoffs"
+      },
+      "Hotspawn Showdown": {
+        "matches": 14,
+        "latest_match": "2026-10-24",
+        "latest_event": "Finals 2026 Playoffs"
+      },
+      "CCT Europe": {
+        "matches": 2930,
+        "latest_match": "2026-10-24",
+        "latest_event": "Series #11 2026 Playoffs"
+      },
+      "Exort Fiesta": {
+        "matches": 146,
+        "latest_match": "2026-10-24",
+        "latest_event": "Closed Qualifier: Series #3 2026 Play-In"
+      },
+      "PGL Masters": {
+        "matches": 158,
+        "latest_match": "2026-10-24",
+        "latest_event": "Bucharest 2026 Group Stage"
+      },
+      "NODWIN Clutch Series": {
+        "matches": 832,
+        "latest_match": "2026-10-24",
+        "latest_event": "Season 13 2026 Playoffs"
+      },
+      "United21": {
+        "matches": 1046,
+        "latest_match": "2026-10-24",
+        "latest_event": "Season 57 2026 Group C"
+      },
+      "European Pro League": {
+        "matches": 1034,
+        "latest_match": "2026-10-24",
+        "latest_event": "Series 10 Closed Qualifier 2026 Group B"
+      },
+      "VOID Autumn Cup": {
+        "matches": 12,
+        "latest_match": "2026-10-24",
+        "latest_event": "2026 Playoffs"
+      },
+      "DraculaN": {
+        "matches": 298,
+        "latest_match": "2026-10-23",
+        "latest_event": "Season 7 2026 Playoffs"
+      },
+      "ESEA": {
+        "matches": 3374,
+        "latest_match": "2026-10-23",
+        "latest_event": "Advanced Europe season 59 2026 Regular Season"
+      },
+      "ESL Challenger League": {
+        "matches": 2551,
+        "latest_match": "2026-10-23",
+        "latest_event": "Europe Cup #9 season 52 2026 Playoffs"
+      },
+      "CIS LAN Championship": {
+        "matches": 187,
+        "latest_match": "2026-10-23",
+        "latest_event": "Season 9 2026 Playoffs"
+      },
+      "Stake Ranked": {
+        "matches": 167,
+        "latest_match": "2026-10-22",
+        "latest_event": "Episode 6: Closed Qualifier 2026 Playoffs"
+      },
+      "1win Private Club": {
+        "matches": 54,
+        "latest_match": "2026-10-22",
+        "latest_event": "Season 2 2026 Playoffs"
+      },
+      "Gamers Club Liga Série A": {
+        "matches": 487,
+        "latest_match": "2026-10-21",
+        "latest_event": "October 2026 Group A"
+      },
+      "DACH CS Masters": {
+        "matches": 179,
+        "latest_match": "2026-10-21",
+        "latest_event": "Season 6 2026 Regular Season"
+      },
+      "PGL": {
+        "matches": 1010,
+        "latest_match": "2026-10-20",
+        "latest_event": "Bucharest Closed Qualifier 2027 Playoffs"
+      },
+      "Dust2.dk Ligaen": {
+        "matches": 328,
+        "latest_match": "2026-10-19",
+        "latest_event": "Season 33 2026 Regular Season"
+      },
+      "CyberClash": {
+        "matches": 16,
+        "latest_match": "2026-10-18",
+        "latest_event": "Closed Qualifier season 2 2026 Group B"
+      },
+      "Thunderpick World Championship": {
+        "matches": 306,
+        "latest_match": "2026-10-18",
+        "latest_event": "2026 Playoffs"
+      },
+      "Logitech G Pro Series": {
+        "matches": 14,
+        "latest_match": "2026-10-18",
+        "latest_event": "2026 Playoffs"
+      },
+      "Stake Pulse": {
+        "matches": 80,
+        "latest_match": "2026-10-17",
+        "latest_event": "Beat III 2026 Playoffs"
+      },
+      "GLuck Yungstar": {
+        "matches": 72,
+        "latest_match": "2026-10-17",
+        "latest_event": "Series #3 2026 Playoffs"
+      },
+      "Elisa BreakOut": {
+        "matches": 30,
+        "latest_match": "2026-10-17",
+        "latest_event": "Series #2 2026 Playoffs"
+      },
+      "FRAG": {
+        "matches": 204,
+        "latest_match": "2026-10-11",
+        "latest_event": "University 2026 Playoffs"
+      },
+      "ESL Pro League": {
+        "matches": 382,
+        "latest_match": "2026-10-11",
+        "latest_event": "Season 24 2026 Playoffs"
+      },
+      "MESA Pro Series": {
+        "matches": 46,
+        "latest_match": "2026-10-11",
+        "latest_event": "Fall 2026 Playoffs"
+      },
+      "ANZC Locals": {
+        "matches": 46,
+        "latest_match": "2026-10-11",
+        "latest_event": "Brisbane: Spring 2026 Playoffs"
+      },
+      "Roman Imperium Cup": {
+        "matches": 249,
+        "latest_match": "2026-10-10",
+        "latest_event": "Season 9 2026 Playoffs"
+      },
+      "Majstrovstvá SR": {
+        "matches": 20,
+        "latest_match": "2026-10-10",
+        "latest_event": "2026 Playoffs"
+      },
+      "FOX Legacy Cup": {
+        "matches": 46,
+        "latest_match": "2026-10-04",
+        "latest_event": "Season 1 2026 Playoffs"
+      },
+      "ROG Journey": {
+        "matches": 152,
+        "latest_match": "2026-10-03",
+        "latest_event": "Autumn 2026 Playoffs"
+      },
+      "Urban Riga": {
+        "matches": 158,
+        "latest_match": "2026-09-30",
+        "latest_event": "Open #7 2026 Playoffs"
+      },
+      "iBUYPOWER Masters": {
+        "matches": 14,
+        "latest_match": "2026-09-27",
+        "latest_event": "FML 2026 Playoffs"
+      },
+      "Leon.bet Masters": {
+        "matches": 22,
+        "latest_match": "2026-09-27",
+        "latest_event": "Season 1 2026 Playoffs"
+      },
+      "FERJEE In House": {
+        "matches": 42,
+        "latest_match": "2026-09-27",
+        "latest_event": "Season 2 2026 Playoffs"
+      },
+      "Tipsport Cup": {
+        "matches": 92,
+        "latest_match": "2026-09-27",
+        "latest_event": "Open #2 2026 Playoffs"
+      },
+      "Logitech G Play Connect": {
+        "matches": 65,
+        "latest_match": "2026-09-23",
+        "latest_event": "2026 Playoffs"
+      },
+      "Circuito Retake": {
+        "matches": 34,
+        "latest_match": "2026-09-20",
+        "latest_event": "Season 12 2026 Playoffs"
+      },
+      "StarLadder StarSeries": {
+        "matches": 104,
+        "latest_match": "2026-09-20",
+        "latest_event": "Fall 2026 Playoffs"
+      },
+      "UKIC": {
+        "matches": 64,
+        "latest_match": "2026-09-19",
+        "latest_event": "Masters Division season 11 2026 Playoffs"
+      },
+      "NSTLGA League": {
+        "matches": 58,
+        "latest_match": "2026-09-13",
+        "latest_event": "Season 2 2026 Playoffs"
+      },
+      "FISSURE PLAYGROUND": {
+        "matches": 110,
+        "latest_match": "2026-09-13",
+        "latest_event": "Season 3 2026 Playoffs"
+      },
+      "BLAST Open": {
+        "matches": 130,
+        "latest_match": "2026-09-06",
+        "latest_event": "Porto Fall 2026 Playoffs"
+      },
+      "IEM": {
+        "matches": 683,
+        "latest_match": "2026-09-04",
+        "latest_event": "Beijing: Global Qualifier 2026 Playoffs"
+      },
+      "Moscow Cyber Games": {
+        "matches": 48,
+        "latest_match": "2026-09-01",
+        "latest_event": "European Qualifier 2026 Playoffs"
+      },
+      "FRAG Midwest": {
+        "matches": 64,
+        "latest_match": "2026-08-31",
+        "latest_event": "St. Louis 2026 Playoffs"
+      },
+      "Kibertochka": {
+        "matches": 10,
+        "latest_match": "2026-08-30",
+        "latest_event": "Season 2 2026 Playoffs"
+      },
+      "BRO CYBER LEAGUE": {
+        "matches": 4,
+        "latest_match": "2026-08-30",
+        "latest_event": "PRO Division season 1 2026 Playoffs"
+      },
+      "Monsters Reloaded": {
+        "matches": 14,
+        "latest_match": "2026-08-27",
+        "latest_event": "2026 Playoffs"
+      },
+      "Esports World Cup": {
+        "matches": 177,
+        "latest_match": "2026-08-23",
+        "latest_event": "2026 Playoffs"
+      },
+      "BetBoom Storm": {
+        "matches": 134,
+        "latest_match": "2026-08-16",
+        "latest_event": "Season 4 2026 Playoffs"
+      },
+      "Dfrag": {
+        "matches": 109,
+        "latest_match": "2026-08-13",
+        "latest_event": "Open Series #6 2026 Playoffs"
+      },
+      "Winline Star Series": {
+        "matches": 59,
+        "latest_match": "2026-08-09",
+        "latest_event": "Season 3 2026 Playoffs"
+      },
+      "BRO SUMMER CUP": {
+        "matches": 13,
+        "latest_match": "2026-08-02",
+        "latest_event": "2026 Playoffs"
+      },
+      "BLAST Bounty": {
+        "matches": 93,
+        "latest_match": "2026-08-02",
+        "latest_event": "Summer 2026 Playoffs"
+      },
+      "BetBoom RUSH B!": {
+        "matches": 52,
+        "latest_match": "2026-07-19",
+        "latest_event": "Summit season 4 2026 Playoffs"
+      },
+      "Esports Nations Cup": {
+        "matches": 28,
+        "latest_match": "2026-07-19",
+        "latest_event": "East European Qualifier 2026 Playoffs"
+      },
+      "HyperX & Intel Nationals": {
+        "matches": 16,
+        "latest_match": "2026-07-19",
+        "latest_event": "2026 Playoffs"
+      },
+      "XSE Pro League": {
+        "matches": 62,
+        "latest_match": "2026-07-12",
+        "latest_event": "2026 Playoffs"
+      },
+      "RES Showdown": {
+        "matches": 57,
+        "latest_match": "2026-07-11",
+        "latest_event": "Europe Fall 2026 Playoffs"
+      },
+      "TESFED League": {
+        "matches": 16,
+        "latest_match": "2026-07-05",
+        "latest_event": "Season 3 2026 Playoffs"
+      },
+      "BetBoom Streamers Battle": {
+        "matches": 50,
+        "latest_match": "2026-07-04",
+        "latest_event": "Season 5 2026 Playoffs"
+      },
+      "Super DraculaN": {
+        "matches": 28,
+        "latest_match": "2026-06-28",
+        "latest_event": "Season 1 2026 Playoffs"
+      },
+      "Svenska CS-Ligan": {
+        "matches": 28,
+        "latest_match": "2026-06-27",
+        "latest_event": "2026 Playoffs"
+      },
+      "Rainhas do Clutch FERJEE": {
+        "matches": 10,
+        "latest_match": "2026-06-26",
+        "latest_event": "2026 Playoffs"
+      },
+      "LG UltraGear Tournament": {
+        "matches": 13,
+        "latest_match": "2026-06-26",
+        "latest_event": "2026 Playoffs"
+      },
+      "Exort Series": {
+        "matches": 1430,
+        "latest_match": "2026-06-07",
+        "latest_event": "Season 27 2026 Playoffs"
+      },
+      "Circuit X Base Recife": {
+        "matches": 14,
+        "latest_match": "2026-05-31",
+        "latest_event": "2026 Playoffs"
+      },
+      "Elisa Open Suomi": {
+        "matches": 194,
+        "latest_match": "2026-05-31",
+        "latest_event": "Season 13 2026 Playoffs"
+      },
+      "BC Game Masters": {
+        "matches": 132,
+        "latest_match": "2026-05-31",
+        "latest_event": "Europe Series #2 season 2 2026 Playoffs"
+      },
+      "FRAGgg": {
+        "matches": 22,
+        "latest_match": "2026-05-31",
+        "latest_event": "Season 17 2026 Playoffs"
+      },
+      "Odyssey Cup": {
+        "matches": 94,
+        "latest_match": "2026-05-30",
+        "latest_event": "Brazil 2026 Playoffs"
+      },
+      "XPortal": {
+        "matches": 25,
+        "latest_match": "2026-05-24",
+        "latest_event": "Season 1 2026 Playoffs"
+      },
+      "Parken Challenger Championship": {
+        "matches": 271,
+        "latest_match": "2026-05-24",
+        "latest_event": "Season 8 2026 Playoffs"
+      },
+      "Conquest of Prague": {
+        "matches": 81,
+        "latest_match": "2026-05-24",
+        "latest_event": "Finals 2026 Playoffs"
+      },
+      "BC Game Masters Championship": {
+        "matches": 66,
+        "latest_match": "2026-05-24",
+        "latest_event": "Season 2 2026 Playoffs"
+      },
+      "CS Asia Championships": {
+        "matches": 104,
+        "latest_match": "2026-05-24",
+        "latest_event": "2026 Playoffs"
+      },
+      "Asian Champions League": {
+        "matches": 43,
+        "latest_match": "2026-05-17",
+        "latest_event": "2026 Playoffs"
+      },
+      "BLAST Rivals": {
+        "matches": 39,
+        "latest_match": "2026-05-03",
+        "latest_event": "Spring 2026 Playoffs"
+      },
+      "Esplay Elite Gaming": {
+        "matches": 18,
+        "latest_match": "2026-05-02",
+        "latest_event": "Season 1 2026 Playoffs"
+      },
+      "LORGAR RANKINGS": {
+        "matches": 37,
+        "latest_match": "2026-04-26",
+        "latest_event": "2026 Playoffs"
+      },
+      "CCT Global Finals": {
+        "matches": 26,
+        "latest_match": "2026-04-26",
+        "latest_event": "Season 3 2026 Playoffs"
+      },
+      "Gamebox Festival": {
+        "matches": 10,
+        "latest_match": "2026-04-26",
+        "latest_event": "2026 Playoffs"
+      },
+      "Dust2.us": {
+        "matches": 233,
+        "latest_match": "2026-04-20",
+        "latest_event": "Eagle Masters season 7 2026 Playoffs"
+      },
+      "GLuck SixSeven": {
+        "matches": 4,
+        "latest_match": "2026-04-07",
+        "latest_event": "Season 1 2026 Playoffs"
+      },
+      "FiReCONTER": {
+        "matches": 59,
+        "latest_match": "2026-04-05",
+        "latest_event": "Season 3 2026 Playoffs"
+      },
+      "Betboom Circuit X Mayhem": {
+        "matches": 28,
+        "latest_match": "2026-04-05",
+        "latest_event": "São Paulo 2026 Playoffs"
+      },
+      "HLC Belgrade Pro": {
+        "matches": 23,
+        "latest_match": "2026-04-05",
+        "latest_event": "2026 Playoffs"
+      },
+      "GangKui Cup": {
+        "matches": 17,
+        "latest_match": "2026-04-05",
+        "latest_event": "Season 2 2026 Playoffs"
+      },
+      "Yuqilin": {
+        "matches": 18,
+        "latest_match": "2026-04-04",
+        "latest_event": "Pinnacle of Battle season 3 2026 Playoffs"
+      },
+      "MaceMedia VOID Cup": {
+        "matches": 5,
+        "latest_match": "2026-03-26",
+        "latest_event": "Spring 2026 Playoffs"
+      },
+      "LOOP Cup": {
+        "matches": 3,
+        "latest_match": "2026-03-22",
+        "latest_event": "Season 1 2026 Playoffs"
+      },
+      "Aorus League": {
+        "matches": 43,
+        "latest_match": "2026-03-21",
+        "latest_event": "Brazil Online Stage 2026 Playoffs"
+      },
+      "A1 Gaming League": {
+        "matches": 80,
+        "latest_match": "2026-03-08",
+        "latest_event": "Season 11 2026 Playoffs"
+      },
+      "IZI WEX": {
+        "matches": 32,
+        "latest_match": "2026-03-06",
+        "latest_event": "Season 1 2026 Playoffs"
+      },
+      "Exort Meteor": {
+        "matches": 76,
+        "latest_match": "2026-03-04",
+        "latest_event": "Season 2 2026 Playoffs"
+      },
+      "JB Pro League": {
+        "matches": 87,
+        "latest_match": "2026-03-01",
+        "latest_event": "Season 2 2026 Playoffs"
+      },
+      "Master League Portugal": {
+        "matches": 6,
+        "latest_match": "2026-03-01",
+        "latest_event": "Season 18 2026 Playoffs"
+      },
+      "CCT Oceania": {
+        "matches": 85,
+        "latest_match": "2026-02-28",
+        "latest_event": "Series #4 season 3 2026 Playoffs"
+      },
+      "Myskill Pro League": {
+        "matches": 60,
+        "latest_match": "2026-02-27",
+        "latest_event": "Season 2 2026 Playoffs"
+      },
+      "META Cup": {
+        "matches": 36,
+        "latest_match": "2026-02-22",
+        "latest_event": "Season 4 2026 Playoffs"
+      },
+      "EPIC.LAN": {
+        "matches": 38,
+        "latest_match": "2026-02-22",
+        "latest_event": "Season 47 2026 Playoffs"
+      },
+      "De_Airport Masters": {
+        "matches": 30,
+        "latest_match": "2026-02-21",
+        "latest_event": "2026 Playoffs"
+      },
+      "NA Revival Series": {
+        "matches": 53,
+        "latest_match": "2026-02-15",
+        "latest_event": "Season 12 2026 Playoffs"
+      },
+      "GLuck StarPearl": {
+        "matches": 30,
+        "latest_match": "2026-02-15",
+        "latest_event": "Season 1 2026 Playoffs"
+      },
+      "IstanbuLAN": {
+        "matches": 14,
+        "latest_match": "2026-02-14",
+        "latest_event": "2026 Playoffs"
+      },
+      "Copenhagen Gaming Week": {
+        "matches": 13,
+        "latest_match": "2026-02-14",
+        "latest_event": "Showdown 2026 Playoffs"
+      },
+      "Ace North American Masters": {
+        "matches": 51,
+        "latest_match": "2026-02-08",
+        "latest_event": "Spring 2026 Playoffs"
+      },
+      "Ace South American Masters": {
+        "matches": 54,
+        "latest_match": "2026-02-08",
+        "latest_event": "Spring 2026 Playoffs"
+      },
+      "Exort Cataclysm": {
+        "matches": 34,
+        "latest_match": "2026-02-03",
+        "latest_event": "Season 1 2026 Playoffs"
+      },
+      "United21 x Esplay Challenge": {
+        "matches": 29,
+        "latest_match": "2026-01-25",
+        "latest_event": "Season 1 2026 Playoffs"
+      },
+      "Zhi-Tech Elite Masters": {
+        "matches": 15,
+        "latest_match": "2026-01-25",
+        "latest_event": "2026 Playoffs"
+      },
+      "PLAYR Masters": {
+        "matches": 40,
+        "latest_match": "2026-01-17",
+        "latest_event": "Season 1 2026 Playoffs"
+      },
+      "Premier League": {
+        "matches": 8,
+        "latest_match": "2026-01-17",
+        "latest_event": "Season 1 2026 Playoffs"
+      },
+      "fl0m's Mythical LAN": {
+        "matches": 13,
+        "latest_match": "2026-01-12",
+        "latest_event": "Las Vegas 2026 Playoffs"
+      },
+      "Perfect World National League Community Series": {
+        "matches": 2,
+        "latest_match": "2026-01-10",
+        "latest_event": "Fall 2026 Playoffs"
+      },
+      "Iron Egg Cup": {
+        "matches": 4,
+        "latest_match": "2025-12-30",
+        "latest_event": "2025 Playoffs"
+      },
+      "VOID Masters": {
+        "matches": 14,
+        "latest_match": "2025-12-30",
+        "latest_event": "2025 Playoffs"
+      },
+      "Cajunto Copa do Brasil": {
+        "matches": 29,
+        "latest_match": "2025-12-21",
+        "latest_event": "2025 Playoffs"
+      },
+      "Betclic Clash": {
+        "matches": 73,
+        "latest_match": "2025-12-21",
+        "latest_event": "Mistrzostwa Polski 2025 Playoffs"
+      },
+      "Wraith TESFED": {
+        "matches": 5,
+        "latest_match": "2025-12-21",
+        "latest_event": "Season 2 2025 Playoffs"
+      },
+      "eXTREMESLAND": {
+        "matches": 52,
+        "latest_match": "2025-12-21",
+        "latest_event": "2025 Playoffs"
+      },
+      "StarLadder Major": {
+        "matches": 106,
+        "latest_match": "2025-12-14",
+        "latest_event": "Budapest 2025 Playoffs"
+      },
+      "NUKE-Liiga": {
+        "matches": 3,
+        "latest_match": "2025-12-13",
+        "latest_event": "Season 1 2025 Playoffs"
+      },
+      "Galaxy Battle": {
+        "matches": 320,
+        "latest_match": "2025-12-09",
+        "latest_event": "Phase 5 2025 Playoffs"
+      },
+      "SHAIQAS": {
+        "matches": 6,
+        "latest_match": "2025-12-07",
+        "latest_event": "Season 1 2025 Playoffs"
+      },
+      "Svenska Elitserien": {
+        "matches": 12,
+        "latest_match": "2025-12-06",
+        "latest_event": "Fall 2025 Playoffs"
+      },
+      "ESL Impact League": {
+        "matches": 198,
+        "latest_match": "2025-11-30",
+        "latest_event": "Season 8 2025 Playoffs"
+      },
+      "Dreamhack Knockout": {
+        "matches": 22,
+        "latest_match": "2025-11-30",
+        "latest_event": "Stockholm 2025 Playoffs"
+      },
+      "MČR": {
+        "matches": 4,
+        "latest_match": "2025-11-29",
+        "latest_event": "2025 Playoffs"
+      },
+      "X2ONE Masters": {
+        "matches": 23,
+        "latest_match": "2025-11-26",
+        "latest_event": "Season 1 2025 Playoffs"
+      },
+      "Bergen Games": {
+        "matches": 3,
+        "latest_match": "2025-11-22",
+        "latest_event": "2025 Playoffs"
+      },
+      "CBCS Masters": {
+        "matches": 13,
+        "latest_match": "2025-11-16",
+        "latest_event": "Xeque Mate 2025 Playoffs"
+      },
+      "Perfect World CS Challenge": {
+        "matches": 28,
+        "latest_match": "2025-11-16",
+        "latest_event": "Series 2 2025 Playoffs"
+      },
+      "Svenska Cupen": {
+        "matches": 14,
+        "latest_match": "2025-11-15",
+        "latest_event": "2025 Playoffs"
+      },
+      "Female Pro League": {
+        "matches": 45,
+        "latest_match": "2025-11-15",
+        "latest_event": "Season 1 2025 Playoffs"
+      },
+      "T-esports Championship": {
+        "matches": 26,
+        "latest_match": "2025-11-15",
+        "latest_event": "Season 4 2025 Playoffs"
+      },
+      "Circuit X Retake São Paulo": {
+        "matches": 28,
+        "latest_match": "2025-11-09",
+        "latest_event": "2025 Playoffs"
+      },
+      "Unmuted MyCup": {
+        "matches": 7,
+        "latest_match": "2025-11-09",
+        "latest_event": "2025 Playoffs"
+      },
+      "Chennai Esports Global Championship": {
+        "matches": 21,
+        "latest_match": "2025-11-09",
+        "latest_event": "2025 Playoffs"
+      },
+      "Red Bull GIBAWAY JOURNEY": {
+        "matches": 71,
+        "latest_match": "2025-11-08",
+        "latest_event": "2025 Playoffs"
+      },
+      "Winline Insight": {
+        "matches": 106,
+        "latest_match": "2025-11-06",
+        "latest_event": "Season 9 2025 Playoffs"
+      },
+      "CCT East Europe": {
+        "matches": 22,
+        "latest_match": "2025-11-02",
+        "latest_event": "Contenders #1 season 3 2025 Playoffs"
+      },
+      "Game Zone Masters": {
+        "matches": 1,
+        "latest_match": "2025-10-25",
+        "latest_event": "2025 Playoffs"
+      },
+      "eSM Liiga": {
+        "matches": 7,
+        "latest_match": "2025-10-18",
+        "latest_event": "2025 Playoffs"
+      },
+      "Exort The Proving Grounds": {
+        "matches": 233,
+        "latest_match": "2025-10-13",
+        "latest_event": "Season 5 2025 Playoffs"
+      },
+      "AGS CUP": {
+        "matches": 9,
+        "latest_match": "2025-10-12",
+        "latest_event": "2025 Playoffs"
+      },
+      "Circuit X South America": {
+        "matches": 28,
+        "latest_match": "2025-10-05",
+        "latest_event": "Season 1 2025 Playoffs"
+      },
+      "FERJEE Rush": {
+        "matches": 28,
+        "latest_match": "2025-09-30",
+        "latest_event": "2025 Playoffs"
+      },
+      "Birch Cup": {
+        "matches": 46,
+        "latest_match": "2025-09-28",
+        "latest_event": "2025 Playoffs"
+      },
+      "LanDaLan": {
+        "matches": 84,
+        "latest_match": "2025-09-28",
+        "latest_event": "Season 3 2025 Playoffs"
+      },
+      "Winline Pro League": {
+        "matches": 47,
+        "latest_match": "2025-09-21",
+        "latest_event": "Season 3 2025 Playoffs"
+      },
+      "Night Shift Invitational": {
+        "matches": 6,
+        "latest_match": "2025-09-14",
+        "latest_event": "Asia-Pacific 2025 Playoffs"
+      },
+      "Urban Academies": {
+        "matches": 51,
+        "latest_match": "2025-08-29",
+        "latest_event": "Season 1 2025 Playoffs"
+      },
+      "Circuito FERJEE": {
+        "matches": 30,
+        "latest_match": "2025-08-15",
+        "latest_event": "2025 Playoffs"
+      },
+      "BLAST Rising": {
+        "matches": 67,
+        "latest_match": "2025-08-03",
+        "latest_event": "Asia Fall 2025 Playoffs"
+      },
+      "OMEN Roman Imperium Cup": {
+        "matches": 7,
+        "latest_match": "2025-07-27",
+        "latest_event": "Season 1 2025 Playoffs"
+      },
+      "KaBuM! Prime League": {
+        "matches": 8,
+        "latest_match": "2025-07-22",
+        "latest_event": "2025 Playoffs"
+      },
+      "Whale.io Cup": {
+        "matches": 17,
+        "latest_match": "2025-07-22",
+        "latest_event": "2025 Playoffs"
+      },
+      "IESF World Championship": {
+        "matches": 28,
+        "latest_match": "2025-07-13",
+        "latest_event": "European Esports Championship 2025 Playoffs"
+      },
+      "Urban Contenders": {
+        "matches": 56,
+        "latest_match": "2025-06-29",
+        "latest_event": "Season 6 2025 Playoffs"
+      },
+      "Ace League": {
+        "matches": 7,
+        "latest_match": "2025-06-29",
+        "latest_event": "Season 1 2025 Playoffs"
+      },
+      "BtcTurk GameFest": {
+        "matches": 6,
+        "latest_match": "2025-06-27",
+        "latest_event": "2025 Playoffs"
+      },
+      "BLAST.tv Major": {
+        "matches": 178,
+        "latest_match": "2025-06-22",
+        "latest_event": "Austin 2025 Playoffs"
+      },
+      "Glitched Masters": {
+        "matches": 22,
+        "latest_match": "2025-06-15",
+        "latest_event": "2025 Playoffs"
+      },
+      "Tradeit League FE Masters": {
+        "matches": 24,
+        "latest_match": "2025-06-15",
+        "latest_event": "Season 7 2025 Playoffs"
+      },
+      "Good Game-ligaen": {
+        "matches": 50,
+        "latest_match": "2025-06-08",
+        "latest_event": "Spring 2025 Playoffs"
+      },
+      "Y-Games PRO Series": {
+        "matches": 70,
+        "latest_match": "2025-06-04",
+        "latest_event": "2025 Playoffs"
+      },
+      "YaLLa Compass": {
+        "matches": 189,
+        "latest_match": "2025-05-27",
+        "latest_event": "Spring 2025 Playoffs"
+      },
+      "Elisa Nordic Championship": {
+        "matches": 14,
+        "latest_match": "2025-05-24",
+        "latest_event": "2025 Playoffs"
+      },
+      "Rainbet Cup": {
+        "matches": 16,
+        "latest_match": "2025-05-19",
+        "latest_event": "2025 Playoffs"
+      },
+      "Paramigo Cup": {
+        "matches": 17,
+        "latest_match": "2025-05-04",
+        "latest_event": "Season 2 2025 Playoffs"
+      },
+      "MESA Nomadic Masters": {
+        "matches": 14,
+        "latest_match": "2025-05-04",
+        "latest_event": "Spring 2025 Playoffs"
+      },
+      "FiReLEAGUE": {
+        "matches": 33,
+        "latest_match": "2025-05-02",
+        "latest_event": "Buenos Aires 2025 Playoffs"
+      },
+      "Level Up LUND!": {
+        "matches": 47,
+        "latest_match": "2025-04-13",
+        "latest_event": "2025 Playoffs"
+      },
+      "Fragster Challenger": {
+        "matches": 73,
+        "latest_match": "2025-04-06",
+        "latest_event": "2025 Playoffs"
+      },
+      "EPL World Series": {
+        "matches": 16,
+        "latest_match": "2025-03-24",
+        "latest_event": "Oceania season 2 2025 Group A"
+      },
+      "DFRAG Invitational": {
+        "matches": 25,
+        "latest_match": "2025-03-23",
+        "latest_event": "2025 Playoffs"
+      },
+      "Caretos Cup": {
+        "matches": 3,
+        "latest_match": "2025-03-16",
+        "latest_event": "2025 Playoffs"
+      },
+      "MESA Asian Masters": {
+        "matches": 54,
+        "latest_match": "2025-03-09",
+        "latest_event": "2025 Playoffs"
+      },
+      "Justice Cup": {
+        "matches": 70,
+        "latest_match": "2025-03-07",
+        "latest_event": "Season 5 2025 Playoffs"
+      },
+      "Winter Hunt": {
+        "matches": 24,
+        "latest_match": "2025-02-19",
+        "latest_event": "Europe 2025 Group Stage"
+      },
+      "BLAST Premier": {
+        "matches": 31,
+        "latest_match": "2025-01-26",
+        "latest_event": "Bounty season 1 2025 Playoffs"
+      },
+      "ICE Invitational": {
+        "matches": 6,
+        "latest_match": "2025-01-21",
+        "latest_event": "2025 Playoffs"
+      },
+      "Frost and Fire": {
+        "matches": 47,
+        "latest_match": "2025-01-12",
+        "latest_event": "Europe 2024 Playoffs"
+      },
+      "Justice Christmas Cup": {
+        "matches": 4,
+        "latest_match": "2024-12-30",
+        "latest_event": "2024 Playoffs"
+      },
+      "Asian Super League": {
+        "matches": 3,
+        "latest_match": "2024-12-30",
+        "latest_event": "Season 4 2024 Playoffs"
+      }
+    }
+  },
+  "valorant": {
+    "checked_at": "2026-10-25T05:13:01.249827+00:00",
+    "source": "PandaScore free Fixtures",
+    "leagues": {
+      "VCT": {
+        "matches": 1668,
+        "latest_match": "2026-10-24",
+        "latest_event": "Threshold China 2026 Week 1"
+      },
+      "Monsters Reloaded": {
+        "matches": 40,
+        "latest_match": "2026-10-24",
+        "latest_event": "2026 Playoffs"
+      },
+      "Project Blender": {
+        "matches": 97,
+        "latest_match": "2026-10-24",
+        "latest_event": "Phase 2 2026 Playoffs"
+      },
+      "THE POKAL": {
+        "matches": 65,
+        "latest_match": "2026-09-13",
+        "latest_event": "2026 Playoffs"
+      },
+      "China Evolution Series": {
+        "matches": 64,
+        "latest_match": "2026-09-13",
+        "latest_event": "Act 3 2026 Playoffs"
+      },
+      "VCL": {
+        "matches": 1970,
+        "latest_match": "2026-07-30",
+        "latest_event": "Americas: Last Chance Qualifier 2026 Playoffs"
+      },
+      "Esports World Cup": {
+        "matches": 125,
+        "latest_match": "2026-07-12",
+        "latest_event": "2026 Playoffs"
+      },
+      "Asia Pacific Predator League": {
+        "matches": 34,
+        "latest_match": "2026-01-10",
+        "latest_event": "2026 Playoffs"
+      },
+      "Tixinha & Sacy Invitational By Bonoxs": {
+        "matches": 14,
+        "latest_match": "2025-12-21",
+        "latest_event": "Season 2 2025 Playoffs"
+      },
+      "TESFED Turkish Cup": {
+        "matches": 7,
+        "latest_match": "2025-12-21",
+        "latest_event": "2025 Playoffs"
+      },
+      "VALORANT Radiant International Invitational": {
+        "matches": 15,
+        "latest_match": "2025-12-21",
+        "latest_event": "2025 Playoffs"
+      },
+      "Spotlight Series": {
+        "matches": 16,
+        "latest_match": "2025-12-14",
+        "latest_event": "Americas 2025 Playoffs"
+      },
+      "CHALLENGERS SHOWDOWN": {
+        "matches": 4,
+        "latest_match": "2025-12-13",
+        "latest_event": "KOREA & JAPAN 2025 Playoffs"
+      },
+      "SOOP Valorant League": {
+        "matches": 27,
+        "latest_match": "2025-12-07",
+        "latest_event": "2025 Playoffs"
+      },
+      "Sentinels Invitational": {
+        "matches": 8,
+        "latest_match": "2025-12-07",
+        "latest_event": "2025 Playoffs"
+      },
+      "Esports Shanghai Masters": {
+        "matches": 3,
+        "latest_match": "2025-12-05",
+        "latest_event": "2025 Playoffs"
+      },
+      "China Esports Festival Super Champions Cup": {
+        "matches": 4,
+        "latest_match": "2025-11-30",
+        "latest_event": "2025 Playoffs"
+      },
+      "Saudi eLeague": {
+        "matches": 7,
+        "latest_match": "2025-11-28",
+        "latest_event": "Championship 2025 Playoffs"
+      },
+      "Red Bull Home Ground": {
+        "matches": 26,
+        "latest_match": "2025-11-16",
+        "latest_event": "2025 Playoffs"
+      },
+      "TEN Valorant Global Invitational": {
+        "matches": 9,
+        "latest_match": "2025-11-09",
+        "latest_event": "2025 Playoffs"
+      },
+      "SEN City Classic": {
+        "matches": 8,
+        "latest_match": "2025-11-09",
+        "latest_event": "2025 Playoffs"
+      },
+      "A1 Esport Valorant Cup": {
+        "matches": 1,
+        "latest_match": "2025-07-05",
+        "latest_event": "Season 8 2025 Playoffs"
+      },
+      "BtcTurk GameFest": {
+        "matches": 3,
+        "latest_match": "2025-06-29",
+        "latest_event": "2025 Stage 3"
+      }
+    }
+  },
+  "kog": {
+    "checked_at": "2026-10-25T05:13:27.127737+00:00",
+    "source": "PandaScore free Fixtures",
+    "leagues": {
+      "RoV Pro League": {
+        "matches": 211,
+        "latest_match": "2026-10-24",
+        "latest_event": "Winter 2026 Playoffs"
+      },
+      "Arena of Glory": {
+        "matches": 225,
+        "latest_match": "2026-10-24",
+        "latest_event": "Winter 2026 Playoffs"
+      },
+      "King Pro League": {
+        "matches": 650,
+        "latest_match": "2026-10-22",
+        "latest_event": "Grand Finals 2026 Breakout Stage"
+      },
+      "Garena Challenger Series": {
+        "matches": 125,
+        "latest_match": "2026-10-18",
+        "latest_event": "Summer 2026 Playoffs"
+      },
+      "Asian Games": {
+        "matches": 15,
+        "latest_match": "2026-09-28",
+        "latest_event": "2026 Playoffs"
+      },
+      "KPL Growth League": {
+        "matches": 571,
+        "latest_match": "2026-09-16",
+        "latest_event": "Promotion 2027 Playoffs"
+      },
+      "Honor of Kings": {
+        "matches": 241,
+        "latest_match": "2026-08-08",
+        "latest_event": "World Cup 2026 Playoffs"
+      },
+      "Arena of Valor Premier League": {
+        "matches": 47,
+        "latest_match": "2026-07-19",
+        "latest_event": "2026 Playoffs"
+      },
+      "Arena of Valor International Championship": {
+        "matches": 51,
+        "latest_match": "2025-12-07",
+        "latest_event": "2025 Playoffs"
+      },
+      "HERO ESPORTS Asian Champions League": {
+        "matches": 11,
+        "latest_match": "2025-05-18",
+        "latest_event": "2025 Playoffs"
+      },
+      "Brave Cup": {
+        "matches": 33,
+        "latest_match": "2025-01-20",
+        "latest_event": "2025 Playoffs"
+      }
+    }
+  },
+  "mlbb": {
+    "checked_at": "2026-10-25T05:13:50.646586+00:00",
+    "source": "PandaScore free Fixtures",
+    "leagues": {
+      "MPL Cambodia": {
+        "matches": 105,
+        "latest_match": "2026-10-24",
+        "latest_event": "Season 11 2026 Regular Season"
+      },
+      "MPL Philippines": {
+        "matches": 255,
+        "latest_match": "2026-10-24",
+        "latest_event": "Season 18 2026 Playoffs"
+      },
+      "MPL Indonesia": {
+        "matches": 312,
+        "latest_match": "2026-10-18",
+        "latest_event": "Season 18 2026 Regular Season"
+      },
+      "MPL Malaysia": {
+        "matches": 226,
+        "latest_match": "2026-10-18",
+        "latest_event": "Season 18 2026 Regular Season"
+      },
+      "MLBB Super League Thailand": {
+        "matches": 98,
+        "latest_match": "2026-10-18",
+        "latest_event": "Season 2 2026 Playoffs"
+      },
+      "MLBB Continental Championships": {
+        "matches": 244,
+        "latest_match": "2026-10-11",
+        "latest_event": "Season 8 2026 Playoffs"
+      },
+      "Asian Games": {
+        "matches": 17,
+        "latest_match": "2026-10-01",
+        "latest_event": "2026 Playoffs"
+      },
+      "BETBOOM Streamers Battle": {
+        "matches": 6,
+        "latest_match": "2026-09-09",
+        "latest_event": "Season 1 2026 Playoffs"
+      },
+      "BetBoom Rise of Legends": {
+        "matches": 289,
+        "latest_match": "2026-08-22",
+        "latest_event": "Season 10 2026 Playoffs"
+      },
+      "Games of the Future": {
+        "matches": 55,
+        "latest_match": "2026-08-09",
+        "latest_event": "2026 Playoffs"
+      },
+      "Mid Season Cup": {
+        "matches": 92,
+        "latest_match": "2026-08-01",
+        "latest_event": "2026 Playoffs"
+      },
+      "MLBB Women's International": {
+        "matches": 28,
+        "latest_match": "2026-07-18",
+        "latest_event": "2026 Playoffs"
+      },
+      "World Championship": {
+        "matches": 88,
+        "latest_match": "2026-01-25",
+        "latest_event": "M7 2026 Playoffs"
+      },
+      "IESF World Esports Championship": {
+        "matches": 8,
+        "latest_match": "2025-12-07",
+        "latest_event": "2025 Playoffs"
+      },
+      "MLBB Super League Myanmar": {
+        "matches": 54,
+        "latest_match": "2025-11-16",
+        "latest_event": "Season 2 2025 Playoffs"
+      },
+      "MPL Singapore": {
+        "matches": 47,
+        "latest_match": "2025-06-08",
+        "latest_event": "Season 9 2025 Playoffs"
+      },
+      "MLBB Super Cup Invitational": {
+        "matches": 20,
+        "latest_match": "2025-05-04",
+        "latest_event": "2025 Playoffs"
+      },
+      "Snapdragon Pro Series": {
+        "matches": 107,
+        "latest_match": "2025-04-13",
+        "latest_event": "Mobile Masters 2025 Playoffs"
+      },
+      "CyberHero Space Battle Cup 5x5": {
+        "matches": 14,
+        "latest_match": "2025-03-30",
+        "latest_event": "2025 Playoffs"
+      }
+    }
+  },
+  "r6": {
+    "checked_at": "2026-10-25T05:14:17.073870+00:00",
+    "source": "PandaScore free Fixtures",
+    "leagues": {
+      "Challenger League": {
+        "matches": 6,
+        "latest_match": "2026-10-24",
+        "latest_event": "2026 Playoffs"
+      },
+      "Asia Pacific League": {
+        "matches": 563,
+        "latest_match": "2026-10-24",
+        "latest_event": "APAC North - Stage 2 2026 Playoffs"
+      },
+      "CN League": {
+        "matches": 149,
+        "latest_match": "2026-10-18",
+        "latest_event": "Stage 2 2026 Playoffs"
+      },
+      "North America League": {
+        "matches": 305,
+        "latest_match": "2026-10-16",
+        "latest_event": "Stage 2 2026 Playoffs"
+      },
+      "Europe MENA League": {
+        "matches": 304,
+        "latest_match": "2026-10-13",
+        "latest_event": "Stage 2 2026 Playoffs"
+      },
+      "South America League": {
+        "matches": 306,
+        "latest_match": "2026-10-13",
+        "latest_event": "Stage 2 2026 Playoffs"
+      },
+      "Esports World Cup": {
+        "matches": 68,
+        "latest_match": "2026-08-15",
+        "latest_event": "2026 Playoffs"
+      },
+      "BLAST R6 Major": {
+        "matches": 110,
+        "latest_match": "2026-05-17",
+        "latest_event": "Salt Lake City 2026 Playoffs"
+      },
+      "R6 North Rainbow Rumble": {
+        "matches": 35,
+        "latest_match": "2026-05-03",
+        "latest_event": "2026 Playoffs"
+      },
+      "Six Invitational": {
+        "matches": 239,
+        "latest_match": "2026-02-15",
+        "latest_event": "2026 Playoffs"
+      },
+      "APAC Cup": {
+        "matches": 6,
+        "latest_match": "2026-01-12",
+        "latest_event": "2025 Playoffs"
+      },
+      "GVC Pioneer": {
+        "matches": 29,
+        "latest_match": "2025-12-28",
+        "latest_event": "Winter 2025 Playoffs"
+      },
+      "RE:L0:AD": {
+        "matches": 51,
+        "latest_match": "2025-05-18",
+        "latest_event": "2025 Playoffs"
+      },
+      "Malta Cyber Series": {
+        "matches": 21,
+        "latest_match": "2025-03-16",
+        "latest_event": "VIII 2025 Playoffs"
+      },
+      "ELEMENT": {
+        "matches": 47,
+        "latest_match": "2025-01-19",
+        "latest_event": "FOUR 2024 Playoffs"
+      },
+      "BR Premier": {
+        "matches": 9,
+        "latest_match": "2024-12-01",
+        "latest_event": "2024 Playoffs"
+      },
+      "DBE": {
+        "matches": 1,
+        "latest_match": "2024-11-23",
+        "latest_event": "Season 1 2024 Playoffs"
+      }
+    }
+  },
+  "ow": {
+    "checked_at": "2026-10-25T05:14:37.979309+00:00",
+    "source": "PandaScore free Fixtures",
+    "leagues": {
+      "OCS": {
+        "matches": 1239,
+        "latest_match": "2026-10-25",
+        "latest_event": "North America Stage 3 2026 Group Stage"
+      },
+      "World Cup": {
+        "matches": 32,
+        "latest_match": "2026-09-13",
+        "latest_event": "2026 Playoffs"
+      },
+      "FACEIT League": {
+        "matches": 110,
+        "latest_match": "2025-04-06",
+        "latest_event": "EMEA Master season 4 2025 Playoffs"
+      }
+    }
+  },
+  "cod": {
+    "checked_at": "2026-10-25T05:14:46.240271+00:00",
+    "source": "PandaScore free Fixtures",
+    "leagues": {
+      "Esports World Cup": {
+        "matches": 83,
+        "latest_match": "2026-08-09",
+        "latest_event": "2026 Playoffs"
+      },
+      "Call of Duty League": {
+        "matches": 588,
+        "latest_match": "2026-07-19",
+        "latest_event": "Championship 2026 Playoffs"
+      },
+      "Call of Duty Challengers": {
+        "matches": 21,
+        "latest_match": "2026-05-08",
+        "latest_event": "North America Elite Stage 3 2026 Playoffs"
       }
     }
   }
