@@ -1,8 +1,8 @@
 {
  "game": "mlbb",
  "updated": "2026-10-25",
- "last_match_date": "2026-10-24",
- "source_matches": 5261,
+ "last_match_date": "2026-10-25",
+ "source_matches": 5264,
  "scale": 400,
  "shrink": 1.0,
  "n_teams": 94,
@@ -362,10 +362,10 @@
    "last_date": "2026-10-11"
   },
   "See You Soon": {
-   "rating": 1364.6,
-   "w": 22,
-   "l": 42,
-   "last_date": "2026-10-23"
+   "rating": 1366.8,
+   "w": 23,
+   "l": 44,
+   "last_date": "2026-10-25"
   },
   "Selangor Red Giants": {
    "rating": 1645.4,
@@ -386,10 +386,10 @@
    "last_date": "2026-10-21"
   },
   "TNR Esports": {
-   "rating": 1526.5,
-   "w": 8,
-   "l": 8,
-   "last_date": "2026-10-23"
+   "rating": 1524.4,
+   "w": 10,
+   "l": 9,
+   "last_date": "2026-10-25"
   },
   "Team EvilKing": {
    "rating": 1458.1,

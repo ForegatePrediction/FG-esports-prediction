@@ -2,7 +2,7 @@
  "game": "cs2",
  "updated": "2026-10-25",
  "last_match_date": "2026-10-24",
- "source_matches": 57316,
+ "source_matches": 57318,
  "scale": 400,
  "shrink": 1.0,
  "n_teams": 559,
@@ -368,8 +368,8 @@
    "last_date": "2026-10-15"
   },
   "BORRACHEIROS": {
-   "rating": 1631.2,
-   "w": 47,
+   "rating": 1645.6,
+   "w": 49,
    "l": 41,
    "last_date": "2026-10-24"
   },
@@ -1670,10 +1670,10 @@
    "last_date": "2026-07-11"
   },
   "MIBR fe": {
-   "rating": 1454.9,
+   "rating": 1440.4,
    "w": 57,
-   "l": 50,
-   "last_date": "2026-10-16"
+   "l": 52,
+   "last_date": "2026-10-24"
   },
   "MOUZ": {
    "rating": 1983.7,

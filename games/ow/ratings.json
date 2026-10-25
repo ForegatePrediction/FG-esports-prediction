@@ -2,7 +2,7 @@
  "game": "ow",
  "updated": "2026-10-25",
  "last_match_date": "2026-10-25",
- "source_matches": 4412,
+ "source_matches": 4417,
  "scale": 400,
  "shrink": 1.0,
  "n_teams": 65,
@@ -224,10 +224,10 @@
    "last_date": "2026-10-14"
   },
   "Poker Face": {
-   "rating": 1302.3,
-   "w": 39,
-   "l": 110,
-   "last_date": "2026-10-24"
+   "rating": 1312.6,
+   "w": 41,
+   "l": 113,
+   "last_date": "2026-10-25"
   },
   "REVATI": {
    "rating": 1300.8,
@@ -386,10 +386,10 @@
    "last_date": "2026-10-24"
   },
   "ZANSIDE GAMING": {
-   "rating": 1471.9,
-   "w": 19,
-   "l": 37,
-   "last_date": "2026-10-23"
+   "rating": 1461.6,
+   "w": 22,
+   "l": 39,
+   "last_date": "2026-10-25"
   },
   "ZETA DIVISION": {
    "rating": 1934.3,
