@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 每日刷新:逐游戏重拉数据 -> 重建 games/<g>/ratings.json 快照。
-- 免费源(lol/dota2/cs2)无需 token;PandaScore 8 个游戏需环境变量 PANDASCORE_TOKEN。
+- LoL 使用 Oracle's Elixir 免费 CSV；其余 10 个游戏使用 PandaScore 免费 Fixtures，需 PANDASCORE_TOKEN。
 - 容错:单个游戏失败不影响其它;数据文件不入库(gitignore),只提交更新后的 ratings.json。
 用法:python3 refresh.py [game ...]   # 不带参数则刷新全部
 """
@@ -33,6 +33,38 @@ def fetch_script(gdir):
     return None
 
 
+def source_coverage(game, spec):
+    """Keep league/event dates as evidence, independently from rebuild dates."""
+    if game == "lol":
+        import cli
+        rows = cli.adapter(game).load()
+    else:
+        path = os.path.join(ROOT, "games", game, "data", spec["outputs"][0])
+        raw = json.load(open(path, encoding="utf-8"))
+        rows = [r for r in raw if isinstance(r.get("s1"), int) and isinstance(r.get("s2"), int)
+                and r.get("w") in (1, 2) and r.get("date")]
+    leagues = {}
+    for row in rows:
+        name = row.get("league") or "Unknown league"
+        date = row["date"]
+        if date > datetime.datetime.now(datetime.timezone.utc).date().isoformat():
+            continue
+        item = leagues.setdefault(name, {"matches": 0, "latest_match": "", "latest_event": ""})
+        item["matches"] += 1
+        if date >= item["latest_match"]:
+            item["latest_match"] = date
+            item["latest_event"] = " ".join(filter(None, [row.get("series"), row.get("tournament")]))
+    path = os.path.join(ROOT, "source-coverage.json")
+    report = json.load(open(path, encoding="utf-8")) if os.path.isfile(path) else {}
+    report[game] = {"checked_at": datetime.datetime.now(datetime.timezone.utc).isoformat(),
+                    "source": "Oracle's Elixir" if game == "lol" else "PandaScore free Fixtures",
+                    "leagues": leagues}
+    with open(path + ".tmp", "w", encoding="utf-8") as f:
+        json.dump(report, f, ensure_ascii=False, indent=2)
+    os.replace(path + ".tmp", path)
+    print(f"[coverage] {game}: {len(leagues)} leagues with results")
+
+
 def refresh(game, spec):
     gdir = os.path.join(ROOT, "games", game)
     if spec["token"] and not os.environ.get("PANDASCORE_TOKEN"):
@@ -52,6 +84,7 @@ def refresh(game, spec):
                 shutil.move(src, os.path.join(ddir, os.path.basename(src)))
         subprocess.run([PY, os.path.join(ROOT, "cli.py"), "snapshot", game], check=True, timeout=600)
         snap = json.load(open(os.path.join(gdir, "ratings.json"), encoding="utf-8"))
+        source_coverage(game, spec)
         latest = snap["last_match_date"]
         age = (datetime.date.today() - datetime.date.fromisoformat(latest)).days
         status = "stale" if age > 30 else "ok"

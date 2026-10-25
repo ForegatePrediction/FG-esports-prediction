@@ -60,7 +60,7 @@ def extract(m):
         return None
     t1, t2 = ops[0]["opponent"], ops[1]["opponent"]
     res = {r["team_id"]: r.get("score") for r in (m.get("results") or [])}
-    return {"id": m["id"], "date": (m.get("begin_at") or "")[:10], "t1": t1["name"], "t2": t2["name"],
+    return {"id": m["id"], "league": (m.get("league") or {}).get("name"), "tournament": (m.get("tournament") or {}).get("name"), "series": (m.get("serie") or {}).get("full_name"), "date": (m.get("begin_at") or "")[:10], "t1": t1["name"], "t2": t2["name"],
             "s1": res.get(t1["id"]), "s2": res.get(t2["id"]), "bo": m.get("number_of_games"),
             "w": (1 if m.get("winner_id") == t1["id"] else 2 if m.get("winner_id") == t2["id"] else None)}
 

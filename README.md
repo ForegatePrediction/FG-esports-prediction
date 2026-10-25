@@ -112,3 +112,10 @@ All match data is the property of the respective providers / game publishers and
 ## License
 
 MIT — see `LICENSE`.
+
+
+## 免费源与每日覆盖证据
+
+LoL 使用 Oracle's Elixir 免费 CSV；Dota 2、CS2、VALORANT、王者荣耀、MLBB、R6、OW、COD、SC2、SCBW 使用 PandaScore 免费 Fixtures 的历史赛程与最终赛果，不调用付费玩家/地图详细统计接口。免费 Fixtures 仍需 `PANDASCORE_TOKEN`；保留此 Token 不代表付费订阅。
+
+每日北京时间 12:00（04:00 UTC）调度。`refresh-status.json` 记录实际抓取状态；`source-coverage.json` 逐游戏、逐联赛保存源数据的最近比赛日期及赛事名称。快照生成时间不代表有新比赛；超过 30 天无源赛果会标记 `stale`，不能按任务绿色判断覆盖正常。
