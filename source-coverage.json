@@ -361,17 +361,17 @@
     }
   },
   "dota2": {
-    "checked_at": "2026-10-25T09:01:47.004429+00:00",
+    "checked_at": "2026-10-25T17:35:34.374746+00:00",
     "source": "PandaScore free Fixtures",
     "leagues": {
       "PARI Universe": {
-        "matches": 26,
-        "latest_match": "2026-10-24",
+        "matches": 28,
+        "latest_match": "2026-10-25",
         "latest_event": "2026 Group A"
       },
       "EPL Masters": {
-        "matches": 194,
-        "latest_match": "2026-10-24",
+        "matches": 195,
+        "latest_match": "2026-10-25",
         "latest_event": "Season 3 2026 Group A"
       },
       "EPL World Series": {
@@ -542,7 +542,7 @@
     }
   },
   "cs2": {
-    "checked_at": "2026-10-25T09:01:53.770431+00:00",
+    "checked_at": "2026-10-25T17:35:40.343557+00:00",
     "source": "PandaScore free Fixtures",
     "leagues": {
       "CCT North America": {
@@ -561,39 +561,39 @@
         "latest_event": "Curitiba season 4 2026 Playoffs"
       },
       "Hotspawn Showdown": {
-        "matches": 14,
-        "latest_match": "2026-10-24",
+        "matches": 15,
+        "latest_match": "2026-10-25",
         "latest_event": "Finals 2026 Playoffs"
       },
       "CCT Europe": {
-        "matches": 2930,
-        "latest_match": "2026-10-24",
-        "latest_event": "Series #11 2026 Playoffs"
+        "matches": 2936,
+        "latest_match": "2026-10-25",
+        "latest_event": "Series #12 2026 Group Stage"
       },
       "Exort Fiesta": {
-        "matches": 146,
-        "latest_match": "2026-10-24",
-        "latest_event": "Closed Qualifier: Series #3 2026 Play-In"
+        "matches": 148,
+        "latest_match": "2026-10-25",
+        "latest_event": "Season 3 2026 Group Stage"
       },
       "PGL Masters": {
-        "matches": 158,
-        "latest_match": "2026-10-24",
+        "matches": 165,
+        "latest_match": "2026-10-25",
         "latest_event": "Bucharest 2026 Group Stage"
       },
       "NODWIN Clutch Series": {
-        "matches": 832,
-        "latest_match": "2026-10-24",
+        "matches": 835,
+        "latest_match": "2026-10-25",
         "latest_event": "Season 13 2026 Playoffs"
       },
       "United21": {
-        "matches": 1046,
-        "latest_match": "2026-10-24",
-        "latest_event": "Season 57 2026 Group C"
+        "matches": 1048,
+        "latest_match": "2026-10-25",
+        "latest_event": "Season 57 2026 Playoffs"
       },
       "European Pro League": {
-        "matches": 1034,
-        "latest_match": "2026-10-24",
-        "latest_event": "Series 10 Closed Qualifier 2026 Group B"
+        "matches": 1035,
+        "latest_match": "2026-10-25",
+        "latest_event": "Series 10 Closed Qualifier 2026 Group C"
       },
       "VOID Autumn Cup": {
         "matches": 12,
@@ -1503,17 +1503,17 @@
     }
   },
   "valorant": {
-    "checked_at": "2026-10-25T09:01:55.167366+00:00",
+    "checked_at": "2026-10-25T17:35:42.100308+00:00",
     "source": "PandaScore free Fixtures",
     "leagues": {
       "VCT": {
-        "matches": 1668,
-        "latest_match": "2026-10-24",
+        "matches": 1669,
+        "latest_match": "2026-10-25",
         "latest_event": "Threshold China 2026 Week 1"
       },
       "Monsters Reloaded": {
-        "matches": 40,
-        "latest_match": "2026-10-24",
+        "matches": 41,
+        "latest_match": "2026-10-25",
         "latest_event": "2026 Playoffs"
       },
       "Project Blender": {
@@ -1624,17 +1624,17 @@
     }
   },
   "kog": {
-    "checked_at": "2026-10-25T09:01:56.504116+00:00",
+    "checked_at": "2026-10-25T17:35:43.342116+00:00",
     "source": "PandaScore free Fixtures",
     "leagues": {
       "RoV Pro League": {
-        "matches": 211,
-        "latest_match": "2026-10-24",
+        "matches": 212,
+        "latest_match": "2026-10-25",
         "latest_event": "Winter 2026 Playoffs"
       },
       "Arena of Glory": {
-        "matches": 225,
-        "latest_match": "2026-10-24",
+        "matches": 227,
+        "latest_match": "2026-10-25",
         "latest_event": "Winter 2026 Playoffs"
       },
       "King Pro League": {
@@ -1685,17 +1685,17 @@
     }
   },
   "mlbb": {
-    "checked_at": "2026-10-25T09:01:57.841114+00:00",
+    "checked_at": "2026-10-25T17:35:44.783680+00:00",
     "source": "PandaScore free Fixtures",
     "leagues": {
       "MPL Cambodia": {
-        "matches": 106,
+        "matches": 108,
         "latest_match": "2026-10-25",
         "latest_event": "Season 11 2026 Regular Season"
       },
       "MPL Philippines": {
-        "matches": 255,
-        "latest_match": "2026-10-24",
+        "matches": 256,
+        "latest_match": "2026-10-25",
         "latest_event": "Season 18 2026 Playoffs"
       },
       "MPL Indonesia": {
@@ -1786,7 +1786,7 @@
     }
   },
   "r6": {
-    "checked_at": "2026-10-25T09:01:59.378314+00:00",
+    "checked_at": "2026-10-25T17:35:45.875058+00:00",
     "source": "PandaScore free Fixtures",
     "leagues": {
       "Challenger League": {
@@ -1877,11 +1877,11 @@
     }
   },
   "ow": {
-    "checked_at": "2026-10-25T09:02:00.813601+00:00",
+    "checked_at": "2026-10-25T17:35:47.063417+00:00",
     "source": "PandaScore free Fixtures",
     "leagues": {
       "OCS": {
-        "matches": 1240,
+        "matches": 1244,
         "latest_match": "2026-10-25",
         "latest_event": "Korea Stage 3 2026 Regular Season"
       },
@@ -1898,7 +1898,7 @@
     }
   },
   "cod": {
-    "checked_at": "2026-10-25T09:02:03.118106+00:00",
+    "checked_at": "2026-10-25T17:35:48.149335+00:00",
     "source": "PandaScore free Fixtures",
     "leagues": {
       "Esports World Cup": {
@@ -1919,7 +1919,7 @@
     }
   },
   "scbw": {
-    "checked_at": "2026-10-25T09:02:04.419718+00:00",
+    "checked_at": "2026-10-25T17:35:49.283585+00:00",
     "source": "PandaScore free Fixtures",
     "leagues": {
       "ASL": {
@@ -1945,7 +1945,7 @@
     }
   },
   "sc2": {
-    "checked_at": "2026-10-25T09:02:05.905153+00:00",
+    "checked_at": "2026-10-25T17:35:50.572510+00:00",
     "source": "PandaScore free Fixtures",
     "leagues": {
       "IntoTheTV x SOOP SC2 League": {

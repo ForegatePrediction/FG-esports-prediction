@@ -1,8 +1,8 @@
 {
  "game": "dota2",
  "updated": "2026-10-25",
- "last_match_date": "2026-10-24",
- "source_matches": 16344,
+ "last_match_date": "2026-10-25",
+ "source_matches": 16351,
  "scale": 400,
  "shrink": 0.7,
  "n_teams": 187,
@@ -14,10 +14,10 @@
    "last_date": "2026-09-23"
   },
   "1win": {
-   "rating": 1724.2,
+   "rating": 1717.6,
    "w": 293,
-   "l": 229,
-   "last_date": "2026-10-24"
+   "l": 231,
+   "last_date": "2026-10-25"
   },
   "4 Anchors and Ilmeria": {
    "rating": 1583.4,
@@ -344,10 +344,10 @@
    "last_date": "2026-08-10"
   },
   "Inner Circle x Insanity": {
-   "rating": 1608.8,
+   "rating": 1577.9,
    "w": 144,
-   "l": 161,
-   "last_date": "2026-10-23"
+   "l": 163,
+   "last_date": "2026-10-25"
   },
   "InterActive Philippines": {
    "rating": 1565.5,
@@ -506,10 +506,10 @@
    "last_date": "2026-09-30"
   },
   "Nemiga Gaming": {
-   "rating": 1556.4,
-   "w": 218,
+   "rating": 1587.3,
+   "w": 220,
    "l": 271,
-   "last_date": "2026-10-24"
+   "last_date": "2026-10-25"
   },
   "New Growth": {
    "rating": 1460.5,
@@ -536,10 +536,10 @@
    "last_date": "2026-08-11"
   },
   "OG": {
-   "rating": 1794.7,
-   "w": 173,
-   "l": 215,
-   "last_date": "2026-10-24"
+   "rating": 1811.0,
+   "w": 175,
+   "l": 216,
+   "last_date": "2026-10-25"
   },
   "PARIVISION": {
    "rating": 2046.3,
@@ -806,10 +806,10 @@
    "last_date": "2026-10-21"
   },
   "Team Liquid": {
-   "rating": 1806.2,
-   "w": 308,
-   "l": 231,
-   "last_date": "2026-10-23"
+   "rating": 1789.9,
+   "w": 309,
+   "l": 233,
+   "last_date": "2026-10-25"
   },
   "Team Lynx": {
    "rating": 1618.8,
@@ -872,10 +872,10 @@
    "last_date": "2026-10-17"
   },
   "Team Yandex": {
-   "rating": 2072.1,
-   "w": 218,
+   "rating": 2078.6,
+   "w": 220,
    "l": 129,
-   "last_date": "2026-10-24"
+   "last_date": "2026-10-25"
   },
   "TeamDk": {
    "rating": 1497.9,

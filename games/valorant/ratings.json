@@ -1,8 +1,8 @@
 {
  "game": "valorant",
  "updated": "2026-10-25",
- "last_match_date": "2026-10-24",
- "source_matches": 10194,
+ "last_match_date": "2026-10-25",
+ "source_matches": 10201,
  "scale": 400,
  "shrink": 1.0,
  "n_teams": 221,
@@ -146,10 +146,10 @@
    "last_date": "2026-06-28"
   },
   "BBL Esports": {
-   "rating": 1646.4,
-   "w": 69,
-   "l": 54,
-   "last_date": "2026-10-24"
+   "rating": 1669.8,
+   "w": 72,
+   "l": 55,
+   "last_date": "2026-10-25"
   },
   "BERG": {
    "rating": 1511.6,
@@ -254,10 +254,10 @@
    "last_date": "2026-07-13"
   },
   "Dragon Ranger Gaming": {
-   "rating": 1489.2,
-   "w": 69,
+   "rating": 1537.1,
+   "w": 72,
    "l": 72,
-   "last_date": "2026-10-24"
+   "last_date": "2026-10-25"
   },
   "Dynamo Esports": {
    "rating": 1349.8,
@@ -410,10 +410,10 @@
    "last_date": "2026-07-25"
   },
   "Fire Flux Esports": {
-   "rating": 1658.4,
-   "w": 43,
-   "l": 50,
-   "last_date": "2026-10-24"
+   "rating": 1635.1,
+   "w": 44,
+   "l": 53,
+   "last_date": "2026-10-25"
   },
   "FlyQuest": {
    "rating": 1477.5,
@@ -830,10 +830,10 @@
    "last_date": "2026-10-09"
   },
   "Nova Esports": {
-   "rating": 1571.7,
+   "rating": 1523.9,
    "w": 53,
-   "l": 53,
-   "last_date": "2026-10-24"
+   "l": 56,
+   "last_date": "2026-10-25"
   },
   "Nova Esports GC": {
    "rating": 1553.2,
