@@ -1,6 +1,6 @@
 {
   "lol": {
-    "checked_at": "2026-10-25T05:02:39.682352+00:00",
+    "checked_at": "2026-10-25T05:26:51.276761+00:00",
     "source": "Oracle's Elixir",
     "leagues": {
       "DCup": {
@@ -361,7 +361,7 @@
     }
   },
   "dota2": {
-    "checked_at": "2026-10-25T05:19:27.518920+00:00",
+    "checked_at": "2026-10-25T05:26:54.326807+00:00",
     "source": "PandaScore free Fixtures",
     "leagues": {
       "PARI Universe": {
@@ -542,7 +542,7 @@
     }
   },
   "cs2": {
-    "checked_at": "2026-10-25T05:20:58.650828+00:00",
+    "checked_at": "2026-10-25T05:27:01.868346+00:00",
     "source": "PandaScore free Fixtures",
     "leagues": {
       "CCT North America": {
@@ -1503,7 +1503,7 @@
     }
   },
   "valorant": {
-    "checked_at": "2026-10-25T05:21:04.712434+00:00",
+    "checked_at": "2026-10-25T05:27:03.520637+00:00",
     "source": "PandaScore free Fixtures",
     "leagues": {
       "VCT": {
@@ -1624,7 +1624,7 @@
     }
   },
   "kog": {
-    "checked_at": "2026-10-25T05:21:05.851016+00:00",
+    "checked_at": "2026-10-25T05:27:04.960332+00:00",
     "source": "PandaScore free Fixtures",
     "leagues": {
       "RoV Pro League": {
@@ -1685,7 +1685,7 @@
     }
   },
   "mlbb": {
-    "checked_at": "2026-10-25T05:21:06.788605+00:00",
+    "checked_at": "2026-10-25T05:27:06.499443+00:00",
     "source": "PandaScore free Fixtures",
     "leagues": {
       "MPL Cambodia": {
@@ -1786,7 +1786,7 @@
     }
   },
   "r6": {
-    "checked_at": "2026-10-25T05:21:08.779478+00:00",
+    "checked_at": "2026-10-25T05:27:07.838697+00:00",
     "source": "PandaScore free Fixtures",
     "leagues": {
       "Challenger League": {
@@ -1877,7 +1877,7 @@
     }
   },
   "ow": {
-    "checked_at": "2026-10-25T05:21:13.173284+00:00",
+    "checked_at": "2026-10-25T05:27:09.376661+00:00",
     "source": "PandaScore free Fixtures",
     "leagues": {
       "OCS": {
@@ -1898,7 +1898,7 @@
     }
   },
   "cod": {
-    "checked_at": "2026-10-25T05:21:14.157920+00:00",
+    "checked_at": "2026-10-25T05:27:10.962768+00:00",
     "source": "PandaScore free Fixtures",
     "leagues": {
       "Esports World Cup": {
@@ -1919,7 +1919,7 @@
     }
   },
   "scbw": {
-    "checked_at": "2026-10-25T05:21:16.310955+00:00",
+    "checked_at": "2026-10-25T05:27:12.415083+00:00",
     "source": "PandaScore free Fixtures",
     "leagues": {
       "ASL": {
@@ -1945,7 +1945,7 @@
     }
   },
   "sc2": {
-    "checked_at": "2026-10-25T05:21:37.544097+00:00",
+    "checked_at": "2026-10-25T05:27:13.902582+00:00",
     "source": "PandaScore free Fixtures",
     "leagues": {
       "IntoTheTV x SOOP SC2 League": {
