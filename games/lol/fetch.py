@@ -79,11 +79,13 @@ def main():
         size = download(fid, temporary)
         # 校验:必须是 CSV(以 gameid 开头),不能是 HTML 错误页
         with open(temporary, "r", encoding="utf-8", errors="ignore") as f:
-            head = f.read(80)
+            head = f.read(4096)
         ok = head.startswith("gameid,")
         print(f"[{'ok' if ok else 'BAD'}] {y}: {size/1e6:.1f} MB  -> {dest}")
         if not ok:
             os.unlink(temporary)
+            if "Quota exceeded" in head or "Too many users have viewed or downloaded" in head:
+                raise RuntimeError(f"{y}: Oracle's Elixir Google Drive download quota exceeded; cached CSV and ratings preserved, retry after upstream quota recovery")
             raise RuntimeError(f"{y}: 下载内容不是 CSV")
         os.replace(temporary, dest)
 

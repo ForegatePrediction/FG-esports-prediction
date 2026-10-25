@@ -63,7 +63,7 @@ def collect(game, path, cutoff, token, fetch=api, test=False):
     boundary = (dt.date.fromisoformat(latest) - dt.timedelta(days=3)).isoformat() if latest and complete.get('cutoff') == cutoff else cutoff
     finished = False
     for page in range(1, (1 if test else 400) + 1):
-        batch = fetch(f'/{game}/matches/past?sort=-begin_at&page[size]=100&page[number]={page}', token)
+        batch = fetch(f'/{game}/matches/past?filter[status]=finished&sort=-begin_at&page[size]=100&page[number]={page}', token)
         if not isinstance(batch, list):
             raise RuntimeError('PandaScore response is not a match list')
         if not batch:
