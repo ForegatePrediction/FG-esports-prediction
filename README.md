@@ -121,3 +121,11 @@ LoL 使用 Oracle's Elixir 免费 CSV；Dota 2、CS2、VALORANT、王者荣耀�
 每日北京时间 12:00（04:00 UTC）调度。`refresh-status.json` 记录实际抓取状态；`source-coverage.json` 逐游戏、逐联赛保存源数据的最近比赛日期及赛事名称。快照生成时间不代表有新比赛；超过 30 天无源赛果会标记 `stale`，不能按任务绿色判断覆盖正常。
 
 Free Fixtures inputs are cached between Actions runs. Initial collection builds the historical cache; subsequent daily runs replay only new results plus a three-day overlap, then rebuild ratings from the complete cached input. HTTP 429 is reported with quota reset headers and preserves the old snapshot. Incomplete API batches cannot replace cached inputs. Manual `probe_only` checks authentication/quota without changing model data.
+
+## VPS 与 GitHub 双通道更新
+
+新增可选持久数据模式：设置 `FG_DATA_DIR` 后，预测从该目录的版本快照读取评分，赛事配置仍使用代码版本。数据目录缺失或不兼容时明确报错；通过原子切换 `current` 可更新评分，无需重启服务。未设置时保留仓库快照模式。
+
+GitHub 每日任务将通过校验的数据包写入独立 `data-snapshots` 分支，包含评分、采集状态和文件哈希，不包含原始缓存、Token 或源代码。只有 VPS 迁移通过后才设置仓库变量 `DUAL_CHANNEL_DATA=true`：启用后 GitHub 使用自己的数据检查点续抓，并停止每日向主分支提交数据。未启用时保留原有主分支更新，避免迁移中断。
+
+VPS 和 GitHub 独立采集、保存各自缓存与游标，生产只由 VPS 发布；GitHub 备份不会自动覆盖生产。安装、时间表、验证和人工恢复见[网关部署说明](https://github.com/ForegatePrediction/FG-prediction-gateway-v2/blob/main/deploy/DUAL_CHANNEL.md)。

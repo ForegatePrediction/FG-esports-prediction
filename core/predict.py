@@ -3,6 +3,7 @@
 import json, os
 from .engine import expect
 from .series import four_markets, per_game_markets
+from . import storage
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -10,7 +11,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 def _load(game):
     gdir = os.path.join(ROOT, "games", game)
     cfg = json.load(open(os.path.join(gdir, "config.json"), encoding="utf-8"))
-    snap = json.load(open(os.path.join(gdir, "ratings.json"), encoding="utf-8"))
+    snap = json.load(open(storage.snapshot(os.path.join(ROOT, 'games'), game), encoding="utf-8"))
     return cfg, snap["teams"]
 
 

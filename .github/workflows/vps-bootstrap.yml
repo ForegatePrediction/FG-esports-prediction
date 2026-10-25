@@ -1,0 +1,35 @@
+name: export-vps-refresh-bootstrap
+on:
+  workflow_dispatch: {}
+permissions:
+  contents: read
+concurrency:
+  group: vps-refresh-bootstrap
+  cancel-in-progress: false
+jobs:
+  export:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - uses: actions/cache/restore@v4
+        with:
+          path: games/*/data/
+          key: bootstrap-${{ github.run_id }}
+          restore-keys: esports-source-v1-${{ runner.os }}-
+          fail-on-cache-miss: true
+      - name: Encrypt free Fixtures configuration for the designated VPS
+        env:
+          PANDASCORE_TOKEN: ${{ secrets.PANDASCORE_TOKEN }}
+          VPS_REFRESH_BOOTSTRAP_PUBLIC_KEY: ${{ vars.VPS_REFRESH_BOOTSTRAP_PUBLIC_KEY }}
+        run: python3 deploy/export-vps-bootstrap.py "$RUNNER_TEMP/vps-refresh-bootstrap"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: vps-refresh-bootstrap
+          path: ${{ runner.temp }}/vps-refresh-bootstrap/
+          retention-days: 1
+          if-no-files-found: error

@@ -45,6 +45,9 @@ jobs:
         run: python3 sources/pandascore.py
       - name: Regression tests
         run: python3 -m unittest discover -s tests -v
+      - name: Restore independent GitHub data checkpoint
+        if: ${{ !inputs.probe_only && vars.DUAL_CHANNEL_DATA == 'true' }}
+        run: bash deploy/github-backup.sh prepare esports
       - name: Refresh all games' ratings
         if: ${{ !inputs.probe_only }}
         env:
@@ -54,8 +57,8 @@ jobs:
           read -r -a games <<< "$SELECTED_GAMES"
           python3 refresh.py "${games[@]}"
 
-      - name: Commit updated snapshots
-        if: ${{ !cancelled() && !inputs.probe_only }}
+      - name: Legacy snapshot commits until VPS migration is verified
+        if: ${{ !cancelled() && !inputs.probe_only && vars.DUAL_CHANNEL_DATA != 'true' && github.ref == 'refs/heads/main' }}
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
@@ -69,6 +72,9 @@ jobs:
             git push
           fi
 
+      - name: Publish verified daily backup to data branch
+        if: ${{ success() && !inputs.probe_only && github.ref == 'refs/heads/main' }}
+        run: bash deploy/github-backup.sh publish esports
       - name: Upload refresh diagnostics
         if: ${{ !cancelled() && !inputs.probe_only }}
         uses: actions/upload-artifact@v4
