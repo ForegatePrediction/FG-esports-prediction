@@ -1,8 +1,8 @@
 {
  "game": "ow",
- "updated": "2026-10-25",
+ "updated": "2026-10-26",
  "last_match_date": "2026-10-25",
- "source_matches": 4433,
+ "source_matches": 4449,
  "scale": 400,
  "shrink": 1.0,
  "n_teams": 65,
@@ -14,10 +14,10 @@
    "last_date": "2026-06-14"
   },
   "1234": {
-   "rating": 1669.1,
+   "rating": 1622.9,
    "w": 17,
-   "l": 20,
-   "last_date": "2026-10-24"
+   "l": 23,
+   "last_date": "2026-10-25"
   },
   "99DIVINE": {
    "rating": 1694.7,
@@ -80,10 +80,10 @@
    "last_date": "2026-10-25"
   },
   "Dallas Fuel": {
-   "rating": 1717.6,
-   "w": 51,
+   "rating": 1735.6,
+   "w": 54,
    "l": 24,
-   "last_date": "2026-10-24"
+   "last_date": "2026-10-25"
   },
   "Denmark": {
    "rating": 1442.3,
@@ -92,10 +92,10 @@
    "last_date": "2026-08-23"
   },
   "Disguised": {
-   "rating": 1389.4,
+   "rating": 1376.4,
    "w": 13,
-   "l": 37,
-   "last_date": "2026-10-18"
+   "l": 40,
+   "last_date": "2026-10-25"
   },
   "ELMT": {
    "rating": 1418.8,
@@ -128,10 +128,10 @@
    "last_date": "2026-09-13"
   },
   "Geekay Esports": {
-   "rating": 1708.0,
-   "w": 99,
-   "l": 79,
-   "last_date": "2026-10-24"
+   "rating": 1714.3,
+   "w": 102,
+   "l": 80,
+   "last_date": "2026-10-25"
   },
   "Germany": {
    "rating": 1539.7,
@@ -194,9 +194,9 @@
    "last_date": "2026-08-23"
   },
   "NTMR": {
-   "rating": 1501.0,
+   "rating": 1478.3,
    "w": 101,
-   "l": 69,
+   "l": 72,
    "last_date": "2026-10-25"
   },
   "Najdorf": {
@@ -266,10 +266,10 @@
    "last_date": "2026-09-13"
   },
   "Spacestation Gaming": {
-   "rating": 1658.0,
-   "w": 131,
+   "rating": 1680.7,
+   "w": 134,
    "l": 76,
-   "last_date": "2026-10-24"
+   "last_date": "2026-10-25"
   },
   "Spain": {
    "rating": 1557.0,
@@ -296,22 +296,22 @@
    "last_date": "2026-10-25"
   },
   "Team Liquid": {
-   "rating": 1675.3,
-   "w": 115,
+   "rating": 1688.3,
+   "w": 118,
    "l": 81,
    "last_date": "2026-10-25"
   },
   "Team Peps": {
-   "rating": 1601.4,
-   "w": 70,
+   "rating": 1647.6,
+   "w": 73,
    "l": 94,
-   "last_date": "2026-10-24"
+   "last_date": "2026-10-25"
   },
   "Team Risk": {
-   "rating": 1592.9,
-   "w": 8,
-   "l": 7,
-   "last_date": "2026-10-24"
+   "rating": 1586.6,
+   "w": 9,
+   "l": 10,
+   "last_date": "2026-10-25"
   },
   "Team Secret": {
    "rating": 1663.2,
@@ -332,10 +332,10 @@
    "last_date": "2026-08-23"
   },
   "The Kafe": {
-   "rating": 1503.8,
+   "rating": 1485.8,
    "w": 12,
-   "l": 21,
-   "last_date": "2026-10-18"
+   "l": 24,
+   "last_date": "2026-10-25"
   },
   "Trap12": {
    "rating": 1411.3,

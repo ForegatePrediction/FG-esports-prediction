@@ -1,8 +1,8 @@
 {
  "game": "valorant",
- "updated": "2026-10-25",
+ "updated": "2026-10-26",
  "last_match_date": "2026-10-25",
- "source_matches": 10201,
+ "source_matches": 10206,
  "scale": 400,
  "shrink": 1.0,
  "n_teams": 221,
@@ -338,10 +338,10 @@
    "last_date": "2026-06-28"
   },
   "FENNEL Female": {
-   "rating": 1681.3,
-   "w": 37,
-   "l": 11,
-   "last_date": "2026-10-22"
+   "rating": 1689.9,
+   "w": 39,
+   "l": 12,
+   "last_date": "2026-10-25"
   },
   "FOKUS": {
    "rating": 1638.9,
@@ -494,10 +494,10 @@
    "last_date": "2026-08-29"
   },
   "Gen.G GC": {
-   "rating": 1622.9,
-   "w": 14,
-   "l": 10,
-   "last_date": "2026-10-23"
+   "rating": 1614.3,
+   "w": 15,
+   "l": 12,
+   "last_date": "2026-10-25"
   },
   "Gen.G Global Academy": {
    "rating": 1502.4,
@@ -836,10 +836,10 @@
    "last_date": "2026-10-25"
   },
   "Nova Esports GC": {
-   "rating": 1553.2,
+   "rating": 1530.1,
    "w": 13,
-   "l": 11,
-   "last_date": "2026-10-22"
+   "l": 13,
+   "last_date": "2026-10-25"
   },
   "ONSIDE GAMING": {
    "rating": 1657.0,
@@ -1160,10 +1160,10 @@
    "last_date": "2026-06-29"
   },
   "Team Liquid Brazil": {
-   "rating": 1603.5,
-   "w": 38,
+   "rating": 1626.5,
+   "w": 40,
    "l": 25,
-   "last_date": "2026-10-23"
+   "last_date": "2026-10-25"
   },
   "Team Secret": {
    "rating": 1388.5,
