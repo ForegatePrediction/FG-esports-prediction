@@ -361,7 +361,7 @@
     }
   },
   "dota2": {
-    "checked_at": "2026-11-02T12:08:38.547788+00:00",
+    "checked_at": "2026-11-03T11:44:18.873306+00:00",
     "source": "PandaScore free Fixtures",
     "leagues": {
       "PARI Universe": {
@@ -370,14 +370,14 @@
         "latest_event": "2026 Playoffs"
       },
       "EPL Masters": {
-        "matches": 196,
-        "latest_match": "2026-10-25",
-        "latest_event": "Season 3 2026 Group B"
+        "matches": 200,
+        "latest_match": "2026-11-02",
+        "latest_event": "Season 3 2026 Playoffs"
       },
       "EPL World Series": {
-        "matches": 628,
-        "latest_match": "2026-11-02",
-        "latest_event": "Southeast Asia season 19 2026 Group Stage"
+        "matches": 630,
+        "latest_match": "2026-11-03",
+        "latest_event": "Southeast Asia season 19 2026 Playoffs"
       },
       "1win Streamers League": {
         "matches": 21,
@@ -540,25 +540,30 @@
         "latest_event": "Punch 2024 Playoffs"
       },
       "Esports Pro Circuit ": {
-        "matches": 21,
-        "latest_match": "2026-11-01",
-        "latest_event": "Season 3 2026 Group C"
+        "matches": 22,
+        "latest_match": "2026-11-02",
+        "latest_event": "Season 3 2026 Group B"
       },
       "NEXUS SERIES": {
         "matches": 10,
         "latest_match": "2026-11-01",
         "latest_event": "Season 2 2026 Playoffs"
+      },
+      "Media Eleague": {
+        "matches": 3,
+        "latest_match": "2026-11-02",
+        "latest_event": "Season 5 2026 Group Stage"
       }
     }
   },
   "cs2": {
-    "checked_at": "2026-11-02T12:08:44.721017+00:00",
+    "checked_at": "2026-11-03T11:44:23.342061+00:00",
     "source": "PandaScore free Fixtures",
     "leagues": {
       "Gamers Club Liga Série A": {
-        "matches": 496,
-        "latest_match": "2026-10-30",
-        "latest_event": "October 2026 Group D"
+        "matches": 497,
+        "latest_match": "2026-11-02",
+        "latest_event": "October 2026 Group A"
       },
       "CCT North America": {
         "matches": 108,
@@ -581,14 +586,14 @@
         "latest_event": "Finals 2026 Playoffs"
       },
       "CCT Europe": {
-        "matches": 3000,
-        "latest_match": "2026-11-01",
-        "latest_event": "Closed Qualifier: Series #13 2026 Group C"
+        "matches": 3003,
+        "latest_match": "2026-11-03",
+        "latest_event": "Closed Qualifier: Series #13 2026 Play-In"
       },
       "Exort Fiesta": {
-        "matches": 166,
-        "latest_match": "2026-11-01",
-        "latest_event": "Season 3 2026 Group Stage"
+        "matches": 169,
+        "latest_match": "2026-11-03",
+        "latest_event": "Season 3 2026 Playoffs"
       },
       "PGL Masters": {
         "matches": 191,
@@ -596,14 +601,14 @@
         "latest_event": "Bucharest 2026 Playoffs"
       },
       "NODWIN Clutch Series": {
-        "matches": 842,
-        "latest_match": "2026-10-27",
-        "latest_event": "Season 13 2026 Playoffs"
+        "matches": 845,
+        "latest_match": "2026-11-02",
+        "latest_event": "Season 14 2026 Play-In Group A"
       },
       "United21": {
-        "matches": 1060,
-        "latest_match": "2026-11-01",
-        "latest_event": "Season 57 2026 Playoffs"
+        "matches": 1061,
+        "latest_match": "2026-11-03",
+        "latest_event": "Season 58 2026 Group A"
       },
       "European Pro League": {
         "matches": 1044,
@@ -621,8 +626,8 @@
         "latest_event": "Season 7 2026 Playoffs"
       },
       "ESEA": {
-        "matches": 3408,
-        "latest_match": "2026-11-01",
+        "matches": 3415,
+        "latest_match": "2026-11-02",
         "latest_event": "Advanced Europe season 59 2026 Regular Season"
       },
       "ESL Challenger League": {
@@ -646,8 +651,8 @@
         "latest_event": "Season 2 2026 Playoffs"
       },
       "DACH CS Masters": {
-        "matches": 182,
-        "latest_match": "2026-10-28",
+        "matches": 184,
+        "latest_match": "2026-11-02",
         "latest_event": "Season 6 2026 Regular Season"
       },
       "PGL": {
@@ -656,8 +661,8 @@
         "latest_event": "Bucharest Closed Qualifier 2027 Playoffs"
       },
       "Dust2.dk Ligaen": {
-        "matches": 334,
-        "latest_match": "2026-10-27",
+        "matches": 341,
+        "latest_match": "2026-11-02",
         "latest_event": "Season 33 2026 Regular Season"
       },
       "CyberClash": {
@@ -791,9 +796,9 @@
         "latest_event": "Porto Fall 2026 Playoffs"
       },
       "IEM": {
-        "matches": 690,
-        "latest_match": "2026-11-02",
-        "latest_event": "Beijing 2026 Group A"
+        "matches": 697,
+        "latest_match": "2026-11-03",
+        "latest_event": "Beijing 2026 Group B"
       },
       "Moscow Cyber Games": {
         "matches": 52,
@@ -916,9 +921,9 @@
         "latest_event": "2026 Playoffs"
       },
       "Elisa Open Suomi": {
-        "matches": 194,
-        "latest_match": "2026-05-31",
-        "latest_event": "Season 13 2026 Playoffs"
+        "matches": 196,
+        "latest_match": "2026-11-02",
+        "latest_event": "Season 14 2026 Group Stage"
       },
       "BC Game Masters": {
         "matches": 132,
@@ -1533,7 +1538,7 @@
     }
   },
   "valorant": {
-    "checked_at": "2026-11-02T12:08:45.971911+00:00",
+    "checked_at": "2026-11-03T11:44:24.835405+00:00",
     "source": "PandaScore free Fixtures",
     "leagues": {
       "VCT": {
@@ -1659,7 +1664,7 @@
     }
   },
   "kog": {
-    "checked_at": "2026-11-02T12:08:47.214126+00:00",
+    "checked_at": "2026-11-03T11:44:26.022257+00:00",
     "source": "PandaScore free Fixtures",
     "leagues": {
       "RoV Pro League": {
@@ -1673,8 +1678,8 @@
         "latest_event": "Winter 2026 Playoffs"
       },
       "King Pro League": {
-        "matches": 656,
-        "latest_match": "2026-11-01",
+        "matches": 657,
+        "latest_match": "2026-11-02",
         "latest_event": "Grand Finals 2026 Playoffs"
       },
       "Garena Challenger Series": {
@@ -1720,7 +1725,7 @@
     }
   },
   "mlbb": {
-    "checked_at": "2026-11-02T12:08:48.451158+00:00",
+    "checked_at": "2026-11-03T11:44:27.158960+00:00",
     "source": "PandaScore free Fixtures",
     "leagues": {
       "MPL Cambodia": {
@@ -1764,9 +1769,9 @@
         "latest_event": "Season 1 2026 Playoffs"
       },
       "BetBoom Rise of Legends": {
-        "matches": 289,
-        "latest_match": "2026-08-22",
-        "latest_event": "Season 10 2026 Playoffs"
+        "matches": 293,
+        "latest_match": "2026-11-02",
+        "latest_event": "Season 11 2026 Group A"
       },
       "Games of the Future": {
         "matches": 55,
@@ -1821,7 +1826,7 @@
     }
   },
   "r6": {
-    "checked_at": "2026-11-02T12:08:49.538581+00:00",
+    "checked_at": "2026-11-03T11:44:28.395629+00:00",
     "source": "PandaScore free Fixtures",
     "leagues": {
       "Challenger League": {
@@ -1912,7 +1917,7 @@
     }
   },
   "ow": {
-    "checked_at": "2026-11-02T12:08:50.724718+00:00",
+    "checked_at": "2026-11-03T11:44:29.681114+00:00",
     "source": "PandaScore free Fixtures",
     "leagues": {
       "OCS": {
@@ -1933,7 +1938,7 @@
     }
   },
   "cod": {
-    "checked_at": "2026-11-02T12:08:52.009559+00:00",
+    "checked_at": "2026-11-03T11:44:30.965311+00:00",
     "source": "PandaScore free Fixtures",
     "leagues": {
       "Esports World Cup": {
@@ -1954,7 +1959,7 @@
     }
   },
   "scbw": {
-    "checked_at": "2026-11-02T12:08:53.161348+00:00",
+    "checked_at": "2026-11-03T11:44:32.021978+00:00",
     "source": "PandaScore free Fixtures",
     "leagues": {
       "ASL": {
@@ -1980,7 +1985,7 @@
     }
   },
   "sc2": {
-    "checked_at": "2026-11-02T12:08:54.397844+00:00",
+    "checked_at": "2026-11-03T11:44:33.207589+00:00",
     "source": "PandaScore free Fixtures",
     "leagues": {
       "IntoTheTV x SOOP SC2 League": {
